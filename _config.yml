@@ -3,4 +3,4 @@ markdown: redcarpet
 pygments: true
 permalink: none
 baseurl:     /
-url:         http://localhost:4000
+url:         http://mesker.github.io/smalltabs
