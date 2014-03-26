@@ -2,5 +2,4 @@ name: SmallTabs Styleguide
 markdown: redcarpet
 pygments: true
 permalink: none
-baseurl: "mesker.github.io"
-url: /smalltabs
+url: mesker.github.io/smalltabs
