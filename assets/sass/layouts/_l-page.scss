@@ -1,0 +1,20 @@
+/**
+ * @file
+ * Layout rules for a centered column of content.
+ */
+
+.l-page {
+  //@include debug-vertical-alignment;  
+  margin-left: $zen-gutter-width; // important
+  margin-right: $zen-gutter-width; // important
+  @include breakpoint($bp1) { 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  @include breakpoint($bp2) { width: 70%; } 
+  @include breakpoint($bp3) { max-width: 760px; }
+}
+
+
+

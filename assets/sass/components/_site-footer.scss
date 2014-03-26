@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Style rules for the site footer.
+ */
+
+.site-footer { 
+  @extend %column;
+  margin-top: rhythm(2);
+  margin-bottom: rhythm(2);
+  @include zen-clear();
+}
+.site-footer__copyright {
+  @extend %sans;
+  @include adjust-font-size-to($label, 1);
+  color: $gray-medium;
+  padding-top: rhythm(3);
+  border-top: 1px solid $off-white;  
+}

@@ -1,0 +1,6 @@
+name: SmallTabs Styleguide
+markdown: redcarpet
+pygments: true
+permalink: none
+baseurl: "mesker.github.io/smalltabs"
+url: http://localhost:4000
