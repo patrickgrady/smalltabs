@@ -421,7 +421,8 @@ q {
 /* Address inconsistent and variable font size in all browsers. */
 /* line 281, ../sass/_normalize.scss */
 small {
-  font-size: 80%;
+  font-size: 0.8em;
+  line-height: 0.53571em;
 }
 
 /* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
@@ -1884,6 +1885,25 @@ a > .site-navigation__github {
   color: #9d9d9d;
   padding-top: 2.57143em;
   border-top: 1px solid #ededed;
+}
+
+/* Styleguide rules */
+/**
+ * @file
+ * Style rules for the look and feel of the styleguide.
+ */
+/* line 6, ../sass/styleguide/_styleguide.scss */
+.styleguide-header {
+  margin-top: 1.71429em;
+  margin-bottom: 5.14286em;
+}
+
+/* line 11, ../sass/styleguide/_styleguide.scss */
+.styleguide-footer {
+  margin-top: 3.42857em;
+  padding-top: 1.71429em;
+  padding-bottom: 1.71429em;
+  background: #ededed;
 }
 
 /* Print rules */

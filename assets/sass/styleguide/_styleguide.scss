@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Style rules for the look and feel of the styleguide.
+ */
+
+.styleguide-header {
+  margin-top: rhythm(2);
+  margin-bottom: rhythm(6);
+}
+
+.styleguide-footer {
+  margin-top: rhythm(4);
+  padding-top: rhythm(2);
+  padding-bottom: rhythm(2);
+  background: $off-white;
+}
+
