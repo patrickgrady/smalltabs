@@ -6,7 +6,7 @@
  * @see http://smacss.com/book/
  */
 /* Import H&FJ CloudTypography */
-@import "//cloud.typography.com/6838432/767882/css/fonts.css";
+@import "//cloud.typography.com/6838432/662604/css/fonts.css";
 /* Import Syntax styles */
 @import url({{ site.baseurl }}/assets/css/syntax.css);
 /* Import Sass mixins, variables, Compass modules, etc. */
