@@ -1,0 +1,93 @@
+/**
+ * @file
+ * Style rules for the rollup.
+ */
+
+.finder-results {
+  background-color: $off-white;
+}
+
+.rollup {
+  border: 1px solid $off-white;
+  background-color: $white;
+  padding: rhythm(1.5) rhythm(1.5) rhythm(.5) rhythm(1.5);
+  margin-bottom: $zen-gutter-width;  
+}
+
+.rollup__title {
+  @include adjust-font-size-to($sm-heading, 1.5);
+  @include leader(0, $sm-heading);
+  @include trailer(.25, $sm-heading);
+}
+
+.rollup__address {
+  color: $gray-medium;
+
+  a:link,
+  a:visited { 
+    color: $gray-medium;
+    text-decoration: underline;  
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    @include trans($timing, $easing);
+    color: $link-color;
+    text-decoration: underline;  
+  }  
+}
+
+.rollup__list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    border-top: 1px solid $off-white;
+    padding-top: rhythm(1);
+    margin-bottom: rhythm(1);
+  }
+}
+
+.rollup__address,
+.rollup__list-drink,
+.rollup__list-food {
+  @include adjust-font-size-to($label, 1.5);
+}
+
+.rollup__list-category {
+  @include adjust-font-size-to($crumb, .5);
+
+  a:link,
+  a:visited { 
+    color: $gray-medium;
+    text-decoration: underline;  
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    @include trans($timing, $easing);
+    color: $link-color;
+    text-decoration: underline;  
+  }
+}
+
+.rollup__list-drink:before,
+.rollup__list-food:before,
+.rollup__list-category:before { 
+  font-weight: 400;
+  @include adjust-font-size-to($label);  
+  font-family: "SSStandard";
+  font-style: normal;
+  margin-right: rhythm(1);
+  vertical-align: middle;
+  color: $ipa;
+}
+
+.rollup__list-drink:before { content: 'date'; }
+.rollup__list-food:before { content: 'date'; }
+.rollup__list-category:before { content: 'tag'; }
+
+
+
+
+

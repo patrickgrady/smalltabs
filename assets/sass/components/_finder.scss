@@ -1,0 +1,61 @@
+/**
+ * @file
+ * Style rules for the specials finder.
+ */
+
+.finder__heading {
+  //padding-bottom: rhythm(1);  
+  //border-bottom: 1px solid $off-white;
+}
+.finder__label {
+  display: inline;
+  margin-right: rhythm(.5);
+  font-weight: 400;
+}
+
+select {
+  display: inline;
+  margin-right: rhythm(.5);
+  min-width: 12em;
+
+  @include box-sizing(border-box);
+  width: auto;
+  -webkit-appearance: none;
+  border-radius: $radius;
+  height: 2em;
+  text-indent: .5em;
+  background-color: $white;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU4QTMzNkUyNDAwQzExRTNBOEY4OTE4N0E1NkQ4QjVCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU4QTMzNkUzNDAwQzExRTNBOEY4OTE4N0E1NkQ4QjVCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RThBMzM2RTA0MDBDMTFFM0E4Rjg5MTg3QTU2RDhCNUIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RThBMzM2RTE0MDBDMTFFM0E4Rjg5MTg3QTU2RDhCNUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4x37VGAAAAWklEQVR42mI0NjZeysDAEMWAHyxlAhKZQPwAj6L7QJwFUvgJiKOB+C8WRX+gcp+YoALHgLgZi0KQ2HEQgwlJsAWIjyLxjwBxK4yDrBBkdQwQf4DiGGTnAAQYAGJbEyV4nwHtAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-position: top 50% right 10px;
+  border: 1px solid $off-white;
+  outline: none;
+  @include trans(.1s, ease-out);
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+    border: 1px solid $link-color;
+  }
+}
+
+button {
+  background: $link-color;
+  border-radius: $radius;
+  border: 1px solid transparent;
+  color: $white;
+  height: 2em;
+  margin: 0;
+  padding: 0 .5em;
+  @include trans(.1s, ease-out);
+}
+button:hover {
+  background: darken($link-color, 5%);
+  color: $white;
+  border: 1px solid darken($link-color, 5%);
+}
+button:focus {
+  outline-style: dotted;
+  outline-color: $black;
+  outline-width: 1px;
+}

@@ -7,7 +7,7 @@
 // We are going to create a 980px wide, 12 column grid with 48px gutters between
 // columns (applied as 24px of left/right padding on each column).
 $zen-column-count: 12;
-$zen-gutter-width: $base-line-height * 1;
+$zen-gutter-width: $base-line-height * 3;
 
 // If you need IE6/7 support for box-sizing: border-box (default), see _base.scss
 //$zen-box-sizing: content-box;
@@ -26,6 +26,7 @@ $zen-auto-include-item-base: true;
  * Center the page.
  */
 
+%container,
 .container {
   /* For screen sizes larger than 1200px, prevent excessively long lines of text
      by setting a max-width. */

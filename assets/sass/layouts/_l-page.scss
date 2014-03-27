@@ -5,8 +5,9 @@
 
 .l-page {
   //@include debug-vertical-alignment;  
-  margin-left: $zen-gutter-width; // important
-  margin-right: $zen-gutter-width; // important
+  margin-left: $zen-gutter-width / 2 ; // important
+  margin-right: $zen-gutter-width / 2; // important
+  @include zen-clear();
   @include breakpoint($bp1) { 
     width: 80%;
     margin-left: auto;

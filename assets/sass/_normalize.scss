@@ -95,8 +95,9 @@ audio:not([controls]) {
  */
 html {
   font-family: $base-font-family; /* 1 */
-  font-weight: 400;
+  font-weight: 300;
   font-size: 100% * ($base-font-size / 16px); /* 3 */
+  color: $black;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-font-smoothing: antialiased; /* 4 */
@@ -184,21 +185,21 @@ blockquote {
  */
 h1 {
   //@extend %sans;
-  font-family: $sentinel;
-  @extend %track-in;
+  font-family: $champion-lightweight;
+  font-weight: 400;
   @include adjust-font-size-to($xxl-heading, 4);
   @include leader(0, $xxl-heading);
   @include trailer(2, $xxl-heading);
 }
 h2 {
-  @extend %sans;
-  @extend %track-in;    
-  @include adjust-font-size-to($md-heading, 1);
+  font-family: $champion-lightweight;
+  font-weight: 400;
+  @include adjust-font-size-to($md-heading, 2);
   @include leader(2, $md-heading);
   @include trailer(1, $md-heading);
 }
 h3 {
-  @extend %sans;
+  //@extend %sans;
   @extend %allcaps;     
   @include adjust-font-size-to($label, 1.5);
   @include leader(2, $label);
@@ -207,7 +208,7 @@ h3 {
 h4,
 h5,
 h6 {
-  @extend %sans;
+  //@extend %sans;
   @extend %allcaps;
   font-weight: 400;     
   @include adjust-font-size-to($label, 1.5);

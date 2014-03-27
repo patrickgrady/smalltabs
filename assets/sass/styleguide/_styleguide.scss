@@ -5,7 +5,7 @@
 
 .styleguide-header {
   margin-top: rhythm(2);
-  margin-bottom: rhythm(6);
+  margin-bottom: rhythm(10);
 }
 
 .styleguide-footer {
@@ -15,3 +15,6 @@
   background: $off-white;
 }
 
+.styleguide-component-container {
+  margin: 0 0 rhythm(10) 0;
+}
