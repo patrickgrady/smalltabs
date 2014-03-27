@@ -209,7 +209,7 @@ html {
   font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, "Times New Roman", "DejaVu Serif", serif;
   /* 1 */
   font-weight: 300;
-  font-size: 93.75%;
+  font-size: 100%;
   /* 3 */
   color: #444444;
   -ms-text-size-adjust: 100%;
@@ -220,24 +220,24 @@ html {
   /* 4 */
   text-rendering: optimizeLegibility;
   /* 4 */
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 @media (min-width: 600px) {
   /* line 96, ../sass/_normalize.scss */
   html {
-    font-size: 105%;
+    font-size: 112%;
   }
 }
 @media (min-width: 900px) {
   /* line 96, ../sass/_normalize.scss */
   html {
-    font-size: 116.25%;
+    font-size: 124%;
   }
 }
 @media (min-width: 1100px) {
   /* line 96, ../sass/_normalize.scss */
   html {
-    font-size: 127.5%;
+    font-size: 136%;
   }
 }
 
@@ -299,7 +299,7 @@ a:hover {
 /* line 173, ../sass/_normalize.scss */
 p,
 pre {
-  margin: 0 0 0.8em 0;
+  margin: 0 0 0.75em 0;
 }
 
 /* line 176, ../sass/_normalize.scss */
@@ -318,9 +318,9 @@ h1 {
   font-family: "Champion Lightwt A", "Champion Lightwt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 400;
   font-size: 3.05em;
-  line-height: 1.04918em;
+  line-height: 0.98361em;
   margin-top: 0em;
-  margin-bottom: 0.52459em;
+  margin-bottom: 0.4918em;
 }
 
 /* line 194, ../sass/_normalize.scss */
@@ -328,17 +328,17 @@ h2 {
   font-family: "Champion Lightwt A", "Champion Lightwt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 400;
   font-size: 1.56em;
-  line-height: 1.02564em;
-  margin-top: 1.02564em;
-  margin-bottom: 0.51282em;
+  line-height: 0.96154em;
+  margin-top: 0.96154em;
+  margin-bottom: 0.48077em;
 }
 
 /* line 201, ../sass/_normalize.scss */
 h3 {
   font-size: 0.8em;
-  line-height: 1.5em;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  line-height: 1.40625em;
+  margin-top: 1.875em;
+  margin-bottom: 0.9375em;
 }
 
 /* line 210, ../sass/_normalize.scss */
@@ -347,9 +347,9 @@ h5,
 h6 {
   font-weight: 400;
   font-size: 0.8em;
-  line-height: 1.5em;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  line-height: 1.40625em;
+  margin-top: 1.875em;
+  margin-bottom: 0.9375em;
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
@@ -380,7 +380,7 @@ hr {
   height: 0;
   border: 1px solid #ddd;
   padding-bottom: -1px;
-  margin: 1.6em 0;
+  margin: 1.5em 0;
 }
 
 /* Address styling not present in IE 8/9. */
@@ -400,7 +400,7 @@ tt,
 var {
   font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
   font-size: 1em;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 /* Improve readability of pre-formatted text in all browsers. */
@@ -419,7 +419,7 @@ q {
 /* line 282, ../sass/_normalize.scss */
 small {
   font-size: 0.8em;
-  line-height: 0.5em;
+  line-height: 0.46875em;
 }
 
 /* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
@@ -451,7 +451,7 @@ menu,
 ol,
 ul {
   /* Address margins set differently in IE 6/7. */
-  margin: 0 0 0.8em 0;
+  margin: 0 0 0.75em 0;
 }
 
 /* line 316, ../sass/_normalize.scss */
@@ -465,13 +465,13 @@ ul ul {
 /* line 320, ../sass/_normalize.scss */
 ol li,
 ul li {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.375em;
 }
 /* line 321, ../sass/_normalize.scss */
 ol li ul, ol li ol,
 ul li ul,
 ul li ol {
-  margin-top: 0.4em;
+  margin-top: 0.375em;
 }
 
 /* line 323, ../sass/_normalize.scss */
@@ -520,17 +520,17 @@ figure {
 
 /* line 377, ../sass/_normalize.scss */
 figure {
-  margin: 1.6em 0;
+  margin: 1.5em 0;
 }
 /* line 379, ../sass/_normalize.scss */
 figure img {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.75em;
 }
 
 /* line 383, ../sass/_normalize.scss */
 figcaption {
   font-size: 0.8em;
-  line-height: 1em;
+  line-height: 0.9375em;
   color: #9d9d9d;
 }
 
@@ -544,17 +544,17 @@ fieldset {
   /* Apply borders and padding that keep the vertical rhythm. */
   border-color: #c0c0c0;
   border-top-style: solid;
-  border-top-width: 0.06667em;
-  padding-top: 0.21333em;
+  border-top-width: 0.0625em;
+  padding-top: 0.2em;
   border-bottom-style: solid;
-  border-bottom-width: 0.06667em;
-  padding-bottom: 0.45333em;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.425em;
   border-left-style: solid;
-  border-left-width: 0.06667em;
-  padding-left: 0.45333em;
+  border-left-width: 0.0625em;
+  padding-left: 0.425em;
   border-right-style: solid;
-  border-right-width: 0.06667em;
-  padding-right: 0.45333em;
+  border-right-width: 0.0625em;
+  padding-right: 0.425em;
 }
 
 /**
@@ -727,8 +727,8 @@ table {
   /* Prevent cramped-looking tables */
   /* width: 100%; */
   /* Add vertical rhythm margins. */
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 /* Layout rules */
@@ -1780,8 +1780,8 @@ table {
  */
 /* line 6, ../sass/components/_site-header.scss */
 .site-header {
-  margin-top: 1.6em;
-  margin-bottom: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   overflow: hidden;
 }
 
@@ -1834,7 +1834,7 @@ table {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding-right: 0.8em;
+  padding-right: 0.75em;
   border-bottom: 0;
 }
 
@@ -1871,17 +1871,17 @@ a > .site-navigation__github {
  */
 /* line 6, ../sass/components/_site-footer.scss */
 .site-footer {
-  margin-top: 1.6em;
-  margin-bottom: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   clear: left;
 }
 
 /* line 12, ../sass/components/_site-footer.scss */
 .site-footer__copyright {
   font-size: 0.8em;
-  line-height: 1em;
+  line-height: 0.9375em;
   color: #9d9d9d;
-  padding-top: 2.4em;
+  padding-top: 2.25em;
   border-top: 1px solid #ededed;
 }
 
@@ -1898,16 +1898,16 @@ a > .site-navigation__github {
 .rollup {
   border: 1px solid #ededed;
   background-color: white;
-  padding: 1.2em 1.2em 0.4em 1.2em;
+  padding: 1.125em 1.125em 0.375em 1.125em;
   margin-bottom: 36px;
 }
 
 /* line 17, ../sass/components/_rollup.scss */
 .rollup__title {
   font-size: 1.25em;
-  line-height: 0.96em;
+  line-height: 0.9em;
   margin-top: 0em;
-  margin-bottom: 0.16em;
+  margin-bottom: 0.15em;
 }
 
 /* line 23, ../sass/components/_rollup.scss */
@@ -1940,8 +1940,8 @@ a > .site-navigation__github {
 /* line 44, ../sass/components/_rollup.scss */
 .rollup__list li {
   border-top: 1px solid #ededed;
-  padding-top: 0.8em;
-  margin-bottom: 0.8em;
+  padding-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 /* line 53, ../sass/components/_rollup.scss */
@@ -1949,13 +1949,13 @@ a > .site-navigation__github {
 .rollup__list-drink,
 .rollup__list-food {
   font-size: 0.8em;
-  line-height: 1.5em;
+  line-height: 1.40625em;
 }
 
 /* line 57, ../sass/components/_rollup.scss */
 .rollup__list-category {
   font-size: 0.6em;
-  line-height: 0.66667em;
+  line-height: 0.625em;
 }
 /* line 61, ../sass/components/_rollup.scss */
 .rollup__list-category a:link,
@@ -1981,10 +1981,10 @@ a > .site-navigation__github {
 .rollup__list-category:before {
   font-weight: 400;
   font-size: 0.8em;
-  line-height: 2em;
+  line-height: 1.875em;
   font-family: "SSStandard";
   font-style: normal;
-  margin-right: 0.8em;
+  margin-right: 0.75em;
   vertical-align: middle;
   color: #e35125;
 }
@@ -2011,14 +2011,14 @@ a > .site-navigation__github {
 /* line 10, ../sass/components/_finder.scss */
 .finder__label {
   display: inline;
-  margin-right: 0.4em;
+  margin-right: 0.375em;
   font-weight: 400;
 }
 
 /* line 16, ../sass/components/_finder.scss */
 select {
   display: inline;
-  margin-right: 0.4em;
+  margin-right: 0.375em;
   min-width: 12em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2081,21 +2081,21 @@ button:focus {
  */
 /* line 6, ../sass/styleguide/_styleguide.scss */
 .styleguide-header {
-  margin-top: 1.6em;
-  margin-bottom: 8em;
+  margin-top: 1.5em;
+  margin-bottom: 7.5em;
 }
 
 /* line 11, ../sass/styleguide/_styleguide.scss */
 .styleguide-footer {
-  margin-top: 3.2em;
-  padding-top: 1.6em;
-  padding-bottom: 1.6em;
+  margin-top: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   background: #ededed;
 }
 
 /* line 18, ../sass/styleguide/_styleguide.scss */
 .styleguide-component-container {
-  margin: 0 0 8em 0;
+  margin: 0 0 7.5em 0;
 }
 
 /* Print rules */
