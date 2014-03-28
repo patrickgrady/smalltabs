@@ -10,7 +10,7 @@
   @include zen-clear();
 }
 .site-footer__copyright {
-  @extend %sans;
+  //@extend %sans;
   @include adjust-font-size-to($label, 1);
   color: $gray-medium;
   padding-top: rhythm(3);

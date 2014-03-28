@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Style rules for the bar feature.
+ */
+
+.feature { color: $white; }
+.feature__image { 
+  background: url('../img/feature__image.jpg');
+  background-size: cover; 
+}
+.feature__title { padding-top: rhythm(2); }
+.feature__address {}
+.feature__summary {}
+.feature__list {}
+.feature__list-drink {}
+.feature__list-food {}
+.feature__list-category { padding-bottom: rhythm(5);}

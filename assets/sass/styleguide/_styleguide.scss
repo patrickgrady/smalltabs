@@ -5,16 +5,30 @@
 
 .styleguide-header {
   margin-top: rhythm(2);
-  margin-bottom: rhythm(10);
+  margin-bottom: rhythm(8);
 }
-
 .styleguide-footer {
-  margin-top: rhythm(4);
-  padding-top: rhythm(2);
+  @include adjust-font-size-to($crumb, 1);
+  padding-top: rhythm(3);
   padding-bottom: rhythm(2);
-  background: $off-white;
 }
-
-.styleguide-component-container {
-  margin: 0 0 rhythm(10) 0;
+.l-styleguide-page {
+  @extend %l-page;
+  margin-bottom: rhythm(4);
+}
+.styleguide-example-wrapper { 
+  background: #f3f3f3;
+}
+.styleguide-example-wrapper:before {
+  content: "Example:";
+  @include adjust-font-size-to($crumb);
+  font-family: $helvetica;
+  font-weight: 700;
+  color: #aaa;
+  position: relative;
+  top: 1em;
+  left: 2em;
+}
+.styleguide-example {
+  padding: 6em 0;
 }

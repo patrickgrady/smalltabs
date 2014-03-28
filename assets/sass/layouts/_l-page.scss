@@ -3,8 +3,8 @@
  * Layout rules for a centered column of content.
  */
 
+%l-page,
 .l-page {
-  //@include debug-vertical-alignment;  
   margin-left: $zen-gutter-width / 2 ; // important
   margin-right: $zen-gutter-width / 2; // important
   @include zen-clear();

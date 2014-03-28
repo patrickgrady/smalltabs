@@ -109,7 +109,7 @@ html {
   // Adjust font-size globally per breakpoint.
   @include breakpoint($bp1){ font-size: ($base-font-size / 16px) * 112%; }
   @include breakpoint($bp2){ font-size: ($base-font-size / 16px) * 124%; }
-  @include breakpoint($bp3){ font-size: ($base-font-size / 16px) * 136%; }  
+  @include breakpoint($bp3){ font-size: ($base-font-size / 16px) * 130%; }  
 }
 
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
@@ -184,7 +184,6 @@ blockquote {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  //@extend %sans;
   font-family: $champion-lightweight;
   font-weight: 400;
   @include adjust-font-size-to($xxl-heading, 4);
@@ -194,26 +193,32 @@ h1 {
 h2 {
   font-family: $champion-lightweight;
   font-weight: 400;
-  @include adjust-font-size-to($md-heading, 2);
+  @include adjust-font-size-to($md-heading, 2.5);
   @include leader(2, $md-heading);
   @include trailer(1, $md-heading);
 }
 h3 {
-  //@extend %sans;
-  @extend %allcaps;     
-  @include adjust-font-size-to($label, 1.5);
-  @include leader(2, $label);
-  @include trailer(1, $label);
+  font-family: $champion-lightweight;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .0125em;
+  @include adjust-font-size-to($text, 2);
+  @include leader(2, $text);
+  @include trailer(1, $text);
 }
-h4,
+h4 {
+  font-weight: 700;     
+  @include adjust-font-size-to($text, 2);
+  @include leader(2, $text);
+  @include trailer(1, $text);
+}
 h5,
 h6 {
-  //@extend %sans;
   @extend %allcaps;
-  font-weight: 400;     
-  @include adjust-font-size-to($label, 1.5);
-  @include leader(2, $label);
-  @include trailer(1, $label);
+  font-weight: 700;     
+  @include adjust-font-size-to($crumb, 1.5);
+  @include leader(2, $crumb);
+  @include trailer(1, $crumb);
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
@@ -236,7 +241,7 @@ dfn {
 hr {
   @include box-sizing(content-box);
   height: 0;
-  border: 1px solid #ddd;
+  border: 1px solid $off-white;
   padding-bottom: -1px;
   margin: rhythm(2) 0;
 }
