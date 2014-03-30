@@ -1,0 +1,37 @@
+/**
+ * @file
+ * Style rules for the look and feel of the recently added block.
+ */
+
+.block { 
+  display: block;
+  margin-bottom: $zen-gutter-width * 2; 
+}
+.block-title {
+  text-transform: uppercase;
+  letter-spacing: .0125em;
+  @include adjust-font-size-to($text, 2);
+  @include leader(0, $text);
+  @include trailer(1, $text);
+}
+.block-list {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    border-top: 1px solid $off-white;
+    margin-bottom: rhythm(1);
+  }
+}
+.block-list__item-title {
+  @include adjust-font-size-to($sm-heading, 1.5);
+  @include leader(1, $sm-heading);
+  @include trailer(.5, $sm-heading); 
+  //@include adjust-font-size-to($md-heading, 2.5);
+  //@include leader(1, $md-heading);
+  //@include trailer(.25, $md-heading);
+}
+.block-list__item-address {
+  text-transform: uppercase;
+  @include adjust-font-size-to($crumb, 1);
+  color: $gray-medium;
+}

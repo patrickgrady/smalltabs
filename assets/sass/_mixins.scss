@@ -8,7 +8,7 @@
    Main text column extend
    ========================================================================== */
 
-%column {
+%single-column {
   margin-left: 24px; // important
   margin-right: 24px; // important
   @include breakpoint($bp1) { 
@@ -19,6 +19,7 @@
   @include breakpoint($bp2) { width: 70%; } 
   @include breakpoint($bp3) { max-width: 760px; }
 }
+
 
 /* ==========================================================================
    Typography grooming extends

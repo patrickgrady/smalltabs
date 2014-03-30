@@ -3,15 +3,65 @@
  * Style rules for the bar feature.
  */
 
-.feature { color: $white; }
+.feature { color: $white; padding-top: 3em; padding-bottom: 3em; }
 .feature__image { 
   background: url('../img/feature__image.jpg');
   background-size: cover; 
 }
-.feature__title { padding-top: rhythm(2); }
-.feature__address {}
+.feature__dotw {
+  @extend %allcaps;
+  font-weight: 700;     
+  @include adjust-font-size-to($crumb, 1.5);
+  color: $pilsner;  
+  @include leader(2, $crumb);
+  @include trailer(1, $crumb);  
+}
+.feature__title { 
+  @include trailer(.25); 
+}
+.feature__address {
+  color: $white-60;
+}
 .feature__summary {}
-.feature__list {}
-.feature__list-drink {}
-.feature__list-food {}
-.feature__list-category { padding-bottom: rhythm(5);}
+.feature-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    border-top: 1px solid $white-30;
+    padding-top: rhythm(1);
+    margin-bottom: rhythm(1);
+    padding-left: rhythm(2);
+  }  
+}
+
+
+
+.feature-list__drink,
+.feature-list__food,
+.feature-list__category {
+  //@include adjust-font-size-to($label, 1.5);
+
+  a:link,
+  a:visited { 
+    color: $gray-medium;
+    text-decoration: underline;  
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    @include trans($timing, $easing);
+    color: $link-color;
+    text-decoration: underline;  
+  }
+}
+.feature-list__drink { background: url('../img/icon__drink.svg'); }
+.feature-list__food { background-image: url('../img/icon__food.svg'); }
+.feature-list__category { background-image: url('../img/icon__tag.svg'); }
+.feature-list__drink,
+.feature-list__food,
+.feature-list__category {
+  background-position: left top rhythm(1.25);
+  background-repeat: no-repeat;
+  background-size: 1em;
+}

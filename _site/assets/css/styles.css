@@ -7,6 +7,9 @@
  */
 /* Import H&FJ CloudTypography */
 @import "//cloud.typography.com/6838432/662604/css/fonts.css";
+/* Import Symbolset icon fonts */
+@import url(../webfonts/ss-standard.css);
+@import url(../webfonts/ss-social.css);
 /* Import Syntax styles */
 @import url({{ site.baseurl }}/assets/css/syntax.css);
 /* Import Sass mixins, variables, Compass modules, etc. */
@@ -18,32 +21,6 @@
 /* ==========================================================================
    Main text column extend
    ========================================================================== */
-/* line 11, ../sass/_mixins.scss */
-.site-footer {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-@media (min-width: 600px) {
-  /* line 11, ../sass/_mixins.scss */
-  .site-footer {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 900px) {
-  /* line 11, ../sass/_mixins.scss */
-  .site-footer {
-    width: 70%;
-  }
-}
-@media (min-width: 1100px) {
-  /* line 11, ../sass/_mixins.scss */
-  .site-footer {
-    max-width: 760px;
-  }
-}
-
 /* ==========================================================================
    Typography grooming extends
    ========================================================================== */
@@ -51,16 +28,16 @@
 /* Display type */
 /* Tight tracking */
 /* Open tracking */
-/* line 37, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 h5,
-h6 {
+h6, .feature__dotw {
   letter-spacing: 0.1em;
 }
 
 /* Style all caps with a slightly open tracking. */
-/* line 40, ../sass/_mixins.scss */
+/* line 41, ../sass/_mixins.scss */
 h5,
-h6 {
+h6, .feature__dotw {
   text-transform: uppercase;
 }
 
@@ -79,7 +56,7 @@ h6 {
  * Element-invisible as defined by snook.ca
  * @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 72, ../sass/_mixins.scss */
+/* line 73, ../sass/_mixins.scss */
 .element-invisible,
 .element-focusable {
   position: absolute !important;
@@ -90,7 +67,7 @@ h6 {
 }
 
 /* Turns off the element-invisible effect. */
-/* line 84, ../sass/_mixins.scss */
+/* line 85, ../sass/_mixins.scss */
 .element-focusable:active, .element-focusable:focus {
   position: static !important;
   clip: auto;
@@ -258,12 +235,12 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  color: #444444;
-  text-decoration: underline;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  color: #fdbb11;
+  text-decoration: none;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */
@@ -310,26 +287,29 @@ blockquote {
 h1 {
   font-family: "Champion Lightwt A", "Champion Lightwt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 400;
+  color: #1e140c;
   font-size: 3.05em;
   line-height: 0.98361em;
   margin-top: 0em;
   margin-bottom: 0.4918em;
 }
 
-/* line 193, ../sass/_normalize.scss */
+/* line 194, ../sass/_normalize.scss */
 h2 {
   font-family: "Champion Lightwt A", "Champion Lightwt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 400;
+  color: #1e140c;
   font-size: 1.56em;
   line-height: 1.20192em;
   margin-top: 0.96154em;
   margin-bottom: 0.48077em;
 }
 
-/* line 200, ../sass/_normalize.scss */
+/* line 202, ../sass/_normalize.scss */
 h3 {
   font-family: "Champion Lightwt A", "Champion Lightwt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 400;
+  color: #1e140c;
   text-transform: uppercase;
   letter-spacing: .0125em;
   font-size: 1em;
@@ -338,65 +318,67 @@ h3 {
   margin-bottom: 0.75em;
 }
 
-/* line 209, ../sass/_normalize.scss */
+/* line 212, ../sass/_normalize.scss */
 h4 {
   font-weight: 700;
   font-size: 1em;
   line-height: 1.5em;
+  color: #1e140c;
   margin-top: 1.5em;
   margin-bottom: 0.75em;
 }
 
-/* line 216, ../sass/_normalize.scss */
+/* line 220, ../sass/_normalize.scss */
 h5,
 h6 {
   font-weight: 700;
   font-size: 0.6em;
   line-height: 1.875em;
+  color: #1e140c;
   margin-top: 2.5em;
   margin-bottom: 1.25em;
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
-/* line 225, ../sass/_normalize.scss */
+/* line 230, ../sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
 /* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
-/* line 231, ../sass/_normalize.scss */
+/* line 236, ../sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
 /* Address styling not present in Safari 5 and Chrome. */
-/* line 236, ../sass/_normalize.scss */
+/* line 241, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
 /* Address differences between Firefox and other browsers. */
-/* line 241, ../sass/_normalize.scss */
+/* line 246, ../sass/_normalize.scss */
 hr {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
-  border: 1px solid #ededed;
+  border: 1px solid whitesmoke;
   padding-bottom: -1px;
   margin: 1.5em 0;
 }
 
 /* Address styling not present in IE 8/9. */
-/* line 250, ../sass/_normalize.scss */
+/* line 255, ../sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
 /* Correct font family set oddly in Safari 5 and Chrome. */
-/* line 261, ../sass/_normalize.scss */
+/* line 266, ../sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -409,26 +391,26 @@ var {
 }
 
 /* Improve readability of pre-formatted text in all browsers. */
-/* line 270, ../sass/_normalize.scss */
+/* line 275, ../sass/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
 
 /* Set consistent quote types. */
-/* line 282, ../sass/_normalize.scss */
+/* line 287, ../sass/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 /* Address inconsistent and variable font size in all browsers. */
-/* line 287, ../sass/_normalize.scss */
+/* line 292, ../sass/_normalize.scss */
 small {
   font-size: 0.8em;
   line-height: 0.46875em;
 }
 
 /* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
-/* line 293, ../sass/_normalize.scss */
+/* line 298, ../sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -437,12 +419,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 299, ../sass/_normalize.scss */
+/* line 304, ../sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 302, ../sass/_normalize.scss */
+/* line 307, ../sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -450,7 +432,7 @@ sub {
 /**
  * Lists
  */
-/* line 312, ../sass/_normalize.scss */
+/* line 317, ../sass/_normalize.scss */
 dl,
 menu,
 ol,
@@ -459,7 +441,7 @@ ul {
   margin: 0 0 0.75em 0;
 }
 
-/* line 321, ../sass/_normalize.scss */
+/* line 326, ../sass/_normalize.scss */
 ol ol,
 ol ul,
 ul ol,
@@ -467,26 +449,26 @@ ul ul {
   /* Turn off margins on nested lists. */
   margin: 0 0 0em 0;
 }
-/* line 325, ../sass/_normalize.scss */
+/* line 330, ../sass/_normalize.scss */
 ol li,
 ul li {
   margin-bottom: 0.375em;
 }
-/* line 326, ../sass/_normalize.scss */
+/* line 331, ../sass/_normalize.scss */
 ol li ul, ol li ol,
 ul li ul,
 ul li ol {
   margin-top: 0.375em;
 }
 
-/* line 328, ../sass/_normalize.scss */
+/* line 333, ../sass/_normalize.scss */
 dd {
   margin: 0 0 0 rhythm(1);
   /* LTR */
 }
 
 /* Address paddings set differently in IE 6/7. */
-/* line 335, ../sass/_normalize.scss */
+/* line 340, ../sass/_normalize.scss */
 menu,
 ol,
 ul {
@@ -499,7 +481,7 @@ ul {
  *
  * @todo Look into adding responsive embedded video.
  */
-/* line 353, ../sass/_normalize.scss */
+/* line 358, ../sass/_normalize.scss */
 img {
   /* Remove border when inside `a` element in IE 8/9. */
   border: 0;
@@ -512,27 +494,27 @@ img {
 }
 
 /* Correct overflow displayed oddly in IE 9. */
-/* line 374, ../sass/_normalize.scss */
+/* line 379, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
 /* Address margin not present in IE 8/9 and Safari 5. */
-/* line 379, ../sass/_normalize.scss */
+/* line 384, ../sass/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 382, ../sass/_normalize.scss */
+/* line 387, ../sass/_normalize.scss */
 figure {
   margin: 1.5em 0;
 }
-/* line 384, ../sass/_normalize.scss */
+/* line 389, ../sass/_normalize.scss */
 figure img {
   margin-bottom: 0.75em;
 }
 
-/* line 388, ../sass/_normalize.scss */
+/* line 393, ../sass/_normalize.scss */
 figcaption {
   font-size: 0.8em;
   line-height: 0.9375em;
@@ -543,7 +525,7 @@ figcaption {
  * Forms
  */
 /* Define consistent border, margin, and padding. */
-/* line 406, ../sass/_normalize.scss */
+/* line 411, ../sass/_normalize.scss */
 fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
@@ -567,7 +549,7 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-/* line 421, ../sass/_normalize.scss */
+/* line 426, ../sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -582,7 +564,7 @@ legend {
  * 4. Improve appearance and consistency with IE 6/7.
  * 5. Keep form elements constrained in their containers.
  */
-/* line 439, ../sass/_normalize.scss */
+/* line 444, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -605,7 +587,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 456, ../sass/_normalize.scss */
+/* line 461, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -617,7 +599,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 467, ../sass/_normalize.scss */
+/* line 472, ../sass/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -632,7 +614,7 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 483, ../sass/_normalize.scss */
+/* line 488, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -646,7 +628,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 495, ../sass/_normalize.scss */
+/* line 500, ../sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -658,7 +640,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 506, ../sass/_normalize.scss */
+/* line 511, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -674,7 +656,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 520, ../sass/_normalize.scss */
+/* line 525, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -688,14 +670,14 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 530, ../sass/_normalize.scss */
+/* line 535, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /* Remove inner padding and border in Firefox 4+. */
-/* line 536, ../sass/_normalize.scss */
+/* line 541, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -706,7 +688,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 545, ../sass/_normalize.scss */
+/* line 550, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -715,7 +697,7 @@ textarea {
 }
 
 /* Drupal-style form labels. */
-/* line 551, ../sass/_normalize.scss */
+/* line 556, ../sass/_normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -724,7 +706,7 @@ label {
 /**
  * Tables
  */
-/* line 559, ../sass/_normalize.scss */
+/* line 564, ../sass/_normalize.scss */
 table {
   /* Remove most spacing between table cells. */
   border-collapse: collapse;
@@ -753,8 +735,9 @@ table {
   margin-right: auto;
   min-width: 260px;
   /* enforces a min-width in FF. */
+  width: 90%;
 }
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   /* line 30, ../sass/layouts/_l-zen-grids-base.scss */
   .container {
     max-width: 1200px;
@@ -764,11 +747,11 @@ table {
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
-/* line 45, ../sass/layouts/_l-zen-grids-base.scss */
+/* line 46, ../sass/layouts/_l-zen-grids-base.scss */
 .container,
 .grid-item {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -789,7 +772,7 @@ table {
   clear: both;
 }
 
-/* line 60, ../sass/layouts/_l-zen-grids-base.scss */
+/* line 61, ../sass/layouts/_l-zen-grids-base.scss */
 .container {
   padding-left: 0px;
   padding-right: 0px;
@@ -802,8 +785,8 @@ table {
 /* line 7, ../sass/layouts/_l-page.scss */
 .l-styleguide-page,
 .l-page {
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 12px;
+  margin-right: 12px;
   clear: left;
 }
 @media (min-width: 600px) {
@@ -841,8 +824,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -861,8 +844,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -876,8 +859,8 @@ table {
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -893,8 +876,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -909,8 +892,8 @@ table {
     width: 33.33333%;
     margin-left: 66.66667%;
     margin-right: -100%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -930,8 +913,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -945,8 +928,8 @@ table {
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -962,8 +945,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -978,8 +961,8 @@ table {
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -995,15 +978,15 @@ table {
 /* line 13, ../sass/layouts/_l-2up.scss */
 .l-2up {
   float: left;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1017,8 +1000,8 @@ table {
 @media (min-width: 900px) {
   /* line 13, ../sass/layouts/_l-2up.scss */
   .l-2up {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1026,16 +1009,16 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: 18px;
+    padding-right: 12px;
+    margin-right: 12px;
   }
 }
 
 @media (min-width: 900px) {
   /* line 22, ../sass/layouts/_l-2up.scss */
   .l-2up:nth-of-type(2n) {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1043,8 +1026,8 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: -18px;
+    padding-right: 12px;
+    margin-right: -12px;
   }
 }
 
@@ -1062,8 +1045,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1077,8 +1060,8 @@ table {
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1094,8 +1077,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1110,8 +1093,8 @@ table {
     width: 50%;
     margin-left: 50%;
     margin-right: -100%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1127,15 +1110,15 @@ table {
 /* line 13, ../sass/layouts/_l-3up.scss */
 .l-3up {
   float: left;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1149,8 +1132,8 @@ table {
 @media (min-width: 600px) {
   /* line 13, ../sass/layouts/_l-3up.scss */
   .l-3up {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1158,15 +1141,15 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: 18px;
+    padding-right: 12px;
+    margin-right: 12px;
   }
 }
 @media (min-width: 1100px) {
   /* line 13, ../sass/layouts/_l-3up.scss */
   .l-3up {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1174,16 +1157,16 @@ table {
     word-wrap: break-word;
     width: 33.33333%;
     padding-left: 0;
-    padding-right: 24px;
-    margin-right: 12px;
+    padding-right: 16px;
+    margin-right: 8px;
   }
 }
 
 @media (min-width: 600px) {
   /* line 25, ../sass/layouts/_l-3up.scss */
   .l-3up:nth-of-type(2n) {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1191,15 +1174,15 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: -18px;
+    padding-right: 12px;
+    margin-right: -12px;
   }
 }
 @media (min-width: 1100px) {
   /* line 25, ../sass/layouts/_l-3up.scss */
   .l-3up:nth-of-type(2n) {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1207,16 +1190,16 @@ table {
     word-wrap: break-word;
     width: 33.33333%;
     padding-left: 0;
-    padding-right: 24px;
-    margin-right: 12px;
+    padding-right: 16px;
+    margin-right: 8px;
   }
 }
 
 @media (min-width: 1100px) {
   /* line 34, ../sass/layouts/_l-3up.scss */
   .l-3up:nth-of-type(3n) {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1224,8 +1207,8 @@ table {
     word-wrap: break-word;
     width: 33.33333%;
     padding-left: 0;
-    padding-right: 24px;
-    margin-right: -24px;
+    padding-right: 16px;
+    margin-right: -16px;
   }
 }
 
@@ -1243,8 +1226,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1258,8 +1241,8 @@ table {
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1275,8 +1258,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1291,8 +1274,8 @@ table {
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1308,8 +1291,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1324,8 +1307,8 @@ table {
     width: 33.33333%;
     margin-left: 66.66667%;
     margin-right: -100%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1341,15 +1324,15 @@ table {
 /* line 13, ../sass/layouts/_l-4up.scss */
 .l-4up {
   float: left;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1363,8 +1346,8 @@ table {
 @media (min-width: 600px) {
   /* line 13, ../sass/layouts/_l-4up.scss */
   .l-4up {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1372,15 +1355,15 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: 18px;
+    padding-right: 12px;
+    margin-right: 12px;
   }
 }
 @media (min-width: 1100px) {
   /* line 13, ../sass/layouts/_l-4up.scss */
   .l-4up {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1388,16 +1371,16 @@ table {
     word-wrap: break-word;
     width: 25%;
     padding-left: 0;
-    padding-right: 27px;
-    margin-right: 9px;
+    padding-right: 18px;
+    margin-right: 6px;
   }
 }
 
 @media (min-width: 600px) {
   /* line 25, ../sass/layouts/_l-4up.scss */
   .l-4up:nth-of-type(2n) {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1405,15 +1388,15 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: -18px;
+    padding-right: 12px;
+    margin-right: -12px;
   }
 }
 @media (min-width: 1100px) {
   /* line 25, ../sass/layouts/_l-4up.scss */
   .l-4up:nth-of-type(2n) {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1421,16 +1404,16 @@ table {
     word-wrap: break-word;
     width: 25%;
     padding-left: 0;
-    padding-right: 27px;
-    margin-right: 9px;
+    padding-right: 18px;
+    margin-right: 6px;
   }
 }
 
 @media (min-width: 1100px) {
   /* line 34, ../sass/layouts/_l-4up.scss */
   .l-4up:nth-of-type(4n) {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1438,8 +1421,8 @@ table {
     word-wrap: break-word;
     width: 25%;
     padding-left: 0;
-    padding-right: 27px;
-    margin-right: -27px;
+    padding-right: 18px;
+    margin-right: -18px;
   }
 }
 
@@ -1457,8 +1440,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1472,8 +1455,8 @@ table {
     width: 25%;
     margin-left: 0%;
     margin-right: -25%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1489,8 +1472,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1505,8 +1488,8 @@ table {
     width: 25%;
     margin-left: 25%;
     margin-right: -50%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1522,8 +1505,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1538,8 +1521,8 @@ table {
     width: 25%;
     margin-left: 50%;
     margin-right: -75%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1555,8 +1538,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1571,8 +1554,8 @@ table {
     width: 25%;
     margin-left: 75%;
     margin-right: -100%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1592,8 +1575,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1607,8 +1590,8 @@ table {
     width: 16.66667%;
     margin-left: 0%;
     margin-right: -16.66667%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1624,8 +1607,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1640,8 +1623,8 @@ table {
     width: 16.66667%;
     margin-left: 16.66667%;
     margin-right: -33.33333%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1657,8 +1640,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1673,8 +1656,8 @@ table {
     width: 16.66667%;
     margin-left: 33.33333%;
     margin-right: -50%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1690,8 +1673,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1706,8 +1689,8 @@ table {
     width: 16.66667%;
     margin-left: 50%;
     margin-right: -66.66667%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1723,8 +1706,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1739,8 +1722,8 @@ table {
     width: 16.66667%;
     margin-left: 66.66667%;
     margin-right: -83.33333%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1756,8 +1739,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1772,8 +1755,8 @@ table {
     width: 16.66667%;
     margin-left: 83.33333%;
     margin-right: -100%;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1843,18 +1826,57 @@ table {
  */
 /* line 6, ../sass/components/_site-footer.scss */
 .site-footer {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
   clear: left;
+  font-size: 0.8em;
+  line-height: 1.40625em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  background: #1e140c;
+  padding: 3em 0;
 }
 
-/* line 12, ../sass/components/_site-footer.scss */
-.site-footer__copyright {
+/* line 14, ../sass/components/_site-footer.scss */
+.site-footer__logo {
+  margin-bottom: 1.5em;
+}
+
+/* line 17, ../sass/components/_site-footer.scss */
+.site-footer__social-links {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 20, ../sass/components/_site-footer.scss */
+.site-footer__social-links li {
+  display: block;
+  padding: 0 0em;
+}
+@media (min-width: 600px) {
+  /* line 20, ../sass/components/_site-footer.scss */
+  .site-footer__social-links li {
+    display: inline;
+    padding: 0 0.75em;
+  }
+}
+
+/* line 31, ../sass/components/_site-footer.scss */
+.site-footer__social-links-twitter:before,
+.site-footer__social-links-facebook:before {
   font-size: 0.8em;
-  line-height: 0.9375em;
-  color: #9d9d9d;
-  padding-top: 2.25em;
-  border-top: 1px solid #ededed;
+  line-height: 1.875em;
+  font-family: "SSSocial";
+  font-style: normal;
+  margin-right: 0.75em;
+  vertical-align: middle;
+}
+
+/* line 38, ../sass/components/_site-footer.scss */
+.site-footer__social-links-twitter:before {
+  content: 'twitter';
+}
+
+/* line 39, ../sass/components/_site-footer.scss */
+.site-footer__social-links-facebook:before {
+  content: 'facebook';
 }
 
 /**
@@ -1863,18 +1885,19 @@ table {
  */
 /* line 6, ../sass/components/_rollup.scss */
 .finder-results {
-  background-color: #ededed;
+  background-color: whitesmoke;
+  padding-top: 24px;
 }
 
-/* line 10, ../sass/components/_rollup.scss */
+/* line 11, ../sass/components/_rollup.scss */
 .rollup {
   background-color: white;
   padding: 1.125em 1.125em 0.375em 1.125em;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
-/* line 16, ../sass/components/_rollup.scss */
-.rollup__title {
+/* line 17, ../sass/components/_rollup.scss */
+.rollup-title {
   font-size: 1.25em;
   line-height: 0.9em;
   margin-top: 0em;
@@ -1882,112 +1905,124 @@ table {
 }
 
 /* line 22, ../sass/components/_rollup.scss */
-.rollup__list {
+.rollup-address {
+  font-size: 0.8em;
+  line-height: 1.40625em;
+  color: #9d9d9d;
+}
+/* line 27, ../sass/components/_rollup.scss */
+.rollup-address a:link,
+.rollup-address a:visited {
+  color: #9d9d9d;
+  text-decoration: underline;
+}
+/* line 33, ../sass/components/_rollup.scss */
+.rollup-address a:hover,
+.rollup-address a:focus,
+.rollup-address a:active {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  color: #e35125;
+  text-decoration: underline;
+}
+
+/* line 39, ../sass/components/_rollup.scss */
+.rollup-list {
   list-style-type: none;
   padding-left: 0;
 }
-/* line 26, ../sass/components/_rollup.scss */
-.rollup__list li {
-  border-top: 1px solid #ededed;
+/* line 43, ../sass/components/_rollup.scss */
+.rollup-list li {
+  border-top: 1px solid whitesmoke;
   padding-top: 0.75em;
   margin-bottom: 0.75em;
   padding-left: 1.5em;
 }
 
-/* line 37, ../sass/components/_rollup.scss */
-.rollup__address,
-.rollup__list-drink,
-.rollup__list-food,
-.rollup__list-category {
+/* line 52, ../sass/components/_rollup.scss */
+.rollup-list__drink,
+.rollup-list__food,
+.rollup-list__category {
   font-size: 0.8em;
   line-height: 1.40625em;
 }
-/* line 41, ../sass/components/_rollup.scss */
-.rollup__address a:link,
-.rollup__address a:visited,
-.rollup__list-drink a:link,
-.rollup__list-drink a:visited,
-.rollup__list-food a:link,
-.rollup__list-food a:visited,
-.rollup__list-category a:link,
-.rollup__list-category a:visited {
+/* line 56, ../sass/components/_rollup.scss */
+.rollup-list__drink a:link,
+.rollup-list__drink a:visited,
+.rollup-list__food a:link,
+.rollup-list__food a:visited,
+.rollup-list__category a:link,
+.rollup-list__category a:visited {
   color: #9d9d9d;
   text-decoration: underline;
 }
-/* line 47, ../sass/components/_rollup.scss */
-.rollup__address a:hover,
-.rollup__address a:focus,
-.rollup__address a:active,
-.rollup__list-drink a:hover,
-.rollup__list-drink a:focus,
-.rollup__list-drink a:active,
-.rollup__list-food a:hover,
-.rollup__list-food a:focus,
-.rollup__list-food a:active,
-.rollup__list-category a:hover,
-.rollup__list-category a:focus,
-.rollup__list-category a:active {
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+/* line 62, ../sass/components/_rollup.scss */
+.rollup-list__drink a:hover,
+.rollup-list__drink a:focus,
+.rollup-list__drink a:active,
+.rollup-list__food a:hover,
+.rollup-list__food a:focus,
+.rollup-list__food a:active,
+.rollup-list__category a:hover,
+.rollup-list__category a:focus,
+.rollup-list__category a:active {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
   color: #e35125;
   text-decoration: underline;
 }
 
-/* line 54, ../sass/components/_rollup.scss */
-.rollup__list-drink {
+/* line 68, ../sass/components/_rollup.scss */
+.rollup-list__drink {
   background: url("../img/icon__drink.svg");
 }
 
-/* line 55, ../sass/components/_rollup.scss */
-.rollup__list-food {
+/* line 69, ../sass/components/_rollup.scss */
+.rollup-list__food {
   background-image: url("../img/icon__food.svg");
 }
 
-/* line 56, ../sass/components/_rollup.scss */
-.rollup__list-category {
+/* line 70, ../sass/components/_rollup.scss */
+.rollup-list__category {
   background-image: url("../img/icon__tag.svg");
 }
 
-/* line 59, ../sass/components/_rollup.scss */
-.rollup__list-drink,
-.rollup__list-food,
-.rollup__list-category {
+/* line 73, ../sass/components/_rollup.scss */
+.rollup-list__drink,
+.rollup-list__food,
+.rollup-list__category {
   background-position: left top 0.9375em;
   background-repeat: no-repeat;
   background-size: 1em;
 }
 
-/*
-.rollup__list-drink:before,
-.rollup__list-food:before,
-.rollup__list-category:before { 
-  font-weight: 400;
-  @include adjust-font-size-to($label);  
-  font-family: "SSStandard";
-  font-style: normal;
-  margin-right: rhythm(1);
-  vertical-align: middle;
-  color: $ipa;
-}
-
-.rollup__list-drink:before { content: 'date'; }
-.rollup__list-food:before { content: 'date'; }
-.rollup__list-category:before { content: 'tag'; }
-*/
 /**
  * @file
  * Style rules for the specials finder.
  */
+/* line 6, ../sass/components/_finder.scss */
+.l-finder {
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+
 /* line 11, ../sass/components/_finder.scss */
+.finder__heading {
+  margin-bottom: 0.375em;
+}
+
+/* line 14, ../sass/components/_finder.scss */
 .finder__label {
   display: inline;
   margin-right: 0.375em;
   font-weight: 400;
 }
 
-/* line 17, ../sass/components/_finder.scss */
+/* line 20, ../sass/components/_finder.scss */
 select {
   display: inline;
   margin-right: 0.375em;
@@ -2000,24 +2035,24 @@ select {
   border-radius: 3px;
   height: 2em;
   text-indent: .5em;
-  background-color: white;
+  background-color: whitesmoke;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU4QTMzNkUyNDAwQzExRTNBOEY4OTE4N0E1NkQ4QjVCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU4QTMzNkUzNDAwQzExRTNBOEY4OTE4N0E1NkQ4QjVCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RThBMzM2RTA0MDBDMTFFM0E4Rjg5MTg3QTU2RDhCNUIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RThBMzM2RTE0MDBDMTFFM0E4Rjg5MTg3QTU2RDhCNUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4x37VGAAAAWklEQVR42mI0NjZeysDAEMWAHyxlAhKZQPwAj6L7QJwFUvgJiKOB+C8WRX+gcp+YoALHgLgZi0KQ2HEQgwlJsAWIjyLxjwBxK4yDrBBkdQwQf4DiGGTnAAQYAGJbEyV4nwHtAAAAAElFTkSuQmCC);
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
-  border: 1px solid #ededed;
+  border: 1px solid #d5d5d5;
   outline: none;
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
-/* line 37, ../sass/components/_finder.scss */
+/* line 40, ../sass/components/_finder.scss */
 select:hover, select:focus, select:active {
   outline: 0;
   border: 1px solid #e35125;
 }
 
-/* line 43, ../sass/components/_finder.scss */
+/* line 46, ../sass/components/_finder.scss */
 button {
   background: #e35125;
   border-radius: 3px;
@@ -2032,14 +2067,14 @@ button {
   transition: all 0.1s ease-out;
 }
 
-/* line 53, ../sass/components/_finder.scss */
+/* line 56, ../sass/components/_finder.scss */
 button:hover {
-  background: #d3461b;
+  background: #fdbb11;
   color: white;
-  border: 1px solid #d3461b;
+  border: 1px solid #fdbb11;
 }
 
-/* line 58, ../sass/components/_finder.scss */
+/* line 61, ../sass/components/_finder.scss */
 button:focus {
   outline-style: dotted;
   outline-color: #444444;
@@ -2053,6 +2088,8 @@ button:focus {
 /* line 6, ../sass/components/_feature.scss */
 .feature {
   color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 /* line 7, ../sass/components/_feature.scss */
@@ -2062,13 +2099,179 @@ button:focus {
 }
 
 /* line 11, ../sass/components/_feature.scss */
-.feature__title {
-  padding-top: 1.5em;
+.feature__dotw {
+  font-weight: 700;
+  font-size: 0.6em;
+  line-height: 1.875em;
+  color: #fdbb11;
+  margin-top: 2.5em;
+  margin-bottom: 1.25em;
 }
 
-/* line 17, ../sass/components/_feature.scss */
-.feature__list-category {
-  padding-bottom: 3.75em;
+/* line 19, ../sass/components/_feature.scss */
+.feature__title {
+  margin-bottom: 0.1875em;
+}
+
+/* line 22, ../sass/components/_feature.scss */
+.feature__address {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 26, ../sass/components/_feature.scss */
+.feature-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* line 30, ../sass/components/_feature.scss */
+.feature-list li {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 0.75em;
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+}
+
+/* line 46, ../sass/components/_feature.scss */
+.feature-list__drink a:link,
+.feature-list__drink a:visited,
+.feature-list__food a:link,
+.feature-list__food a:visited,
+.feature-list__category a:link,
+.feature-list__category a:visited {
+  color: #9d9d9d;
+  text-decoration: underline;
+}
+/* line 52, ../sass/components/_feature.scss */
+.feature-list__drink a:hover,
+.feature-list__drink a:focus,
+.feature-list__drink a:active,
+.feature-list__food a:hover,
+.feature-list__food a:focus,
+.feature-list__food a:active,
+.feature-list__category a:hover,
+.feature-list__category a:focus,
+.feature-list__category a:active {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  color: #e35125;
+  text-decoration: underline;
+}
+
+/* line 58, ../sass/components/_feature.scss */
+.feature-list__drink {
+  background: url("../img/icon__drink.svg");
+}
+
+/* line 59, ../sass/components/_feature.scss */
+.feature-list__food {
+  background-image: url("../img/icon__food.svg");
+}
+
+/* line 60, ../sass/components/_feature.scss */
+.feature-list__category {
+  background-image: url("../img/icon__tag.svg");
+}
+
+/* line 63, ../sass/components/_feature.scss */
+.feature-list__drink,
+.feature-list__food,
+.feature-list__category {
+  background-position: left top 0.9375em;
+  background-repeat: no-repeat;
+  background-size: 1em;
+}
+
+/**
+ * @file
+ * Style rules for the look and feel of the recently added block.
+ */
+/* line 6, ../sass/components/_updated-list.scss */
+.block {
+  display: block;
+  margin-bottom: 48px;
+}
+
+/* line 10, ../sass/components/_updated-list.scss */
+.block-title {
+  text-transform: uppercase;
+  letter-spacing: .0125em;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0em;
+  margin-bottom: 0.75em;
+}
+
+/* line 17, ../sass/components/_updated-list.scss */
+.block-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* line 20, ../sass/components/_updated-list.scss */
+.block-list li {
+  border-top: 1px solid whitesmoke;
+  margin-bottom: 0.75em;
+}
+
+/* line 25, ../sass/components/_updated-list.scss */
+.block-list__item-title {
+  font-size: 1.25em;
+  line-height: 0.9em;
+  margin-top: 0.6em;
+  margin-bottom: 0.3em;
+}
+
+/* line 33, ../sass/components/_updated-list.scss */
+.block-list__item-address {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  line-height: 1.25em;
+  color: #9d9d9d;
+}
+
+/**
+ * @file
+ * Style rules for the contact block.
+ */
+/* line 11, ../sass/components/_contact-list.scss */
+.contact-list
+.contact-list__item--phone:before,
+.contact-list__item--website:before,
+.contact-list__item--facebook:before,
+.contact-list__item--twitter:before,
+.contact-list__item--yelp:before {
+  font-size: 0.8em;
+  line-height: 1.875em;
+  font-family: "SSSocial";
+  font-style: normal;
+  margin-right: 0.75em;
+  vertical-align: middle;
+}
+
+/* line 18, ../sass/components/_contact-list.scss */
+.contact-list__item--phone:before {
+  content: 'phone';
+}
+
+/* line 19, ../sass/components/_contact-list.scss */
+.contact-list__item--website:before {
+  content: 'link';
+}
+
+/* line 20, ../sass/components/_contact-list.scss */
+.contact-list__item--facebook:before {
+  content: 'facebook';
+}
+
+/* line 21, ../sass/components/_contact-list.scss */
+.contact-list__item--twitter:before {
+  content: 'twitter';
+}
+
+/* line 22, ../sass/components/_contact-list.scss */
+.contact-list__item--yelp:before {
+  content: 'yelp';
 }
 
 /* Styleguide rules */

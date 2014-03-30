@@ -7,7 +7,7 @@
 // We are going to create a 980px wide, 12 column grid with 48px gutters between
 // columns (applied as 24px of left/right padding on each column).
 $zen-column-count: 12;
-$zen-gutter-width: $base-line-height * 3;
+$zen-gutter-width: $base-line-height * 2;
 
 // If you need IE6/7 support for box-sizing: border-box (default), see _base.scss
 //$zen-box-sizing: content-box;
@@ -33,7 +33,8 @@ $zen-auto-include-item-base: true;
   margin-left: auto;
   margin-right: auto;
   min-width: 260px; /* enforces a min-width in FF. */
-  @include breakpoint($bp2) { max-width: 1200px; }
+  width: 90%;
+  @include breakpoint($bp3) { max-width: 1200px; }
 }
 
 /*

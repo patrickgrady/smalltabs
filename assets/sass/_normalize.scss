@@ -143,8 +143,8 @@ a:hover,
 a:focus,
 a:active {
   @include trans($timing, $easing);
-  color: $black;
-  text-decoration: underline;  
+  color: $pilsner;
+  text-decoration: none;  
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */
@@ -186,6 +186,7 @@ blockquote {
 h1 {
   font-family: $champion-lightweight;
   font-weight: 400;
+  color: $stout;
   @include adjust-font-size-to($xxl-heading, 4);
   @include leader(0, $xxl-heading);
   @include trailer(2, $xxl-heading);
@@ -193,6 +194,7 @@ h1 {
 h2 {
   font-family: $champion-lightweight;
   font-weight: 400;
+  color: $stout;  
   @include adjust-font-size-to($md-heading, 2.5);
   @include leader(2, $md-heading);
   @include trailer(1, $md-heading);
@@ -200,6 +202,7 @@ h2 {
 h3 {
   font-family: $champion-lightweight;
   font-weight: 400;
+  color: $stout;  
   text-transform: uppercase;
   letter-spacing: .0125em;
   @include adjust-font-size-to($text, 2);
@@ -209,6 +212,7 @@ h3 {
 h4 {
   font-weight: 700;     
   @include adjust-font-size-to($text, 2);
+  color: $stout;  
   @include leader(2, $text);
   @include trailer(1, $text);
 }
@@ -217,6 +221,7 @@ h6 {
   @extend %allcaps;
   font-weight: 700;     
   @include adjust-font-size-to($crumb, 1.5);
+  color: $stout;  
   @include leader(2, $crumb);
   @include trailer(1, $crumb);
 }

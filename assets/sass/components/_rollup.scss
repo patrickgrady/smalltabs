@@ -5,21 +5,38 @@
 
 .finder-results {
   background-color: $off-white;
+  padding-top: $zen-gutter-width;  
 }
 
 .rollup {
   background-color: $white;
   padding: rhythm(1.5) rhythm(1.5) rhythm(.5) rhythm(1.5);
   margin-bottom: $zen-gutter-width;  
+  //min-height: 300px; 
 }
-
-.rollup__title {
+.rollup-title {
   @include adjust-font-size-to($sm-heading, 1.5);
   @include leader(0, $sm-heading);
   @include trailer(.5, $sm-heading);
 }
+.rollup-address {
+  @include adjust-font-size-to($label, 1.5);  
+  color: $gray-medium;
 
-.rollup__list {
+  a:link,
+  a:visited { 
+    color: $gray-medium;
+    text-decoration: underline;  
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    @include trans($timing, $easing);
+    color: $link-color;
+    text-decoration: underline;  
+  }
+}
+.rollup-list {
   list-style-type: none;
   padding-left: 0;
 
@@ -30,11 +47,9 @@
     padding-left: rhythm(2);
   }
 }
-
-.rollup__address,
-.rollup__list-drink,
-.rollup__list-food,
-.rollup__list-category {
+.rollup-list__drink,
+.rollup-list__food,
+.rollup-list__category {
   @include adjust-font-size-to($label, 1.5);
 
   a:link,
@@ -50,36 +65,13 @@
     text-decoration: underline;  
   }
 }
-
-.rollup__list-drink { background: url('../img/icon__drink.svg'); }
-.rollup__list-food { background-image: url('../img/icon__food.svg'); }
-.rollup__list-category { background-image: url('../img/icon__tag.svg'); }
-.rollup__list-drink,
-.rollup__list-food,
-.rollup__list-category {
+.rollup-list__drink { background: url('../img/icon__drink.svg'); }
+.rollup-list__food { background-image: url('../img/icon__food.svg'); }
+.rollup-list__category { background-image: url('../img/icon__tag.svg'); }
+.rollup-list__drink,
+.rollup-list__food,
+.rollup-list__category {
   background-position: left top rhythm(1.25);
   background-repeat: no-repeat;
   background-size: 1em;
 }
-
-/*
-.rollup__list-drink:before,
-.rollup__list-food:before,
-.rollup__list-category:before { 
-  font-weight: 400;
-  @include adjust-font-size-to($label);  
-  font-family: "SSStandard";
-  font-style: normal;
-  margin-right: rhythm(1);
-  vertical-align: middle;
-  color: $ipa;
-}
-
-.rollup__list-drink:before { content: 'date'; }
-.rollup__list-food:before { content: 'date'; }
-.rollup__list-category:before { content: 'tag'; }
-*/
-
-
-
-

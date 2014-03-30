@@ -3,16 +3,37 @@
  * Style rules for the site footer.
  */
 
-.site-footer { 
-  @extend %column;
-  margin-top: rhythm(2);
-  margin-bottom: rhythm(2);
+.site-footer {
   @include zen-clear();
+  @include adjust-font-size-to($label,1.5);   
+  text-align: center;
+  color: $white-60;
+  background: $stout;
+  padding: 3em 0;
 }
-.site-footer__copyright {
-  //@extend %sans;
-  @include adjust-font-size-to($label, 1);
-  color: $gray-medium;
-  padding-top: rhythm(3);
-  border-top: 1px solid $off-white;  
+.site-footer__logo {
+  margin-bottom: rhythm(2);
 }
+.site-footer__social-links {
+  list-style: none;
+  padding-left: 0;
+  li {
+    display: block;    
+    padding: 0 rhythm(0);
+    @include breakpoint($bp1) {
+      display: inline;
+      padding: 0 rhythm(1);      
+    }
+  }
+}
+
+.site-footer__social-links-twitter:before,
+.site-footer__social-links-facebook:before {
+  @include adjust-font-size-to($label);  
+  font-family: "SSSocial";
+  font-style: normal;
+  margin-right: rhythm(1);
+  vertical-align: middle;
+}
+.site-footer__social-links-twitter:before { content:'twitter'; }
+.site-footer__social-links-facebook:before { content:'facebook'; }

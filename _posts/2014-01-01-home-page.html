@@ -1,5 +1,74 @@
 ---
-layout: post
+layout: templates
 title: "Home Page"
 categories: templates
 ---
+
+{% include site-header.html %}
+{% include feature.html %}
+
+<div class="container">
+  <div class="l-1up l-finder">
+    {% include finder.html %}
+  </div>
+</div>
+<div class="finder-results">
+  <div class="container">
+    <div class="l-3up--1">
+      {% include rollup--a.html %}
+    </div>
+    <div class="l-3up--2">
+      {% include rollup--b.html %}
+    </div>
+    <div class="l-3up--3">
+      {% include rollup--c.html %}
+    </div> 
+    <div class="l-3up--1">
+      {% include rollup--c.html %}
+    </div>
+    <div class="l-3up--2">
+      {% include rollup--b.html %}
+    </div>
+    <div class="l-3up--3">
+      {% include rollup--a.html %}
+    </div> 
+    <div class="l-3up--1">
+      {% include rollup--a.html %}
+    </div>
+    <div class="l-3up--2">
+      {% include rollup--b.html %}
+    </div>
+    <div class="l-3up--3">
+      {% include rollup--c.html %}
+    </div> 
+    <div class="l-3up--1">
+      {% include rollup--b.html %}
+    </div>
+    <div class="l-3up--2">
+      {% include rollup--a.html %}
+    </div>
+    <div class="l-3up--3">
+      {% include rollup--b.html %}
+    </div>              
+  </div>
+</div>
+
+<div class="container">
+  <div class="l-1up">
+    {% include neighborhoods-list.html %}
+  </div>
+</div>
+
+<div class="container">
+  <div class="l-3up--1">
+    {% include added-list.html %}
+  </div>
+  <div class="l-3up--2">
+    {% include updated-list.html %}
+  </div>
+  <div class="l-3up--3">
+    {% include added-list.html %}
+  </div>
+</div>
+
+{% include site-footer.html %}

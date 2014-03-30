@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Style rules for the contact block.
+ */
+
+.contact-list
+.contact-list__item--phone:before,
+.contact-list__item--website:before,
+.contact-list__item--facebook:before,
+.contact-list__item--twitter:before,
+.contact-list__item--yelp:before {
+  @include adjust-font-size-to($label);  
+  font-family: "SSSocial";
+  font-style: normal;
+  margin-right: rhythm(1);
+  vertical-align: middle;
+}
+.contact-list__item--phone:before { content: 'phone'; }
+.contact-list__item--website:before { content: 'link'; }
+.contact-list__item--facebook:before { content: 'facebook'; }
+.contact-list__item--twitter:before { content: 'twitter'; }
+.contact-list__item--yelp:before { content: 'yelp'; }

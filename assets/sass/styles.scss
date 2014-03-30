@@ -8,6 +8,10 @@
 /* Import H&FJ CloudTypography */
 @import "//cloud.typography.com/6838432/662604/css/fonts.css";
 
+/* Import Symbolset icon fonts */
+@import "../webfonts/ss-standard.css";
+@import "../webfonts/ss-social.css";
+
 /* Import Syntax styles */
 @import "{{ site.baseurl }}/assets/css/syntax.css";
 
@@ -34,6 +38,8 @@
 @import "components/rollup";
 @import "components/finder";
 @import "components/feature";
+@import "components/updated-list";
+@import "components/contact-list";
 
 /* Styleguide rules */
 @import "styleguide/styleguide";
