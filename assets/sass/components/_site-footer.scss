@@ -5,24 +5,37 @@
 
 .site-footer {
   @include zen-clear();
-  @include adjust-font-size-to($label,1.5);   
-  text-align: center;
-  color: $white-60;
-  background: $stout;
-  padding: 3em 0;
+  @include adjust-font-size-to($crumb, 1.25);   
+  text-align: left;
+  color: $gray-medium;
+  border-top: 1px solid $off-white;
+  // background: $stout;
+  // background: $off-white;
+
+  padding: 4em 0 3em;
 }
 .site-footer__logo {
+  float: left;
+
+  margin-right: $zen-gutter-width / 2;
   margin-bottom: rhythm(2);
+}
+.site-footer__copyright {
+  float: left;
+  p {
+    margin-bottom: rhythm(0);
+  }
 }
 .site-footer__social-links {
   list-style: none;
   padding-left: 0;
   li {
+    margin-bottom: 0;
     display: block;    
     padding: 0 rhythm(0);
     @include breakpoint($bp1) {
       display: inline;
-      padding: 0 rhythm(1);      
+      padding-right: rhythm(1);      
     }
   }
 }

@@ -9,10 +9,10 @@
 }
 
 .rollup {
-  background-color: $white;
+  background-color: $off-white;
   padding: rhythm(1.5) rhythm(1.5) rhythm(.5) rhythm(1.5);
   margin-bottom: $zen-gutter-width;  
-  //min-height: 300px; 
+  //min-height: 320px; 
 }
 .rollup-title {
   @include adjust-font-size-to($sm-heading, 1.5);
@@ -37,6 +37,7 @@
   }
 }
 .rollup-list {
+  color: $black;
   list-style-type: none;
   padding-left: 0;
 

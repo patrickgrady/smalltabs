@@ -3,24 +3,24 @@
  * Style rules for the bar feature.
  */
 
-.feature { color: $white; padding-top: 3em; padding-bottom: 3em; }
-.feature__image { 
-  background: url('../img/feature__image.jpg');
-  background-size: cover; 
+.feature { }
+.feature__image {
+  @include box-sizing(border-box);
+  border: 1em solid $off-white;
 }
 .feature__dotw {
   @extend %allcaps;
   font-weight: 700;     
   @include adjust-font-size-to($crumb, 1.5);
   color: $pilsner;  
-  @include leader(2, $crumb);
+  @include leader(0, $crumb);
   @include trailer(1, $crumb);  
 }
 .feature__title { 
   @include trailer(.25); 
 }
 .feature__address {
-  color: $white-60;
+  color: $gray-medium;
 }
 .feature__summary {}
 .feature-list {
@@ -28,7 +28,7 @@
   padding-left: 0;
 
   li {
-    border-top: 1px solid $white-30;
+    border-top: 1px solid $off-white;
     padding-top: rhythm(1);
     margin-bottom: rhythm(1);
     padding-left: rhythm(2);
@@ -40,8 +40,7 @@
 .feature-list__drink,
 .feature-list__food,
 .feature-list__category {
-  //@include adjust-font-size-to($label, 1.5);
-
+  color: $black;
   a:link,
   a:visited { 
     color: $gray-medium;

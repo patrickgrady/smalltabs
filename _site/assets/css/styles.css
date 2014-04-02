@@ -750,8 +750,8 @@ table {
 /* line 46, ../sass/layouts/_l-zen-grids-base.scss */
 .container,
 .grid-item {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -785,8 +785,8 @@ table {
 /* line 7, ../sass/layouts/_l-page.scss */
 .l-styleguide-page,
 .l-page {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
   clear: left;
 }
 @media (min-width: 600px) {
@@ -813,6 +813,12 @@ table {
   }
 }
 
+/* line 21, ../sass/layouts/_l-page.scss */
+.l-stripe {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
 /**
  * @file
  * Layout rules for full-width content
@@ -824,8 +830,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -844,8 +850,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -859,8 +865,8 @@ table {
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -876,8 +882,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -892,8 +898,8 @@ table {
     width: 33.33333%;
     margin-left: 66.66667%;
     margin-right: -100%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -913,8 +919,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -928,8 +934,8 @@ table {
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -945,8 +951,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -961,8 +967,8 @@ table {
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -978,15 +984,15 @@ table {
 /* line 13, ../sass/layouts/_l-2up.scss */
 .l-2up {
   float: left;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1000,8 +1006,8 @@ table {
 @media (min-width: 900px) {
   /* line 13, ../sass/layouts/_l-2up.scss */
   .l-2up {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1009,16 +1015,16 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 12px;
-    margin-right: 12px;
+    padding-right: 24px;
+    margin-right: 24px;
   }
 }
 
 @media (min-width: 900px) {
   /* line 22, ../sass/layouts/_l-2up.scss */
   .l-2up:nth-of-type(2n) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1026,8 +1032,8 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 12px;
-    margin-right: -12px;
+    padding-right: 24px;
+    margin-right: -24px;
   }
 }
 
@@ -1045,8 +1051,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1060,8 +1066,8 @@ table {
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1077,8 +1083,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1093,8 +1099,8 @@ table {
     width: 50%;
     margin-left: 50%;
     margin-right: -100%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1110,15 +1116,15 @@ table {
 /* line 13, ../sass/layouts/_l-3up.scss */
 .l-3up {
   float: left;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1132,8 +1138,8 @@ table {
 @media (min-width: 600px) {
   /* line 13, ../sass/layouts/_l-3up.scss */
   .l-3up {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1141,15 +1147,15 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 12px;
-    margin-right: 12px;
+    padding-right: 24px;
+    margin-right: 24px;
   }
 }
 @media (min-width: 1100px) {
   /* line 13, ../sass/layouts/_l-3up.scss */
   .l-3up {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1157,16 +1163,16 @@ table {
     word-wrap: break-word;
     width: 33.33333%;
     padding-left: 0;
-    padding-right: 16px;
-    margin-right: 8px;
+    padding-right: 32px;
+    margin-right: 16px;
   }
 }
 
 @media (min-width: 600px) {
   /* line 25, ../sass/layouts/_l-3up.scss */
   .l-3up:nth-of-type(2n) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1174,15 +1180,15 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 12px;
-    margin-right: -12px;
+    padding-right: 24px;
+    margin-right: -24px;
   }
 }
 @media (min-width: 1100px) {
   /* line 25, ../sass/layouts/_l-3up.scss */
   .l-3up:nth-of-type(2n) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1190,16 +1196,16 @@ table {
     word-wrap: break-word;
     width: 33.33333%;
     padding-left: 0;
-    padding-right: 16px;
-    margin-right: 8px;
+    padding-right: 32px;
+    margin-right: 16px;
   }
 }
 
 @media (min-width: 1100px) {
   /* line 34, ../sass/layouts/_l-3up.scss */
   .l-3up:nth-of-type(3n) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1207,8 +1213,8 @@ table {
     word-wrap: break-word;
     width: 33.33333%;
     padding-left: 0;
-    padding-right: 16px;
-    margin-right: -16px;
+    padding-right: 32px;
+    margin-right: -32px;
   }
 }
 
@@ -1226,8 +1232,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1241,8 +1247,8 @@ table {
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1258,8 +1264,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1274,8 +1280,8 @@ table {
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1291,8 +1297,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1307,8 +1313,8 @@ table {
     width: 33.33333%;
     margin-left: 66.66667%;
     margin-right: -100%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1324,15 +1330,15 @@ table {
 /* line 13, ../sass/layouts/_l-4up.scss */
 .l-4up {
   float: left;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1346,8 +1352,8 @@ table {
 @media (min-width: 600px) {
   /* line 13, ../sass/layouts/_l-4up.scss */
   .l-4up {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1355,15 +1361,15 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 12px;
-    margin-right: 12px;
+    padding-right: 24px;
+    margin-right: 24px;
   }
 }
 @media (min-width: 1100px) {
   /* line 13, ../sass/layouts/_l-4up.scss */
   .l-4up {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1371,16 +1377,16 @@ table {
     word-wrap: break-word;
     width: 25%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: 6px;
+    padding-right: 36px;
+    margin-right: 12px;
   }
 }
 
 @media (min-width: 600px) {
   /* line 25, ../sass/layouts/_l-4up.scss */
   .l-4up:nth-of-type(2n) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1388,15 +1394,15 @@ table {
     word-wrap: break-word;
     width: 50%;
     padding-left: 0;
-    padding-right: 12px;
-    margin-right: -12px;
+    padding-right: 24px;
+    margin-right: -24px;
   }
 }
 @media (min-width: 1100px) {
   /* line 25, ../sass/layouts/_l-4up.scss */
   .l-4up:nth-of-type(2n) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1404,16 +1410,16 @@ table {
     word-wrap: break-word;
     width: 25%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: 6px;
+    padding-right: 36px;
+    margin-right: 12px;
   }
 }
 
 @media (min-width: 1100px) {
   /* line 34, ../sass/layouts/_l-4up.scss */
   .l-4up:nth-of-type(4n) {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1421,8 +1427,8 @@ table {
     word-wrap: break-word;
     width: 25%;
     padding-left: 0;
-    padding-right: 18px;
-    margin-right: -18px;
+    padding-right: 36px;
+    margin-right: -36px;
   }
 }
 
@@ -1440,8 +1446,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1455,8 +1461,8 @@ table {
     width: 25%;
     margin-left: 0%;
     margin-right: -25%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1472,8 +1478,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1488,8 +1494,8 @@ table {
     width: 25%;
     margin-left: 25%;
     margin-right: -50%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1505,8 +1511,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1521,8 +1527,8 @@ table {
     width: 25%;
     margin-left: 50%;
     margin-right: -75%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1538,8 +1544,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1554,8 +1560,8 @@ table {
     width: 25%;
     margin-left: 75%;
     margin-right: -100%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1575,8 +1581,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1590,8 +1596,8 @@ table {
     width: 16.66667%;
     margin-left: 0%;
     margin-right: -16.66667%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1607,8 +1613,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1623,8 +1629,8 @@ table {
     width: 16.66667%;
     margin-left: 16.66667%;
     margin-right: -33.33333%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1640,8 +1646,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1656,8 +1662,8 @@ table {
     width: 16.66667%;
     margin-left: 33.33333%;
     margin-right: -50%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1673,8 +1679,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1689,8 +1695,8 @@ table {
     width: 16.66667%;
     margin-left: 50%;
     margin-right: -66.66667%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1706,8 +1712,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1722,8 +1728,8 @@ table {
     width: 16.66667%;
     margin-left: 66.66667%;
     margin-right: -83.33333%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1739,8 +1745,8 @@ table {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1755,8 +1761,8 @@ table {
     width: 16.66667%;
     margin-left: 83.33333%;
     margin-right: -100%;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -1827,38 +1833,50 @@ table {
 /* line 6, ../sass/components/_site-footer.scss */
 .site-footer {
   clear: left;
-  font-size: 0.8em;
-  line-height: 1.40625em;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.6);
-  background: #1e140c;
-  padding: 3em 0;
-}
-
-/* line 14, ../sass/components/_site-footer.scss */
-.site-footer__logo {
-  margin-bottom: 1.5em;
+  font-size: 0.6em;
+  line-height: 1.5625em;
+  text-align: left;
+  color: #9d9d9d;
+  border-top: 1px solid whitesmoke;
+  padding: 4em 0 3em;
 }
 
 /* line 17, ../sass/components/_site-footer.scss */
+.site-footer__logo {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 1.5em;
+}
+
+/* line 23, ../sass/components/_site-footer.scss */
+.site-footer__copyright {
+  float: left;
+}
+/* line 25, ../sass/components/_site-footer.scss */
+.site-footer__copyright p {
+  margin-bottom: 0em;
+}
+
+/* line 29, ../sass/components/_site-footer.scss */
 .site-footer__social-links {
   list-style: none;
   padding-left: 0;
 }
-/* line 20, ../sass/components/_site-footer.scss */
+/* line 32, ../sass/components/_site-footer.scss */
 .site-footer__social-links li {
+  margin-bottom: 0;
   display: block;
   padding: 0 0em;
 }
 @media (min-width: 600px) {
-  /* line 20, ../sass/components/_site-footer.scss */
+  /* line 32, ../sass/components/_site-footer.scss */
   .site-footer__social-links li {
     display: inline;
-    padding: 0 0.75em;
+    padding-right: 0.75em;
   }
 }
 
-/* line 31, ../sass/components/_site-footer.scss */
+/* line 44, ../sass/components/_site-footer.scss */
 .site-footer__social-links-twitter:before,
 .site-footer__social-links-facebook:before {
   font-size: 0.8em;
@@ -1869,12 +1887,12 @@ table {
   vertical-align: middle;
 }
 
-/* line 38, ../sass/components/_site-footer.scss */
+/* line 51, ../sass/components/_site-footer.scss */
 .site-footer__social-links-twitter:before {
   content: 'twitter';
 }
 
-/* line 39, ../sass/components/_site-footer.scss */
+/* line 52, ../sass/components/_site-footer.scss */
 .site-footer__social-links-facebook:before {
   content: 'facebook';
 }
@@ -1886,14 +1904,14 @@ table {
 /* line 6, ../sass/components/_rollup.scss */
 .finder-results {
   background-color: whitesmoke;
-  padding-top: 24px;
+  padding-top: 48px;
 }
 
 /* line 11, ../sass/components/_rollup.scss */
 .rollup {
-  background-color: white;
+  background-color: whitesmoke;
   padding: 1.125em 1.125em 0.375em 1.125em;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 /* line 17, ../sass/components/_rollup.scss */
@@ -1930,10 +1948,11 @@ table {
 
 /* line 39, ../sass/components/_rollup.scss */
 .rollup-list {
+  color: #444444;
   list-style-type: none;
   padding-left: 0;
 }
-/* line 43, ../sass/components/_rollup.scss */
+/* line 44, ../sass/components/_rollup.scss */
 .rollup-list li {
   border-top: 1px solid whitesmoke;
   padding-top: 0.75em;
@@ -1941,14 +1960,14 @@ table {
   padding-left: 1.5em;
 }
 
-/* line 52, ../sass/components/_rollup.scss */
+/* line 53, ../sass/components/_rollup.scss */
 .rollup-list__drink,
 .rollup-list__food,
 .rollup-list__category {
   font-size: 0.8em;
   line-height: 1.40625em;
 }
-/* line 56, ../sass/components/_rollup.scss */
+/* line 57, ../sass/components/_rollup.scss */
 .rollup-list__drink a:link,
 .rollup-list__drink a:visited,
 .rollup-list__food a:link,
@@ -1958,7 +1977,7 @@ table {
   color: #9d9d9d;
   text-decoration: underline;
 }
-/* line 62, ../sass/components/_rollup.scss */
+/* line 63, ../sass/components/_rollup.scss */
 .rollup-list__drink a:hover,
 .rollup-list__drink a:focus,
 .rollup-list__drink a:active,
@@ -1976,22 +1995,22 @@ table {
   text-decoration: underline;
 }
 
-/* line 68, ../sass/components/_rollup.scss */
+/* line 69, ../sass/components/_rollup.scss */
 .rollup-list__drink {
   background: url("../img/icon__drink.svg");
 }
 
-/* line 69, ../sass/components/_rollup.scss */
+/* line 70, ../sass/components/_rollup.scss */
 .rollup-list__food {
   background-image: url("../img/icon__food.svg");
 }
 
-/* line 70, ../sass/components/_rollup.scss */
+/* line 71, ../sass/components/_rollup.scss */
 .rollup-list__category {
   background-image: url("../img/icon__tag.svg");
 }
 
-/* line 73, ../sass/components/_rollup.scss */
+/* line 74, ../sass/components/_rollup.scss */
 .rollup-list__drink,
 .rollup-list__food,
 .rollup-list__category {
@@ -2004,25 +2023,49 @@ table {
  * @file
  * Style rules for the specials finder.
  */
-/* line 6, ../sass/components/_finder.scss */
-.l-finder {
-  margin-top: 3em;
-  margin-bottom: 1.5em;
-}
-
 /* line 11, ../sass/components/_finder.scss */
-.finder__heading {
-  margin-bottom: 0.375em;
+.finder__map {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1em solid whitesmoke;
 }
 
-/* line 14, ../sass/components/_finder.scss */
+/* line 15, ../sass/components/_finder.scss */
+.finder {
+  color: white;
+}
+
+/* line 19, ../sass/components/_finder.scss */
+.finder__image {
+  padding-top: 144px;
+  padding-bottom: 144px;
+  background: url("../img/feature__image.jpg");
+  background-size: cover;
+}
+
+/* line 25, ../sass/components/_finder.scss */
+.finder__heading {
+  color: #fdbb11;
+  text-transform: uppercase;
+  margin-bottom: 0.1875em;
+}
+
+/* line 30, ../sass/components/_finder.scss */
+.finder__subheading {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0em;
+  margin-bottom: 1.125em;
+}
+
+/* line 35, ../sass/components/_finder.scss */
 .finder__label {
   display: inline;
   margin-right: 0.375em;
   font-weight: 400;
 }
 
-/* line 20, ../sass/components/_finder.scss */
+/* line 41, ../sass/components/_finder.scss */
 select {
   display: inline;
   margin-right: 0.375em;
@@ -2046,13 +2089,13 @@ select {
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
-/* line 40, ../sass/components/_finder.scss */
+/* line 61, ../sass/components/_finder.scss */
 select:hover, select:focus, select:active {
   outline: 0;
   border: 1px solid #e35125;
 }
 
-/* line 46, ../sass/components/_finder.scss */
+/* line 67, ../sass/components/_finder.scss */
 button {
   background: #e35125;
   border-radius: 3px;
@@ -2067,14 +2110,14 @@ button {
   transition: all 0.1s ease-out;
 }
 
-/* line 56, ../sass/components/_finder.scss */
+/* line 77, ../sass/components/_finder.scss */
 button:hover {
   background: #fdbb11;
   color: white;
   border: 1px solid #fdbb11;
 }
 
-/* line 61, ../sass/components/_finder.scss */
+/* line 82, ../sass/components/_finder.scss */
 button:focus {
   outline-style: dotted;
   outline-color: #444444;
@@ -2085,17 +2128,12 @@ button:focus {
  * @file
  * Style rules for the bar feature.
  */
-/* line 6, ../sass/components/_feature.scss */
-.feature {
-  color: white;
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
-
 /* line 7, ../sass/components/_feature.scss */
 .feature__image {
-  background: url("../img/feature__image.jpg");
-  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1em solid whitesmoke;
 }
 
 /* line 11, ../sass/components/_feature.scss */
@@ -2104,7 +2142,7 @@ button:focus {
   font-size: 0.6em;
   line-height: 1.875em;
   color: #fdbb11;
-  margin-top: 2.5em;
+  margin-top: 0em;
   margin-bottom: 1.25em;
 }
 
@@ -2115,7 +2153,7 @@ button:focus {
 
 /* line 22, ../sass/components/_feature.scss */
 .feature__address {
-  color: rgba(255, 255, 255, 0.6);
+  color: #9d9d9d;
 }
 
 /* line 26, ../sass/components/_feature.scss */
@@ -2125,13 +2163,19 @@ button:focus {
 }
 /* line 30, ../sass/components/_feature.scss */
 .feature-list li {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid whitesmoke;
   padding-top: 0.75em;
   margin-bottom: 0.75em;
   padding-left: 1.5em;
 }
 
-/* line 46, ../sass/components/_feature.scss */
+/* line 42, ../sass/components/_feature.scss */
+.feature-list__drink,
+.feature-list__food,
+.feature-list__category {
+  color: #444444;
+}
+/* line 45, ../sass/components/_feature.scss */
 .feature-list__drink a:link,
 .feature-list__drink a:visited,
 .feature-list__food a:link,
@@ -2141,7 +2185,7 @@ button:focus {
   color: #9d9d9d;
   text-decoration: underline;
 }
-/* line 52, ../sass/components/_feature.scss */
+/* line 51, ../sass/components/_feature.scss */
 .feature-list__drink a:hover,
 .feature-list__drink a:focus,
 .feature-list__drink a:active,
@@ -2159,22 +2203,22 @@ button:focus {
   text-decoration: underline;
 }
 
-/* line 58, ../sass/components/_feature.scss */
+/* line 57, ../sass/components/_feature.scss */
 .feature-list__drink {
   background: url("../img/icon__drink.svg");
 }
 
-/* line 59, ../sass/components/_feature.scss */
+/* line 58, ../sass/components/_feature.scss */
 .feature-list__food {
   background-image: url("../img/icon__food.svg");
 }
 
-/* line 60, ../sass/components/_feature.scss */
+/* line 59, ../sass/components/_feature.scss */
 .feature-list__category {
   background-image: url("../img/icon__tag.svg");
 }
 
-/* line 63, ../sass/components/_feature.scss */
+/* line 62, ../sass/components/_feature.scss */
 .feature-list__drink,
 .feature-list__food,
 .feature-list__category {
@@ -2190,7 +2234,7 @@ button:focus {
 /* line 6, ../sass/components/_updated-list.scss */
 .block {
   display: block;
-  margin-bottom: 48px;
+  margin-bottom: 96px;
 }
 
 /* line 10, ../sass/components/_updated-list.scss */
@@ -2274,6 +2318,34 @@ button:focus {
   content: 'yelp';
 }
 
+/**
+ * @file
+ * Style rules for the neighborhoods list.
+ */
+/* line 6, ../sass/components/_neighborhoods-list.scss */
+.neighborhoods-list {
+  list-style-type: none;
+  padding-left: 0;
+  -moz-column-count: 2;
+  -moz-column-gap: 48px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 48px;
+}
+@media (min-width: 600px) {
+  /* line 6, ../sass/components/_neighborhoods-list.scss */
+  .neighborhoods-list {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+  }
+}
+@media (min-width: 900px) {
+  /* line 6, ../sass/components/_neighborhoods-list.scss */
+  .neighborhoods-list {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+  }
+}
+
 /* Styleguide rules */
 /**
  * @file
@@ -2287,10 +2359,10 @@ button:focus {
 
 /* line 10, ../sass/styleguide/_styleguide.scss */
 .styleguide-footer {
+  background: white;
   font-size: 0.6em;
   line-height: 1.25em;
-  padding-top: 2.25em;
-  padding-bottom: 1.5em;
+  padding-top: 3em;
 }
 
 /* line 15, ../sass/styleguide/_styleguide.scss */

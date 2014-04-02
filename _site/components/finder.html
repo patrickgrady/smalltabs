@@ -28,82 +28,178 @@
 
 <div class="styleguide-example-wrapper">
   <div class="styleguide-example">
-    <div class="container finder">
-  <div class="l-1up">
-    <form class="finder">
-  <h1 class="finder__heading">Find specials near or far:</h1>
+    <div class="finder">
+  <div class="finder__image">
+    <div class="container">
+      <div class="l-1up">
+        <h1 class="finder__heading">Thrifty & Thirsty in Chicago?</h1>
+        <h2 class="finder__subheading">Use Small Tabs to find a great night out without spending a fortune!</h2>
 
-  <p>
-    <label class="finder__label" for="select">Browse</label>
-    <select id="finder__dotw">
-      <option>Monday</option>
-      <option>Tuesday</option>
-      <option>Wednesday</option>
-      <option>Thursday</option>
-      <option>Friday</option>
-      <option>Saturday</option>
-      <option>Sunday</option>
-    </select>
+        <form>
+          <p>
+          <label class="finder__label element-invisible" for="select">Browse</label>
+          <select id="finder__dotw">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+          </select>
 
-    <label class="finder__label" for="select">specials in</label>
-    <select id="finder__neighborhood">
-      <option>any neighborhood</option>
-      <option>Albany Park</option>
-      <option>Andersonville</option>
-      <option>Avondale</option>
-      <option>Bridgeport</option>
-      <option>Bucktown</option>
-      <option>Edgewater</option>
-      <option>Edison Park</option>
-      <option>Gold Coast</option>
-      <option>Humboldt Park</option>
-      <option>Irving Park</option>
-      <option>Jefferson Park</option>
-      <option>Lakeview</option>
-      <option>Lincoln Park</option>
-      <option>Lincoln Square</option>
-      <option>Logan Square</option>
-      <option>Loop</option>
-      <option>Mayfair</option>
-      <option>Millenium Park</option>
-      <option>Near North Side</option>
-      <option>Near South Side</option>
-      <option>Near West Side</option>
-      <option>Noble Square</option>
-      <option>North Center</option>
-      <option>Norwood Park</option>
-      <option>Old Town</option>
-      <option>Pilsen</option>
-      <option>Printers Row</option>
-      <option>River North</option>
-      <option>Rogers Park</option>
-      <option>Roscoe Village</option>
-      <option>South Loop</option>
-      <option>Streeterville</option>
-      <option>Ukrainian Village</option>
-      <option>University Village</option>
-      <option>Uptown</option>
-      <option>West Loop</option>
-      <option>West Rogers Park</option>
-      <option>Wicker Park</option>
-      <option>Wrigleyville</option> 
-    </select>
+          <label class="finder__label" for="select">specials in</label>
+          <select id="finder__neighborhood">
+            <option>any neighborhood</option>
+            <option>Albany Park</option>
+            <option>Andersonville</option>
+            <option>Avondale</option>
+            <option>Bridgeport</option>
+            <option>Bucktown</option>
+            <option>Edgewater</option>
+            <option>Edison Park</option>
+            <option>Gold Coast</option>
+            <option>Humboldt Park</option>
+            <option>Irving Park</option>
+            <option>Jefferson Park</option>
+            <option>Lakeview</option>
+            <option>Lincoln Park</option>
+            <option>Lincoln Square</option>
+            <option>Logan Square</option>
+            <option>Loop</option>
+            <option>Mayfair</option>
+            <option>Millenium Park</option>
+            <option>Near North Side</option>
+            <option>Near South Side</option>
+            <option>Near West Side</option>
+            <option>Noble Square</option>
+            <option>North Center</option>
+            <option>Norwood Park</option>
+            <option>Old Town</option>
+            <option>Pilsen</option>
+            <option>Printers Row</option>
+            <option>River North</option>
+            <option>Rogers Park</option>
+            <option>Roscoe Village</option>
+            <option>South Loop</option>
+            <option>Streeterville</option>
+            <option>Ukrainian Village</option>
+            <option>University Village</option>
+            <option>Uptown</option>
+            <option>West Loop</option>
+            <option>West Rogers Park</option>
+            <option>Wicker Park</option>
+            <option>Wrigleyville</option> 
+          </select>
 
-    <label class="finder__label" for="select">at</label>
-    <select id="finder__type">
-      <option>any type of bar</option>
-      <option>Dive bar</option>
-      <option>Night Club</option>
-      <option>Sports Bar</option>
-      <option>Microbrewery</option>
-    </select>      
+          <label class="finder__label" for="select">at</label>
+          <select id="finder__type">
+            <option>any type of bar</option>
+            <option>Dive bar</option>
+            <option>Night Club</option>
+            <option>Sports Bar</option>
+            <option>Microbrewery</option>
+          </select>      
 
-    <button class="buttons" type="submit">Go</button>
+          <button class="buttons" type="submit">Go</button>
 
-  </p>
-</form>
+          </p>
+      </form>
+    </div>
   </div>
 </div>
+
+<div class="container">
+  <div class="l-1up">
+    <h3>Markup</h3>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;finder&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;finder__image&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;l-1up&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;finder__heading&quot;</span><span class="nt">&gt;</span>Thrifty <span class="err">&amp;</span> Thirsty in Chicago?<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">&quot;finder__subheading&quot;</span><span class="nt">&gt;</span>Use Small Tabs to find a great night out without spending a fortune!<span class="nt">&lt;/h2&gt;</span>
+
+        <span class="nt">&lt;form&gt;</span>
+          <span class="nt">&lt;p&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;finder__label element-invisible&quot;</span> <span class="na">for=</span><span class="s">&quot;select&quot;</span><span class="nt">&gt;</span>Browse<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;finder__dotw&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Monday<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Tuesday<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Wednesday<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Thursday<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Friday<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Saturday<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Sunday<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;/select&gt;</span>
+
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;finder__label&quot;</span> <span class="na">for=</span><span class="s">&quot;select&quot;</span><span class="nt">&gt;</span>specials in<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;finder__neighborhood&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>any neighborhood<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Albany Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Andersonville<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Avondale<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Bridgeport<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Bucktown<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Edgewater<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Edison Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Gold Coast<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Humboldt Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Irving Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Jefferson Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Lakeview<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Lincoln Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Lincoln Square<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Logan Square<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Loop<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Mayfair<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Millenium Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Near North Side<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Near South Side<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Near West Side<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Noble Square<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>North Center<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Norwood Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Old Town<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Pilsen<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Printers Row<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>River North<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Rogers Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Roscoe Village<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>South Loop<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Streeterville<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Ukrainian Village<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>University Village<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Uptown<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>West Loop<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>West Rogers Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Wicker Park<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Wrigleyville<span class="nt">&lt;/option&gt;</span> 
+          <span class="nt">&lt;/select&gt;</span>
+
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;finder__label&quot;</span> <span class="na">for=</span><span class="s">&quot;select&quot;</span><span class="nt">&gt;</span>at<span class="nt">&lt;/label&gt;</span>
+          <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;finder__type&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;option&gt;</span>any type of bar<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Dive bar<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Night Club<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Sports Bar<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;option&gt;</span>Microbrewery<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;/select&gt;</span>      
+
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;buttons&quot;</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Go<span class="nt">&lt;/button&gt;</span>
+
+          <span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+  </div>
+</div>
+
+
+
+
+
   </div>
 </div>
 

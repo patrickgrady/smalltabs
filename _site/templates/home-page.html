@@ -29,14 +29,100 @@
     </div>
   </div>
 </header>
-<article class="feature feature__image">
+
+<div class="finder">
+  <div class="finder__image">
+    <div class="container">
+      <div class="l-1up">
+        <h1 class="finder__heading">Thrifty & Thirsty in Chicago?</h1>
+        <h2 class="finder__subheading">Use Small Tabs to find a great night out without spending a fortune!</h2>
+
+        <form>
+          <p>
+          <label class="finder__label element-invisible" for="select">Browse</label>
+          <select id="finder__dotw">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+          </select>
+
+          <label class="finder__label" for="select">specials in</label>
+          <select id="finder__neighborhood">
+            <option>any neighborhood</option>
+            <option>Albany Park</option>
+            <option>Andersonville</option>
+            <option>Avondale</option>
+            <option>Bridgeport</option>
+            <option>Bucktown</option>
+            <option>Edgewater</option>
+            <option>Edison Park</option>
+            <option>Gold Coast</option>
+            <option>Humboldt Park</option>
+            <option>Irving Park</option>
+            <option>Jefferson Park</option>
+            <option>Lakeview</option>
+            <option>Lincoln Park</option>
+            <option>Lincoln Square</option>
+            <option>Logan Square</option>
+            <option>Loop</option>
+            <option>Mayfair</option>
+            <option>Millenium Park</option>
+            <option>Near North Side</option>
+            <option>Near South Side</option>
+            <option>Near West Side</option>
+            <option>Noble Square</option>
+            <option>North Center</option>
+            <option>Norwood Park</option>
+            <option>Old Town</option>
+            <option>Pilsen</option>
+            <option>Printers Row</option>
+            <option>River North</option>
+            <option>Rogers Park</option>
+            <option>Roscoe Village</option>
+            <option>South Loop</option>
+            <option>Streeterville</option>
+            <option>Ukrainian Village</option>
+            <option>University Village</option>
+            <option>Uptown</option>
+            <option>West Loop</option>
+            <option>West Rogers Park</option>
+            <option>Wicker Park</option>
+            <option>Wrigleyville</option> 
+          </select>
+
+          <label class="finder__label" for="select">at</label>
+          <select id="finder__type">
+            <option>any type of bar</option>
+            <option>Dive bar</option>
+            <option>Night Club</option>
+            <option>Sports Bar</option>
+            <option>Microbrewery</option>
+          </select>      
+
+          <button class="buttons" type="submit">Go</button>
+
+          </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<article class="feature l-stripe">
 
   <div class="container">
-    <div class="l-page">
+    <div class="l-2up--1">
+       <img class="feature__image" src="/smalltabs/assets/img/feature__image-2.jpg" />
+    </div>
+
+    <div class="l-2up--2">
       <p class="feature__dotw">Featured Tuesday Special:</p>
       <h1 class="feature__title"><a href="#">Finley Dunne's Tavern</a></h1>
       <p class="feature__address">3458 N Lincoln Ave, Lakeview</p>
-      <p class="feature__summary">Finley Dunne's Tavern was established in 1996 and remains one of the most popular neighbor bars in the Paulina Station area of Lakeview in Chicago. The Tavern serves a wide array of neighborhood guests and groups. It has become a destination spot for many who want to enjoy the great staff, large beer selection, and our Famous “Ryan Burger”.</p>
+
       <ul class="feature-list">
         <li class="feature-list__drink">$7 Domestic Pitchers, $3 Miller Lite Bottles, $4 Four Rebels Lion Bombs</li>
         <li class="feature-list__food">$10 8 Chicken Wings & 2 Miller Lite Bottles, $25 20 Chicken Wings & 5 Miller Lite Bottles</li>
@@ -48,252 +134,10 @@
 </article>
 
 <div class="container">
-  <div class="l-1up l-finder">
-    <form class="finder">
-  <h1 class="finder__heading">Find specials near or far:</h1>
+  <div class="l-1up l-stripe">
+    <h1>420 bars, 39 Neighborhoods:</h1>
 
-  <p>
-    <label class="finder__label" for="select">Browse</label>
-    <select id="finder__dotw">
-      <option>Monday</option>
-      <option>Tuesday</option>
-      <option>Wednesday</option>
-      <option>Thursday</option>
-      <option>Friday</option>
-      <option>Saturday</option>
-      <option>Sunday</option>
-    </select>
-
-    <label class="finder__label" for="select">specials in</label>
-    <select id="finder__neighborhood">
-      <option>any neighborhood</option>
-      <option>Albany Park</option>
-      <option>Andersonville</option>
-      <option>Avondale</option>
-      <option>Bridgeport</option>
-      <option>Bucktown</option>
-      <option>Edgewater</option>
-      <option>Edison Park</option>
-      <option>Gold Coast</option>
-      <option>Humboldt Park</option>
-      <option>Irving Park</option>
-      <option>Jefferson Park</option>
-      <option>Lakeview</option>
-      <option>Lincoln Park</option>
-      <option>Lincoln Square</option>
-      <option>Logan Square</option>
-      <option>Loop</option>
-      <option>Mayfair</option>
-      <option>Millenium Park</option>
-      <option>Near North Side</option>
-      <option>Near South Side</option>
-      <option>Near West Side</option>
-      <option>Noble Square</option>
-      <option>North Center</option>
-      <option>Norwood Park</option>
-      <option>Old Town</option>
-      <option>Pilsen</option>
-      <option>Printers Row</option>
-      <option>River North</option>
-      <option>Rogers Park</option>
-      <option>Roscoe Village</option>
-      <option>South Loop</option>
-      <option>Streeterville</option>
-      <option>Ukrainian Village</option>
-      <option>University Village</option>
-      <option>Uptown</option>
-      <option>West Loop</option>
-      <option>West Rogers Park</option>
-      <option>Wicker Park</option>
-      <option>Wrigleyville</option> 
-    </select>
-
-    <label class="finder__label" for="select">at</label>
-    <select id="finder__type">
-      <option>any type of bar</option>
-      <option>Dive bar</option>
-      <option>Night Club</option>
-      <option>Sports Bar</option>
-      <option>Microbrewery</option>
-    </select>      
-
-    <button class="buttons" type="submit">Go</button>
-
-  </p>
-</form>
-  </div>
-</div>
-<div class="finder-results">
-  <div class="container">
-    <div class="l-3up--1">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">Longman & Eagle</a></h1>
-  <p class="rollup-address">
-    2657 N Kedzie Ave,
-    <a href="#">Logan Square</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$7 Domestic Pitchers, $3 Miller Lite Bottles, $4 Four Rebels Lion Bombs</li>
-    <li class="rollup-list__food">$10 8 Chicken Wings & 2 Miller Lite Bottles, $25 20 Chicken Wings & 5 Miller Lite Bottles</li>
-    <li class="rollup-list__category"><a href="#">Sports Bar</a>, <a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>
-    <div class="l-3up--2">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">The Abbey Pub</a></h1>
-  <p class="rollup-address">
-    3420 W Grace St,
-    <a href="#">Irving Park</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$5 Jager Bombs, $4 Bloody Marys, $4 Jack Daniels Tennessee Honey, $3.50 Pabst Blue Ribbon Tallboys</li>
-    <li class="rollup-list__category"><a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>
-    <div class="l-3up--3">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">The Lion Head Pub</a></h1>
-  <p class="rollup-address">
-    2251 N Lincoln Ave,
-    <a href="#">Lincoln Park</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$3.25 Coors Light 20oz Drafts, $15 Coors Light Buckets, $5 Absolut Bloody Marys, $7.50 Antipasto Bloody Marys w/ Coors Light Chasers</li>
-    <li class="rollup-list__food">50¢ Wings, $3.50 Half Pound Cheeseburgers from 11am-4pm</li>
-    <li class="rollup-list__category"><a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div> 
-    <div class="l-3up--1">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">The Lion Head Pub</a></h1>
-  <p class="rollup-address">
-    2251 N Lincoln Ave,
-    <a href="#">Lincoln Park</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$3.25 Coors Light 20oz Drafts, $15 Coors Light Buckets, $5 Absolut Bloody Marys, $7.50 Antipasto Bloody Marys w/ Coors Light Chasers</li>
-    <li class="rollup-list__food">50¢ Wings, $3.50 Half Pound Cheeseburgers from 11am-4pm</li>
-    <li class="rollup-list__category"><a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>
-    <div class="l-3up--2">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">The Abbey Pub</a></h1>
-  <p class="rollup-address">
-    3420 W Grace St,
-    <a href="#">Irving Park</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$5 Jager Bombs, $4 Bloody Marys, $4 Jack Daniels Tennessee Honey, $3.50 Pabst Blue Ribbon Tallboys</li>
-    <li class="rollup-list__category"><a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>
-    <div class="l-3up--3">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">Longman & Eagle</a></h1>
-  <p class="rollup-address">
-    2657 N Kedzie Ave,
-    <a href="#">Logan Square</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$7 Domestic Pitchers, $3 Miller Lite Bottles, $4 Four Rebels Lion Bombs</li>
-    <li class="rollup-list__food">$10 8 Chicken Wings & 2 Miller Lite Bottles, $25 20 Chicken Wings & 5 Miller Lite Bottles</li>
-    <li class="rollup-list__category"><a href="#">Sports Bar</a>, <a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div> 
-    <div class="l-3up--1">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">Longman & Eagle</a></h1>
-  <p class="rollup-address">
-    2657 N Kedzie Ave,
-    <a href="#">Logan Square</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$7 Domestic Pitchers, $3 Miller Lite Bottles, $4 Four Rebels Lion Bombs</li>
-    <li class="rollup-list__food">$10 8 Chicken Wings & 2 Miller Lite Bottles, $25 20 Chicken Wings & 5 Miller Lite Bottles</li>
-    <li class="rollup-list__category"><a href="#">Sports Bar</a>, <a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>
-    <div class="l-3up--2">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">The Abbey Pub</a></h1>
-  <p class="rollup-address">
-    3420 W Grace St,
-    <a href="#">Irving Park</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$5 Jager Bombs, $4 Bloody Marys, $4 Jack Daniels Tennessee Honey, $3.50 Pabst Blue Ribbon Tallboys</li>
-    <li class="rollup-list__category"><a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>
-    <div class="l-3up--3">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">The Lion Head Pub</a></h1>
-  <p class="rollup-address">
-    2251 N Lincoln Ave,
-    <a href="#">Lincoln Park</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$3.25 Coors Light 20oz Drafts, $15 Coors Light Buckets, $5 Absolut Bloody Marys, $7.50 Antipasto Bloody Marys w/ Coors Light Chasers</li>
-    <li class="rollup-list__food">50¢ Wings, $3.50 Half Pound Cheeseburgers from 11am-4pm</li>
-    <li class="rollup-list__category"><a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div> 
-    <div class="l-3up--1">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">The Abbey Pub</a></h1>
-  <p class="rollup-address">
-    3420 W Grace St,
-    <a href="#">Irving Park</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$5 Jager Bombs, $4 Bloody Marys, $4 Jack Daniels Tennessee Honey, $3.50 Pabst Blue Ribbon Tallboys</li>
-    <li class="rollup-list__category"><a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>
-    <div class="l-3up--2">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">Longman & Eagle</a></h1>
-  <p class="rollup-address">
-    2657 N Kedzie Ave,
-    <a href="#">Logan Square</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$7 Domestic Pitchers, $3 Miller Lite Bottles, $4 Four Rebels Lion Bombs</li>
-    <li class="rollup-list__food">$10 8 Chicken Wings & 2 Miller Lite Bottles, $25 20 Chicken Wings & 5 Miller Lite Bottles</li>
-    <li class="rollup-list__category"><a href="#">Sports Bar</a>, <a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>
-    <div class="l-3up--3">
-      <article class="rollup">
-  <h1 class="rollup-title"><a href="#">The Abbey Pub</a></h1>
-  <p class="rollup-address">
-    3420 W Grace St,
-    <a href="#">Irving Park</a>
-  </p>
-  <ul class="rollup-list">
-    <li class="rollup-list__drink">$5 Jager Bombs, $4 Bloody Marys, $4 Jack Daniels Tennessee Honey, $3.50 Pabst Blue Ribbon Tallboys</li>
-    <li class="rollup-list__category"><a href="#">Night Club</a></li>      
-  </ul>
-</article>
-    </div>              
-  </div>
-</div>
-
-<div class="container">
-  <div class="l-1up">
-    <ul class="neighborhoods-list">
+<ul class="neighborhoods-list">
   <li><a href="#">Albany Park</a></li>
   <li><a href="#">Andersonville</a></li>
   <li><a href="#">Avondale</a></li>
@@ -337,6 +181,8 @@
   </div>
 </div>
 
+
+<!--
 <div class="container">
   <div class="l-3up--1">
     <aside class="block">
@@ -432,16 +278,22 @@
 </aside>
   </div>
 </div>
+-->
 
 <footer class="site-footer">
   <div class="container">
     <div class="l-1up">
-      <img class="site-footer__logo" src="/smalltabs/assets/img/smalltabs-logo__footer.svg" />
-      <p class="site-footer__copyright">Copyright © 2009-2014 Matt Mesker. All rights reserved. By using this website, you agree to our <a href="#">terms of use</a>.</p>
-      <ul class="site-footer__social-links">
-        <li class="site-footer__social-links-twitter"><a href="#">Follow us on Twitter</a></li>
-        <li class="site-footer__social-links-facebook"><a href="#">Friend us on Facebook</a></li>
-      </ul>
+      <div class="site-footer__logo">
+        <img src="/smalltabs/assets/img/smalltabs-logo__footer.svg" />
+      </div>
+      <div class="site-footer__copyright">
+        <p>Copyright © 2009-2014 Matt Mesker. All rights reserved. By using this website, you agree to our <a href="#">terms of use</a>.</p>
+        <ul class="site-footer__social-links">
+          <li class="site-footer__social-links-twitter"><a href="#">Follow us on Twitter</a></li>
+          <li class="site-footer__social-links-facebook"><a href="#">Friend us on Facebook</a></li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </footer>

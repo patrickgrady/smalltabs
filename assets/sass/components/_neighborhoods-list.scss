@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Style rules for the neighborhoods list.
+ */
+
+.neighborhoods-list {
+  list-style-type: none;
+  padding-left: 0;  
+  -moz-column-count: 2;
+  -moz-column-gap: $zen-gutter-width;
+  -webkit-column-count: 2;
+  -webkit-column-gap: $zen-gutter-width;
+  @include breakpoint($bp1) {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+  }
+  @include breakpoint($bp2) {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+  }
+}

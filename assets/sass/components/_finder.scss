@@ -4,12 +4,33 @@
  */
 
 .l-finder {
-  margin-top: rhythm(4);
-  margin-bottom: rhythm(2);
+  //margin-top: rhythm(4);
+  //margin-bottom: rhythm(2);
 }
 
+.finder__map {
+  @include box-sizing(border-box);
+  border: 1em solid $off-white;
+}
+.finder { 
+
+  color: $white;
+}
+.finder__image {
+  padding-top: 144px;
+  padding-bottom: 144px;  
+  background: url('../img/feature__image.jpg');
+  background-size: cover; 
+}
 .finder__heading {
-  @include trailer(.5);
+  color: $pilsner;
+  text-transform: uppercase;
+  @include trailer(.25);
+}
+.finder__subheading {
+  color: $white-60;
+  @include leader(0);
+  @include trailer(1.5);
 }
 .finder__label {
   display: inline;
