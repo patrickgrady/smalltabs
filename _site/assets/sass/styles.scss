@@ -12,14 +12,14 @@
 @import "../webfonts/ss-standard.css";
 @import "../webfonts/ss-social.css";
 
-/* Import Syntax styles */
-@import "{{ site.baseurl }}/assets/css/syntax.css";
-
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
 
 /* HTML element (SMACSS base) rules */
 @import "normalize";
+
+/* Import Syntax styles */
+@import "syntax";
 
 /* Layout rules */
 @import "layouts/l-zen-grids-base";

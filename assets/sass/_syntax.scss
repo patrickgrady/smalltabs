@@ -1,4 +1,16 @@
-.highlight  { background: #ffffff; font-size: 75%; padding: .75em 1em; color: #222222; }
+/**
+ * @file
+ * Style rules for the Pygments syntax highlights.
+ */
+
+.highlight  { 
+  background: $off-white;
+  border: 1px solid darken($off-white, 5%);
+  border-radius: $radius; 
+  font-size: .675em;
+  padding: .75em 1em; 
+  color: #222222; 
+}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */

@@ -184,24 +184,21 @@ blockquote {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  font-family: $champion-lightweight;
-  font-weight: 400;
+  @extend %champion-lightweight;
   color: $stout;
   @include adjust-font-size-to($xxl-heading, 4);
   @include leader(0, $xxl-heading);
   @include trailer(2, $xxl-heading);
 }
 h2 {
-  font-family: $champion-lightweight;
-  font-weight: 400;
+  @extend %sentinel-display;
   color: $stout;  
   @include adjust-font-size-to($md-heading, 2.5);
   @include leader(2, $md-heading);
   @include trailer(1, $md-heading);
 }
 h3 {
-  font-family: $champion-lightweight;
-  font-weight: 400;
+  @extend %sentinel;
   color: $stout;  
   text-transform: uppercase;
   letter-spacing: .0125em;
@@ -210,6 +207,7 @@ h3 {
   @include trailer(1, $text);
 }
 h4 {
+  @extend %sentinel;
   font-weight: 700;     
   @include adjust-font-size-to($text, 2);
   color: $stout;  
@@ -218,6 +216,7 @@ h4 {
 }
 h5,
 h6 {
+  @extend %sentinel;
   @extend %allcaps;
   font-weight: 700;     
   @include adjust-font-size-to($crumb, 1.5);

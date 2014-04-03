@@ -22,23 +22,26 @@
 
 
 /* ==========================================================================
-   Typography grooming extends
+   Typography extends
    ========================================================================== */
 
-/* Sans-serif type */
-//%sans { font-family: $franklin-gothic; }
+/* Use Champion Lightweight */
+%champion-lightweight { font-family: $champion-lightweight; font-weight: 400; }
 
-/* Display type */
-%display-type { font-family: $sentinel; }
+/* Use Sentinel Display */
+%sentinel-display { font-family: $sentinel; }
+
+/* Use Sentinel ScreenSmart */
+%sentinel { font-family: $sentinel-ssm; }
 
 /* Tight tracking */
 %track-in { letter-spacing: -0.03em; }
 
 /* Open tracking */
-%track-out { letter-spacing: 0.1em; }
+%track-out { letter-spacing: 0.05em; }
 
 /* Style all caps with a slightly open tracking. */
-%allcaps { @extend %track-out; text-transform: uppercase; }
+%allcaps { text-transform: uppercase; }
 
 
 /* ==========================================================================
