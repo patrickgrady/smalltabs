@@ -5,7 +5,8 @@
 
 .site-header { 
   display: block;
-  background-color: $stout;
+  background: url('../img/header__background.jpg');
+  background-size: cover; 
   padding: rhythm(2) 0;  
 }
 
@@ -27,23 +28,24 @@
 }
 
 .site-navigation a:link,
-.site-navigation a:visited {  
+.site-navigation a:visited {
+  color: $white-30;  
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding-right: rhythm(1.5);
+  padding-left: rhythm(1.5, $text);
   border-bottom: 0;
 }
 .site-navigation a:hover,
 .site-navigation a:active {
+  color: $white;  
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   text-decoration: none;  
-  color: $white;
 }
 
 

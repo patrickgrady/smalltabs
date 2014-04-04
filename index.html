@@ -2,39 +2,41 @@
 layout: default
 title: Home
 ---
-<div class="l-styleguide-page">
-  <h1>Styleguide</h1>
+<div class="container">
+  <div class="l-1up styleguide-body">
+    <h1>Styleguide</h1>
 
-  <section>
-    <hr />
-    <h2>Elements</h2>
-    <p>Elements are the foundation of the system. Simply using typography and color, well designed Elements can begin to express the site's personality.</p>
-    <ul class="posts">
-      {% for post in site.categories.elements %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
+    <section>
+      <hr />
+      <h2>Elements</h2>
+      <p>Elements are the foundation of the system. Simply using typography and color, well designed Elements can begin to express the site's personality.</p>
+      <ul class="posts">
+        {% for post in site.categories.elements %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
 
-  <section>
-    <hr />
-    <h2>Components</h2>
-    <p>Elements are combined and sometimes modified to create components. Components are designed to serve specific functional roles within the system.</p>
-    <ul class="posts">
-      {% for post in site.categories.component order:descending %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
+    <section>
+      <hr />
+      <h2>Components</h2>
+      <p>Elements are combined and sometimes modified to create components. Components are designed to serve specific functional roles within the system.</p>
+      <ul class="posts">
+        {% for post in site.categories.components order:descending %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
 
-  <section>
-    <hr />
-    <h2>Templates</h2>
-    <p>Templates are the specific page structures. They are as you might imagine, populated with... Components.<p>
-    <ul class="posts">
-      {% for post in site.categories.templates %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
+    <section>
+      <hr />
+      <h2>Templates</h2>
+      <p>Templates are the specific page structures. They are as you might imagine, populated with... Components.<p>
+      <ul class="posts">
+        {% for post in site.categories.templates %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
 </div>

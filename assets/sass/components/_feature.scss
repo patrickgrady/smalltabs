@@ -3,10 +3,27 @@
  * Style rules for the bar feature.
  */
 
-.feature { }
-.feature__image {
-  @include box-sizing(border-box);
-  border: 1em solid $off-white;
+.feature {
+  //background: url('../img/feature__background.jpg');
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //color: $white;
+  background: $off-white;
+
+  /*
+  a:link,
+  a:visited { 
+    color: $white;
+    text-decoration: none;  
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    @include trans($timing, $easing);
+    color: $hover-color;
+    text-decoration: none;  
+  }
+  */
 }
 .feature__dotw {
   @extend %allcaps;
@@ -17,22 +34,34 @@
   @include trailer(1, $crumb);  
 }
 .feature__title { 
-  @include trailer(.25); 
+  @extend %sentinel-display;
+  font-weight: 700;
+  @include adjust-font-size-to($lg-heading, 1.5);
+  @include leader(0, $lg-heading);
+  @include trailer(.5, $lg-heading);
+  padding-top: rhythm(1.5, $lg-heading);
+  padding-right: rhythm(1, $lg-heading);  
+  margin-bottom: rhythm(1.5, $lg-heading);
+  padding-left: rhythm(1.5, $lg-heading);
 }
 .feature__address {
   color: $gray-medium;
 }
 .feature__summary {}
 .feature-list {
+  color: $black;
   list-style-type: none;
   padding-left: 0;
+  @include adjust-font-size-to($label, 1.5);
 
   li {
-    border-top: 1px solid $off-white;
-    padding-top: rhythm(1);
-    margin-bottom: rhythm(1);
-    padding-left: rhythm(2);
-  }  
+    border-top: 1px solid $white-60;
+    padding-top: rhythm(1.25, $label);
+    padding-right: rhythm(1, $label);
+    padding-bottom: rhythm(1.25, $label);
+    padding-left: rhythm(4, $label);    
+    margin-bottom: 0;
+  }
 }
 
 
@@ -40,7 +69,6 @@
 .feature-list__drink,
 .feature-list__food,
 .feature-list__category {
-  color: $black;
   a:link,
   a:visited { 
     color: $gray-medium;
@@ -50,7 +78,7 @@
   a:focus,
   a:active {
     @include trans($timing, $easing);
-    color: $link-color;
+    color: $hover-color;
     text-decoration: underline;  
   }
 }
@@ -60,7 +88,7 @@
 .feature-list__drink,
 .feature-list__food,
 .feature-list__category {
-  background-position: left top rhythm(1.25);
+  background-position: left rhythm(1.5, $label) top rhythm(1.5, $label);
   background-repeat: no-repeat;
   background-size: 1em;
 }

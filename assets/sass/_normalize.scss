@@ -143,7 +143,7 @@ a:hover,
 a:focus,
 a:active {
   @include trans($timing, $easing);
-  color: $pilsner;
+  color: $hover-color;
   text-decoration: none;  
 }
 
@@ -186,12 +186,19 @@ blockquote {
 h1 {
   @extend %champion-lightweight;
   color: $stout;
-  @include adjust-font-size-to($xxl-heading, 4);
-  @include leader(0, $xxl-heading);
-  @include trailer(2, $xxl-heading);
+  @include adjust-font-size-to($md-heading, 2);
+  @include leader(0, $md-heading);
+  @include trailer(1, $md-heading);
+
+  @include breakpoint($bp1) {
+    @include adjust-font-size-to($xxl-heading, 4);
+    @include leader(0, $xxl-heading);
+    @include trailer(1, $xxl-heading);
+  }
 }
 h2 {
   @extend %sentinel-display;
+  @extend %track-in;
   color: $stout;  
   @include adjust-font-size-to($md-heading, 2.5);
   @include leader(2, $md-heading);
@@ -390,7 +397,6 @@ figure {
   }
 }
 figcaption {
-  @extend %sans;
   @include adjust-font-size-to($label, 1); 
   color: $gray-medium;
 }

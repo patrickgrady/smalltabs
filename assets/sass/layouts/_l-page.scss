@@ -17,6 +17,10 @@
   @include breakpoint($bp3) { max-width: 760px; }
 }
 
+.page {
+  background: $off-white;
+  padding: $zen-gutter-width 0;
+}
 
 .l-stripe {
   padding-top: 3em;

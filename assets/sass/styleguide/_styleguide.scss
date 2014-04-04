@@ -3,32 +3,35 @@
  * Style rules for the look and feel of the styleguide.
  */
 
+$styleguide-slug: 2em;
+
 .styleguide-header {
-  margin-top: rhythm(2);
-  margin-bottom: rhythm(8);
+  margin-top: $styleguide-slug;
+  margin-bottom: $styleguide-slug * 2;
+}
+.styleguide-header__image {
+  height: 32px;
+}
+.styleguide-breadcrumbs {
+  @extend %allcaps;  
+  @include adjust-font-size-to($label, 1);
+}
+.styleguide-body {
+  p { max-width: 760px; }
+  margin-bottom: $styleguide-slug;  
 }
 .styleguide-footer {
   background: $white;
   @include adjust-font-size-to($crumb, 1);
-  padding-top: rhythm(4);
+  margin-top: $styleguide-slug * 2;
+  margin-bottom: $styleguide-slug * 2;  
 }
-.l-styleguide-page {
-  @extend %l-page;
-  margin-bottom: rhythm(4);
-}
-.styleguide-example-wrapper { 
+
+.styleguide-example { 
   background: $off-white;
+  padding: $styleguide-slug * 2 0;
+  margin-bottom: $styleguide-slug;
 }
-.styleguide-example-wrapper:before {
-  content: "Example:";
-  @include adjust-font-size-to($crumb);
-  font-family: $helvetica;
-  font-weight: 700;
-  color: #aaa;
-  position: relative;
-  top: 1em;
-  left: 2em;
-}
-.styleguide-example {
-  padding: 6em 0;
+.styleguide-markup {
+  margin-bottom: $styleguide-slug;
 }

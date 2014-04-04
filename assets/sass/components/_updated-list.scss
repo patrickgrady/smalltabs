@@ -5,7 +5,7 @@
 
 .block { 
   display: block;
-  margin-bottom: $zen-gutter-width * 2; 
+  margin-bottom: $zen-gutter-width; 
 }
 .block-title {
   text-transform: uppercase;
@@ -18,7 +18,7 @@
   list-style-type: none;
   padding-left: 0;
   li {
-    border-top: 1px solid $off-white;
+    border-top: 1px solid $mushroom;
     margin-bottom: rhythm(1);
   }
 }

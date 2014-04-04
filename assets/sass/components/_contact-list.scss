@@ -3,7 +3,16 @@
  * Style rules for the contact block.
  */
 
-.contact-list
+.contact-list {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    @include adjust-font-size-to($label, 1.5);
+    padding-top: rhythm(1, $label);   
+    border-top: 1px solid $mushroom;
+    margin-bottom: rhythm(1, $label);
+  }
+}
 .contact-list__item--phone:before,
 .contact-list__item--website:before,
 .contact-list__item--facebook:before,

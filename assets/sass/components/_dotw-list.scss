@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Style rules for the dotw rollup.
+ */
+
+.dotw-title {
+  @extend %sentinel-display;
+  font-weight: 700;
+  @include adjust-font-size-to($sm-heading, 1.5);
+  @include leader(0, $sm-heading);
+  @include trailer(.5, $sm-heading);
+  padding-top: rhythm(1.5, $sm-heading);
+  padding-right: rhythm(1, $sm-heading);  
+  margin-bottom: rhythm(1.5, $sm-heading);
+  padding-left: rhythm(1.5, $sm-heading);
+}
+.dotw-list { @extend %rollup-list; }
+.dotw-list__drink { background: url('../img/icon__drink.svg'); }
+.dotw-list__food { background-image: url('../img/icon__food.svg'); }
+.dotw-list__drink,
+.dotw-list__food {
+  background-position: left rhythm(1.5, $label) top rhythm(1.5, $label);
+  background-repeat: no-repeat;
+  background-size: 1em;
+}

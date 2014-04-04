@@ -33,7 +33,7 @@ $zen-auto-include-item-base: true;
   margin-left: auto;
   margin-right: auto;
   min-width: 260px; /* enforces a min-width in FF. */
-  width: 90%;
+  width: 95%;
   @include breakpoint($bp3) { max-width: 1200px; }
 }
 

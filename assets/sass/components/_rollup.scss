@@ -10,26 +10,22 @@
 
 .rollup {
   background-color: $white;
-  //padding: rhythm(1.5) rhythm(1.5) rhythm(.5) rhythm(1.5);
   margin-bottom: $zen-gutter-width / 2;  
-  //min-height: 320px; 
 }
 .rollup-title {
-  @extend %sentinel;
+  @extend %sentinel-display;
   font-weight: 700;
   @include adjust-font-size-to($sm-heading, 1.5);
   @include leader(0, $sm-heading);
   @include trailer(.5, $sm-heading);
   padding-top: rhythm(1.5, $sm-heading);
   padding-left: rhythm(4, $sm-heading);
-  //padding-left: rhythm(4, $sm-heading);
   padding-right: rhythm(1, $sm-heading);  
 }
 .rollup-address {
+  @extend %allcaps;  
   @include adjust-font-size-to($crumb, 1);
   @include trailer(0, $crumb);
-  @extend %allcaps;  
-  //color: $gray-medium;
   padding-left: rhythm(4, $crumb); 
   padding-right: rhythm(1, $crumb);    
   padding-bottom: rhythm(1.5, $crumb);  
@@ -43,14 +39,16 @@
   a:focus,
   a:active {
     @include trans($timing, $easing);
-    color: $link-color;
+    color: $hover-color;
     text-decoration: underline;  
   }
 }
+%rollup-list,
 .rollup-list {
   color: $black;
   list-style-type: none;
   padding-left: 0;
+  @include adjust-font-size-to($label, 1.5);
 
   li {
     border-top: 1px solid $off-white;
@@ -61,11 +59,10 @@
     margin-bottom: 0;
   }
 }
+
 .rollup-list__drink,
 .rollup-list__food,
 .rollup-list__category {
-  @include adjust-font-size-to($label, 1.5);
-
   a:link,
   a:visited { 
     color: $gray-medium;
@@ -75,7 +72,7 @@
   a:focus,
   a:active {
     @include trans($timing, $easing);
-    color: $link-color;
+    color: $hover-color;
     text-decoration: underline;  
   }
 }

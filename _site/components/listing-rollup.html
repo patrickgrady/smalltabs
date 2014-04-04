@@ -12,25 +12,28 @@
   </head>
     <body>
 
-      <header class="styleguide-header">
-        <div class="l-styleguide-page">
+      <header class="container styleguide-header">
+        <div class="l-1up">
           <h1 class="element-invisible">Small Tabs Styleguide</h1>
           <a href="/smalltabs/index.html">
-            <img src="/smalltabs/assets/img/smalltabs-logo__header.svg" />
+            <img class="styleguide-header__image" src="/smalltabs/assets/img/smalltabs-logo__header.svg" />
           </a>
         </div>
       </header>
 
-      <div class="l-styleguide-page">
-  <small><a href="/smalltabs/index.html">Small Tabs Styleguide</a> › component:</small>
-  <hr />  
-  <h1>Listing Rollup</h1>
-  <p>Listing rollups are a results microformat that display a bar's daily special. Their role is to quickly communicate the bar's location, specials and bar type in an easily scannable manner.</p>
-</div>
+      <section class="container">
+  <div class="l-1up styleguide-body">
+    <nav class="styleguide-breadcrumbs"><a href="/smalltabs/">styleguide</a> › components</nav>
+    <hr />  
+    <h1>Listing Rollup</h1>
+    <p>Listing rollups are a results microformat that display a bar's daily special. Their role is to quickly communicate the bar's location, specials and bar type in an easily scannable manner.</p>
+  </div>
+</section>
 
-<div class="styleguide-example-wrapper">
-  <div class="styleguide-example">
-    <article class="rollup">
+<section class="styleguide-example">
+  <div class="container">
+    <div class="l-page">
+      <article class="rollup">
   <h1 class="rollup-title"><a href="#">Longman & Eagle</a></h1>
   <p class="rollup-address">
     2657 N Kedzie Ave,
@@ -42,12 +45,12 @@
     <li class="rollup-list__category"><a href="#">Sports Bar</a>, <a href="#">Night Club</a></li>      
   </ul>
 </article>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="container">
+<section class="styleguide-markup container">
   <div class="l-1up">
-    <h4>Markup</h4>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">&quot;rollup&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;rollup-title&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;</span>Longman <span class="err">&amp;</span> Eagle<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
   <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;rollup-address&quot;</span><span class="nt">&gt;</span>
@@ -62,11 +65,10 @@
 <span class="nt">&lt;/article&gt;</span>
 </code></pre></div>
   </div>
-</div>
+</section>
 
-
-      <footer class="styleguide-footer">
-        <div class="l-styleguide-page">
+      <footer class="container styleguide-footer">
+        <div class="l-1up">
           <p>Small Tabs is a product created by <a href="http://twitter.com/mattmesker">@mattmesker</a>, <a href="http://twitter.com/patrickgrady">@patrickgrady</a> and <a href="http://twitter.com/meskermichael">@meskermichael</a>.</p>
         </div>
       </footer>

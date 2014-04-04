@@ -19,3 +19,14 @@
     -webkit-column-count: 4;
   }
 }
+.neighborhoods-list__heading {
+  color: $pilsner;
+  @extend %allcaps;
+  @include trailer(.5, $xxl-heading);
+}
+.neighborhoods-list__subheading {
+  @include adjust-font-size-to($lg-heading, 2.5);  
+  @include leader(0);
+  @include trailer(2, $lg-heading);
+  color: $stout;
+}

@@ -1,21 +1,26 @@
 ---
 layout: templates
 title: "Home Page"
-categories: templates
+categories: Templates
 ---
+<header class="site-header">
+  {% include site-header.html %}
+  <div class="container">
+    <div class="l-1up l-finder--homepage">
+      {% include finder--homepage.html %}
+    </div>
+  </div>
+</header>
 
-{% include site-header.html %}
+<div class="container l-stripe">
+  <div class="l-1up">
+    {% include feature.html %}
+  </div>
 
-{% include finder.html %}
-
-{% include feature.html %}
-
-<div class="container">
-  <div class="l-1up l-stripe">
+  <div class="l-1up">
     {% include neighborhoods-list.html %}
   </div>
 </div>
-
 
 <!--
 <div class="container">

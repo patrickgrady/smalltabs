@@ -1,54 +1,54 @@
 ---
 layout: templates
 title: "Find a Bar Page"
-categories: templates
+categories: Templates
 ---
 
-{% include site-header.html %}
+<header class="site-header">
+  {% include site-header.html %}
+  <div class="container">
+    <div class="l-1up">
+      {% include finder.html %}
+    </div>
+  </div>
+</header>
 
-<div class="container">
-  <div class="l-1up l-stripe">
-    {% include finder_ui.html %}
-    <img class="finder__map" src="{{ site.baseurl }}/assets/img/map-fpo.png"/>
+
+
   </div>
 </div>
 
+<div class="page">
   <div class="container">
-    <div class="l-3up--1">
+    <div class="l-33-66--1">
+      {% include added-list.html %}
+    </div>
+    <div class="l-33-66--2">
       {% include rollup--a.html %}
-    </div>
-    <div class="l-3up--2">
+
       {% include rollup--b.html %}
-    </div>
-    <div class="l-3up--3">
+  
       {% include rollup--c.html %}
-    </div> 
-    <div class="l-3up--1">
+     
       {% include rollup--c.html %}
-    </div>
-    <div class="l-3up--2">
+
       {% include rollup--b.html %}
-    </div>
-    <div class="l-3up--3">
+  
       {% include rollup--a.html %}
-    </div> 
-    <div class="l-3up--1">
+
       {% include rollup--a.html %}
-    </div>
-    <div class="l-3up--2">
+
       {% include rollup--b.html %}
-    </div>
-    <div class="l-3up--3">
+  
       {% include rollup--c.html %}
-    </div> 
-    <div class="l-3up--1">
+     
       {% include rollup--b.html %}
-    </div>
-    <div class="l-3up--2">
+
       {% include rollup--a.html %}
-    </div>
-    <div class="l-3up--3">
+  
       {% include rollup--b.html %}
+
     </div>              
   </div>
+</div>
 {% include site-footer.html %}
