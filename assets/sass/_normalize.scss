@@ -205,7 +205,8 @@ h2 {
   @include trailer(1, $md-heading);
 }
 h3 {
-  @extend %sentinel;
+  @extend %champion-lightweight;
+  @extend %allcaps;
   color: $stout;  
   text-transform: uppercase;
   letter-spacing: .0125em;
@@ -214,7 +215,7 @@ h3 {
   @include trailer(1, $text);
 }
 h4 {
-  @extend %sentinel;
+  @extend %track-in;
   font-weight: 700;     
   @include adjust-font-size-to($text, 2);
   color: $stout;  
@@ -223,7 +224,6 @@ h4 {
 }
 h5,
 h6 {
-  @extend %sentinel;
   @extend %allcaps;
   font-weight: 700;     
   @include adjust-font-size-to($crumb, 1.5);

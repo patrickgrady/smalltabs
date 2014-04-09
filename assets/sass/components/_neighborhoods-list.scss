@@ -30,3 +30,11 @@
   @include trailer(2, $lg-heading);
   color: $stout;
 }
+.neighborhoods-list__item {
+  @extend %sentinel;
+  &:after {
+    content: '›';
+    margin-left: rhythm(.25, $text);
+    color: $stout;
+  }
+}

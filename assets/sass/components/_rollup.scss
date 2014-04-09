@@ -23,6 +23,7 @@
   padding-right: rhythm(1, $sm-heading);  
 }
 .rollup-address {
+  @extend %helvetica;
   @extend %allcaps;  
   @include adjust-font-size-to($crumb, 1);
   @include trailer(0, $crumb);
@@ -85,4 +86,17 @@
   background-position: left rhythm(1.5, $label) top rhythm(1.5, $label);
   background-repeat: no-repeat;
   background-size: 1em;
+}
+
+.rollup-pin {
+  float: left;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  z-index: 999;  
+  background: url('../img/icon__pin.svg');
+  left: rhythm(1.125, $label); 
+  top: rhythm(1.25, $label);
+  background-repeat: no-repeat;
+  background-size: 1em;  
 }

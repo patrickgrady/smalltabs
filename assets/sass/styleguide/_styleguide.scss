@@ -10,14 +10,15 @@ $styleguide-slug: 2em;
   margin-bottom: $styleguide-slug * 2;
 }
 .styleguide-header__image {
-  height: 32px;
+  height: 36px;
 }
 .styleguide-breadcrumbs {
+  font-family: $helvetica;
   @extend %allcaps;  
   @include adjust-font-size-to($label, 1);
 }
 .styleguide-body {
-  p { max-width: 760px; }
+  h1,h2,h3,h4,h5,h6,p,ul,ol { max-width: 760px; }
   margin-bottom: $styleguide-slug;  
 }
 .styleguide-footer {
@@ -27,6 +28,14 @@ $styleguide-slug: 2em;
   margin-bottom: $styleguide-slug * 2;  
 }
 
+.styleguide-swatch {
+  padding: 1em;
+  &.reverse {
+    color: $white;
+  }
+  margin-bottom: $zen-gutter-width;
+}
+
 .styleguide-example { 
   background: $off-white;
   padding: $styleguide-slug * 2 0;
@@ -34,4 +43,24 @@ $styleguide-slug: 2em;
 }
 .styleguide-markup {
   margin-bottom: $styleguide-slug;
+}
+.stout-80 { 
+  background: tint( $stout, 20% );
+  padding: 1em;
+}
+.stout-60 { 
+  background: $stout-60;
+  padding: 1em;
+}
+.stout-40 { 
+  background: tint( $stout, 60% );
+  padding: 1em;
+}
+.stout-20 { 
+  background: tint( $stout, 80% );
+  padding: 1em;
+}
+.stout-5 { 
+  background: tint( $stout, 95% );
+  padding: 1em;
 }

@@ -96,23 +96,32 @@ $gotham-ssm: 'Gotham SSm A', 'Gotham SSm B', $helvetica;
 $monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $helvetica; // The font family set on the html element.
+$base-font-family: $sentinel-ssm; // The font family set on the html element.
 $font-monospace:   $monospace;
 
 // Sass color variables, etc.
-$black: #444444;
-$gray-medium: #9d9d9d;
-$gray-light: #d5d5d5;
-$off-white: #f5f4ee;
+
+$wingsauce: #e35125;
+$ipa: $wingsauce;
+$pilsner: #fdbb11;
+$stout: #1e140c;
+$stout-80: tint( $stout, 20% );
+$stout-60: tint( $stout, 40% );
+$stout-40: tint( $stout, 60% );
+$stout-20: tint( $stout, 80% );
+$stout-05: tint( $stout, 95% );
+
+$link-color: $ipa;
+$hover-color: $stout;
+
+$black: $stout-80;
+$gray-medium: $stout-60;
+$gray-light: $stout-40;
+$mushroom: $stout-20;
+$off-white: $stout-05;
 $white: #ffffff;
 $white-60: rgba($white, .60);
 $white-30: rgba($white, .30);
-$ipa: #e35125;
-$stout: #1e140c;
-$pilsner: #fdbb11;
-$mushroom: #d7d3be;
-$link-color: $ipa;
-$hover-color: $stout;
 
 // Breakpoint Variables
 $bp1: 600px;
