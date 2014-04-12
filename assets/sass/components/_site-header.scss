@@ -5,8 +5,9 @@
 
 .site-header { 
   display: block;
-  background: url('../img/header__background.jpg');
-  background-size: cover; 
+  //background: url('../img/header__background.jpg');
+  //background-size: cover; 
+  background: $weber;
   padding: rhythm(2) 0;  
 }
 
@@ -18,34 +19,52 @@
 }
 
 .site-navigation {
+  @extend %champion-heavyweight;
   float: right;
   height: 40px;
-  font-family: $champion-lightweight;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: .0125em;
-  @include adjust-font-size-to($text, 0);
+  @include adjust-font-size-to($crumb, 0);
 }
-
 .site-navigation a:link,
-.site-navigation a:visited {
-  color: $white-30;  
+.site-navigation a:visited { 
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding-left: rhythm(1.5, $text);
+  margin-left: rhythm(1.5, $crumb);
   border-bottom: 0;
 }
 .site-navigation a:hover,
 .site-navigation a:active {
-  color: $white;  
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   text-decoration: none;  
 }
+.site-navigation__link {
+  text-transform: uppercase;
+  letter-spacing: .125em;
+  &:link,
+  &:visited {
+    color: $weber-75;
+  }  
+  &:hover,
+  &:active { 
+    color: $white;
+  }  
+}
+.site-navigation__button {
+  background: $pilsner;
+  padding: 1em 1.5em;
+  border-radius: $radius;
 
-
+  &:link,
+  &:visited {
+    color: $weber;
+  }
+  &:hover,
+  &:active {
+    background: $white;
+  }
+}

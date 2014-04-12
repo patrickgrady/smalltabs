@@ -1,16 +1,15 @@
 ---
 layout: templates
 title: "Home Page"
+description: Something about this template is it cool because this and because of that. Only put this type of content on this template you dumb denny.
 categories: Templates
 ---
-<header class="site-header">
-  {% include site-header.html %}
-  <div class="container">
-    <div class="l-1up l-finder--homepage">
-      {% include finder--homepage.html %}
-    </div>
-  </div>
-</header>
+
+{% include site-header.html %}
+
+<div class="l-finder-homepage">
+  {% include finder--homepage.html %}
+</div>
 
 <div class="container l-stripe">
   <div class="l-1up">

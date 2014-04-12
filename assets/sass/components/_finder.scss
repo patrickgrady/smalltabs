@@ -7,12 +7,13 @@
   //margin-top: rhythm(4);
   //margin-bottom: rhythm(2);
 }
-.l-finder--homepage {
-  margin-top: 3em;
-  margin-bottom: 3em;
+.l-finder-homepage {
+  background: $pilsner;
+  padding-top: 3em;
+  padding-bottom: 3em;
   @include breakpoint($bp1) {
-    margin-top: 9em;
-    margin-bottom: 9em;
+    padding-top: 9em;
+    padding-bottom: 9em;
   }
 }
 
@@ -31,22 +32,26 @@
   background-size: cover; 
 }
 .finder__heading {
+  @extend %allcaps; 
   color: $white;
-  @extend %allcaps;  
-  @include trailer(.5, $xxl-heading);
+  @include adjust-font-size-to($lg-heading, 2);
+  @include trailer(1, $lg-heading);
 }
 .finder__subheading {
-  @include adjust-font-size-to($lg-heading, 2.5);  
+  @include adjust-font-size-to($xl-heading, 2.5);  
   @include leader(0);
-  @include trailer(2, $lg-heading);
-  color: $pilsner;
-  padding-bottom: rhythm(2, $lg-heading);
+  @include trailer(2, $xl-heading);
+  color: $weber;
+  padding-bottom: rhythm(2, $xl-heading);
   border-bottom: 2px solid $white-30;
 }
 .finder__label {
+  @extend %champion-heavyweight;
+  text-transform: uppercase;
+  letter-spacing: .125em;
   @include adjust-font-size-to($crumb, 1);
   @include trailer(1, $crumb); 
-  color: $mushroom; 
+  color: $weber; 
   font-weight: 700;
 }
 .finder__column {
@@ -80,6 +85,9 @@ select, button {
 }
 
 select {
+  font-family: $helvetica;
+  font-weight: 300;
+  color: $weber-75;
   @include box-sizing(border-box);
   width: 100%;
   -webkit-appearance: none;

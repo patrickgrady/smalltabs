@@ -184,7 +184,7 @@ blockquote {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  @extend %champion-lightweight;
+  @extend %champion-heavyweight;
   color: $stout;
   @include adjust-font-size-to($md-heading, 2);
   @include leader(0, $md-heading);

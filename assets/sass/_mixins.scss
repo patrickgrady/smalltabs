@@ -25,6 +25,9 @@
    Typography extends
    ========================================================================== */
 
+/* Use Champion Heavyweight */
+%champion-heavyweight { font-family: $champion-heavyweight; font-weight: 400; }
+
 /* Use Champion Lightweight */
 %champion-lightweight { font-family: $champion-lightweight; font-weight: 400; }
 

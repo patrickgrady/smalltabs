@@ -22,40 +22,47 @@
 /* ==========================================================================
    Typography extends
    ========================================================================== */
-/* Use Champion Lightweight */
+/* Use Champion Heavyweight */
 /* line 29, ../sass/_mixins.scss */
-h1, h3 {
+h1, .site-navigation, .finder__label {
+  font-family: "Champion Heavywt A", "Champion Heavywt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-weight: 400;
+}
+
+/* Use Champion Lightweight */
+/* line 32, ../sass/_mixins.scss */
+h3 {
   font-family: "Champion Lightwt A", "Champion Lightwt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 400;
 }
 
 /* Use Sentinel Display */
-/* line 32, ../sass/_mixins.scss */
+/* line 35, ../sass/_mixins.scss */
 h2, .rollup-title, .feature__title, .dotw-title {
   font-family: "Sentinel A", "Sentinel B", Georgia, "Times New Roman", "DejaVu Serif", serif;
 }
 
 /* Use Sentinel ScreenSmart */
-/* line 35, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .neighborhoods-list__item {
   font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, "Times New Roman", "DejaVu Serif", serif;
 }
 
 /* Use Helvetica Neue font stack */
-/* line 38, ../sass/_mixins.scss */
+/* line 41, ../sass/_mixins.scss */
 .rollup-address {
   font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
 
 /* Tight tracking */
-/* line 41, ../sass/_mixins.scss */
+/* line 44, ../sass/_mixins.scss */
 h2, h4 {
   letter-spacing: -0.03em;
 }
 
 /* Open tracking */
 /* Style all caps with a slightly open tracking. */
-/* line 47, ../sass/_mixins.scss */
+/* line 50, ../sass/_mixins.scss */
 h3, h5,
 h6, .rollup-address, .finder__heading, .feature__dotw, .neighborhoods-list__heading, .styleguide-breadcrumbs {
   text-transform: uppercase;
@@ -76,7 +83,7 @@ h6, .rollup-address, .finder__heading, .feature__dotw, .neighborhoods-list__head
  * Element-invisible as defined by snook.ca
  * @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 79, ../sass/_mixins.scss */
+/* line 82, ../sass/_mixins.scss */
 .element-invisible,
 .element-focusable {
   position: absolute !important;
@@ -87,7 +94,7 @@ h6, .rollup-address, .finder__heading, .feature__dotw, .neighborhoods-list__head
 }
 
 /* Turns off the element-invisible effect. */
-/* line 91, ../sass/_mixins.scss */
+/* line 94, ../sass/_mixins.scss */
 .element-focusable:active, .element-focusable:focus {
   position: static !important;
   clip: auto;
@@ -2188,12 +2195,11 @@ table {
 /* line 6, ../sass/components/_site-header.scss */
 .site-header {
   display: block;
-  background: url("../img/header__background.jpg");
-  background-size: cover;
+  background: #2e3e36;
   padding: 1.5em 0;
 }
 
-/* line 13, ../sass/components/_site-header.scss */
+/* line 14, ../sass/components/_site-header.scss */
 .site-logo {
   float: left;
   vertical-align: middle;
@@ -2201,40 +2207,63 @@ table {
   height: 40px;
 }
 
-/* line 20, ../sass/components/_site-header.scss */
+/* line 21, ../sass/components/_site-header.scss */
 .site-navigation {
   float: right;
   height: 40px;
-  font-family: "Champion Lightwt A", "Champion Lightwt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: .0125em;
-  font-size: 1em;
+  font-size: 0.6em;
   line-height: 0em;
 }
 
-/* line 31, ../sass/components/_site-header.scss */
+/* line 28, ../sass/components/_site-header.scss */
 .site-navigation a:link,
 .site-navigation a:visited {
-  color: rgba(255, 255, 255, 0.3);
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding-left: 1.125em;
+  margin-left: 1.875em;
   border-bottom: 0;
 }
 
-/* line 42, ../sass/components/_site-header.scss */
+/* line 38, ../sass/components/_site-header.scss */
 .site-navigation a:hover,
 .site-navigation a:active {
-  color: white;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   text-decoration: none;
+}
+
+/* line 45, ../sass/components/_site-header.scss */
+.site-navigation__link {
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
+/* line 49, ../sass/components/_site-header.scss */
+.site-navigation__link:link, .site-navigation__link:visited {
+  color: #8aa29e;
+}
+/* line 53, ../sass/components/_site-header.scss */
+.site-navigation__link:hover, .site-navigation__link:active {
+  color: white;
+}
+
+/* line 57, ../sass/components/_site-header.scss */
+.site-navigation__button {
+  background: #fdbb11;
+  padding: 1em 1.5em;
+  border-radius: 3px;
+}
+/* line 63, ../sass/components/_site-header.scss */
+.site-navigation__button:link, .site-navigation__button:visited {
+  color: #2e3e36;
+}
+/* line 67, ../sass/components/_site-header.scss */
+.site-navigation__button:hover, .site-navigation__button:active {
+  background: white;
 }
 
 /**
@@ -2436,31 +2465,32 @@ table {
  * Style rules for the specials finder.
  */
 /* line 10, ../sass/components/_finder.scss */
-.l-finder--homepage {
-  margin-top: 3em;
-  margin-bottom: 3em;
+.l-finder-homepage {
+  background: #fdbb11;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 @media (min-width: 600px) {
   /* line 10, ../sass/components/_finder.scss */
-  .l-finder--homepage {
-    margin-top: 9em;
-    margin-bottom: 9em;
+  .l-finder-homepage {
+    padding-top: 9em;
+    padding-bottom: 9em;
   }
 }
 
-/* line 20, ../sass/components/_finder.scss */
+/* line 21, ../sass/components/_finder.scss */
 .finder__map,
 .finder__map img {
   margin: 0;
   padding: 0;
 }
 
-/* line 24, ../sass/components/_finder.scss */
+/* line 25, ../sass/components/_finder.scss */
 .finder {
   color: white;
 }
 
-/* line 27, ../sass/components/_finder.scss */
+/* line 28, ../sass/components/_finder.scss */
 .finder__image {
   padding-top: 12em;
   padding-bottom: 12em;
@@ -2468,33 +2498,37 @@ table {
   background-size: cover;
 }
 
-/* line 33, ../sass/components/_finder.scss */
+/* line 34, ../sass/components/_finder.scss */
 .finder__heading {
   color: white;
-  margin-bottom: 0.12295em;
+  font-size: 1.95em;
+  line-height: 0.76923em;
+  margin-bottom: 0.38462em;
 }
 
-/* line 38, ../sass/components/_finder.scss */
+/* line 40, ../sass/components/_finder.scss */
 .finder__subheading {
-  font-size: 1.95em;
-  line-height: 0.96154em;
+  font-size: 2.44em;
+  line-height: 0.76844em;
   margin-top: 0em;
-  margin-bottom: 0.76923em;
-  color: #fdbb11;
-  padding-bottom: 0.76923em;
+  margin-bottom: 0.61475em;
+  color: #2e3e36;
+  padding-bottom: 0.61475em;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-/* line 46, ../sass/components/_finder.scss */
+/* line 48, ../sass/components/_finder.scss */
 .finder__label {
+  text-transform: uppercase;
+  letter-spacing: .125em;
   font-size: 0.6em;
   line-height: 1.25em;
   margin-bottom: 1.25em;
-  color: #d2d0ce;
+  color: #2e3e36;
   font-weight: 700;
 }
 
-/* line 52, ../sass/components/_finder.scss */
+/* line 57, ../sass/components/_finder.scss */
 .finder__column {
   width: 100%;
   position: relative;
@@ -2502,7 +2536,7 @@ table {
   margin-bottom: 1em;
 }
 @media (min-width: 600px) {
-  /* line 52, ../sass/components/_finder.scss */
+  /* line 57, ../sass/components/_finder.scss */
   .finder__column {
     float: left;
     width: 28%;
@@ -2510,34 +2544,37 @@ table {
   }
 }
 
-/* line 63, ../sass/components/_finder.scss */
+/* line 68, ../sass/components/_finder.scss */
 .finder__column--button {
   width: 100%;
   position: relative;
   height: 3.5em;
 }
 @media (min-width: 600px) {
-  /* line 63, ../sass/components/_finder.scss */
+  /* line 68, ../sass/components/_finder.scss */
   .finder__column--button {
     float: left;
     width: 10%;
   }
 }
 
-/* line 73, ../sass/components/_finder.scss */
+/* line 78, ../sass/components/_finder.scss */
 .finder__select,
 .finder__button {
   position: absolute;
   bottom: 0;
 }
 
-/* line 78, ../sass/components/_finder.scss */
+/* line 83, ../sass/components/_finder.scss */
 select, button {
   font-weight: 400;
 }
 
-/* line 82, ../sass/components/_finder.scss */
+/* line 87, ../sass/components/_finder.scss */
 select {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-weight: 300;
+  color: #8aa29e;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2557,13 +2594,13 @@ select {
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
-/* line 98, ../sass/components/_finder.scss */
+/* line 106, ../sass/components/_finder.scss */
 select:hover, select:focus, select:active {
   outline: 0;
   border: 1px solid #e35125;
 }
 
-/* line 104, ../sass/components/_finder.scss */
+/* line 112, ../sass/components/_finder.scss */
 button {
   width: 100%;
   background: #e35125;
@@ -2579,14 +2616,14 @@ button {
   transition: all 0.1s ease-out;
 }
 
-/* line 115, ../sass/components/_finder.scss */
+/* line 123, ../sass/components/_finder.scss */
 button:hover {
   background: #fdbb11;
   color: white;
   border: 1px solid #fdbb11;
 }
 
-/* line 120, ../sass/components/_finder.scss */
+/* line 128, ../sass/components/_finder.scss */
 button:focus {
   outline-style: dotted;
   outline-color: #4b433c;
@@ -2955,42 +2992,47 @@ button:focus {
 }
 
 /* line 39, ../sass/styleguide/_styleguide.scss */
+.white-box {
+  box-shadow: inset 0px 0px 1px #666;
+}
+
+/* line 43, ../sass/styleguide/_styleguide.scss */
 .styleguide-example {
   background: #f3f3f2;
   padding: 4em 0;
   margin-bottom: 2em;
 }
 
-/* line 44, ../sass/styleguide/_styleguide.scss */
+/* line 48, ../sass/styleguide/_styleguide.scss */
 .styleguide-markup {
   margin-bottom: 2em;
 }
 
-/* line 47, ../sass/styleguide/_styleguide.scss */
+/* line 51, ../sass/styleguide/_styleguide.scss */
 .stout-80 {
   background: #4b433c;
   padding: 1em;
 }
 
-/* line 51, ../sass/styleguide/_styleguide.scss */
+/* line 55, ../sass/styleguide/_styleguide.scss */
 .stout-60 {
   background: #78726d;
   padding: 1em;
 }
 
-/* line 55, ../sass/styleguide/_styleguide.scss */
+/* line 59, ../sass/styleguide/_styleguide.scss */
 .stout-40 {
   background: #a5a19d;
   padding: 1em;
 }
 
-/* line 59, ../sass/styleguide/_styleguide.scss */
+/* line 63, ../sass/styleguide/_styleguide.scss */
 .stout-20 {
   background: #d2d0ce;
   padding: 1em;
 }
 
-/* line 63, ../sass/styleguide/_styleguide.scss */
+/* line 67, ../sass/styleguide/_styleguide.scss */
 .stout-5 {
   background: #f3f3f2;
   padding: 1em;

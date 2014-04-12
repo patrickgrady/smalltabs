@@ -36,6 +36,10 @@ $styleguide-slug: 2em;
   margin-bottom: $zen-gutter-width;
 }
 
+.white-box {
+  box-shadow: inset 0px 0px 1px #666;
+}
+
 .styleguide-example { 
   background: $off-white;
   padding: $styleguide-slug * 2 0;
