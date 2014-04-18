@@ -97,7 +97,7 @@ html {
   font-family: $base-font-family; /* 1 */
   font-weight: 300;
   font-size: 100% * ($base-font-size / 16px); /* 3 */
-  color: $black;
+  color: $weber;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-font-smoothing: antialiased; /* 4 */
@@ -184,8 +184,8 @@ blockquote {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  @extend %champion-heavyweight;
-  color: $stout;
+  @extend %champion-lightweight;
+  color: $weber;
   @include adjust-font-size-to($md-heading, 2);
   @include leader(0, $md-heading);
   @include trailer(1, $md-heading);
@@ -197,28 +197,24 @@ h1 {
   }
 }
 h2 {
-  @extend %sentinel-display;
-  @extend %track-in;
-  color: $stout;  
+  @extend %champion-heavyweight;
+  color: $weber;  
   @include adjust-font-size-to($md-heading, 2.5);
   @include leader(2, $md-heading);
   @include trailer(1, $md-heading);
 }
 h3 {
-  @extend %champion-lightweight;
-  @extend %allcaps;
-  color: $stout;  
-  text-transform: uppercase;
-  letter-spacing: .0125em;
-  @include adjust-font-size-to($text, 2);
-  @include leader(2, $text);
-  @include trailer(1, $text);
+  @extend %sentinel-display;
+  color: $weber;  
+  @include adjust-font-size-to($sm-heading, 2);
+  @include leader(2, $sm-heading);
+  @include trailer(1, $sm-heading);
 }
 h4 {
   @extend %track-in;
   font-weight: 700;     
   @include adjust-font-size-to($text, 2);
-  color: $stout;  
+  color: $weber;  
   @include leader(2, $text);
   @include trailer(1, $text);
 }
@@ -226,10 +222,10 @@ h5,
 h6 {
   @extend %allcaps;
   font-weight: 700;     
-  @include adjust-font-size-to($crumb, 1.5);
-  color: $stout;  
-  @include leader(2, $crumb);
-  @include trailer(1, $crumb);
+  @include adjust-font-size-to($label, 1.5);
+  color: $weber;  
+  @include leader(2, $label);
+  @include trailer(1, $label);
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */

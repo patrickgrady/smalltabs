@@ -3,66 +3,53 @@ layout: post
 title: "Color Palette"
 description: The colors of Small Tabs are inspired by wooden bar stools, delightfully bright chicken wings and of course beer.
 categories: Elements
+color-1: "#000000"
+color-2: "#222222"
+color-3: "#444444"
+color-4: "#666666"
+color-5: "#888888"
+color-6: "#cccccc"
 ---
 
 <section class="container">
   <div class="l-2up--1">
-    <div class="styleguide-swatch reverse" style="background: #e35125">
+    <div class="styleguide-swatch reverse" style="background:{{ page.color-1 }}">
       <code>
-        Variable: $wingsauce <br />
-        Hex: #e35125
+        Variable: $variable <br />
+        Hex: {{ page.color-1 }}
       </code>
     </div>
-
-    <div class="styleguide-swatch reverse" style="background: #fdbb11">
+    <div class="styleguide-swatch reverse" style="background:{{ page.color-2 }}">
       <code>
-        Variable: $pilsner <br />
-        Hex: #fdbb11
-      </code>
-    </div>    
-
-    <div class="styleguide-swatch reverse" style="background: #1e140c">
-      <code>
-        Variable: $stout <br />
-        Hex: #1e140c
+        Variable: $variable <br />
+        Hex: {{ page.color-2 }}
       </code>
     </div>
-  
-    <div class="styleguide-swatch reverse" style="background: #46433c">
+    <div class="styleguide-swatch reverse" style="background:{{ page.color-3 }}">
       <code>
-        Variable: $stout-80 <br />
-        Hex: #46433c
+        Variable: $variable <br />
+        Hex: {{ page.color-3 }}
       </code>
-    </div>  
+    </div>
   </div>
-
-  <div class="l-2up--2">  
-    <div class="styleguide-swatch reverse" style="background: #78726d">
+  <div class="l-2up--2">
+    <div class="styleguide-swatch reverse" style="background:{{ page.color-4 }}">
       <code>
-        Variable: $stout-60 <br />
-        Hex: #78726d
-      </code>
-    </div>  
-
-    <div class="styleguide-swatch" style="background: #a5a19d">
-      <code>
-        Variable: $stout-40 <br />
-        Hex: #a5a19d
+        Variable: $variable <br />
+        Hex: {{ page.color-4 }}
       </code>
     </div> 
-
-    <div class="styleguide-swatch" style="background: #d2d0ce">
+    <div class="styleguide-swatch reverse" style="background:{{ page.color-5 }}">
       <code>
-        Variable: $stout-20 <br />
-        Hex: #d2d0ce
+        Variable: $variable <br />
+        Hex: {{ page.color-5 }}
       </code>
-    </div>  
-
-    <div class="styleguide-swatch white-box" style="background: #f3f3f2">
+    </div> 
+    <div class="styleguide-swatch" style="background:{{ page.color-6 }}">
       <code>
-        Variable: $stout-05 <br />
-        Hex: #f3f3f2
+        Variable: $variable <br />
+        Hex: {{ page.color-6 }}
       </code>
-    </div>
-  </div>  
+    </div> 
+  </div> 
 </section>

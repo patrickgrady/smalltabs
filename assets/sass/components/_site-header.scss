@@ -5,8 +5,6 @@
 
 .site-header { 
   display: block;
-  //background: url('../img/header__background.jpg');
-  //background-size: cover; 
   background: $weber;
   padding: rhythm(2) 0;  
 }
@@ -55,13 +53,13 @@
   }  
 }
 .site-navigation__button {
-  background: $pilsner;
+  background: rgba($weber-50, 0.125);
   padding: 1em 1.5em;
   border-radius: $radius;
 
   &:link,
   &:visited {
-    color: $weber;
+    color: $weber-75;
   }
   &:hover,
   &:active {

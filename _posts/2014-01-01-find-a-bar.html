@@ -5,50 +5,35 @@ description: Something about this template is it cool because this and because o
 categories: Templates
 ---
 
-<header class="site-header">
-  {% include site-header.html %}
+{% include site-header.html %}
+
+<nav class="l-finder">
   <div class="container">
     <div class="l-1up">
       {% include finder.html %}
     </div>
   </div>
-</header>
+</nav>
 
-
-
-  </div>
-</div>
+<figure class="finder__map">
+  <img src="{{ site.baseurl }}/assets/img/map-fpo.png" />
+</figure>
 
 <div class="page">
   <div class="container">
-    <div class="l-33-66--1">
-      {% include added-list.html %}
-    </div>
-    <div class="l-33-66--2">
+    <div class="l-66-33--1">
       {% include rollup--a.html %}
-
       {% include rollup--b.html %}
-  
       {% include rollup--c.html %}
-     
       {% include rollup--c.html %}
-
       {% include rollup--b.html %}
-  
       {% include rollup--a.html %}
-
       {% include rollup--a.html %}
-
       {% include rollup--b.html %}
-  
       {% include rollup--c.html %}
-     
       {% include rollup--b.html %}
-
       {% include rollup--a.html %}
-  
       {% include rollup--b.html %}
-
     </div>              
   </div>
 </div>

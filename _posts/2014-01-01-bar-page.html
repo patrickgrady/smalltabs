@@ -15,19 +15,20 @@ categories: Templates
   </div>
 </div>
 
-<figure class="map">
-  <img src="{{ site.baseurl }}/assets/img/map-fpo.png" />
-</figure>
+<div class="page">
+  <figure class="finder__map">
+    <img src="{{ site.baseurl }}/assets/img/map-fpo.png" />
+  </figure>
 
-<div class="container">
-  <div class="l-66-33--1">
-    {% include dotw-list.html %}
-  </div>  
+  <div class="container">
+    <div class="l-66-33--1">
+      {% include dotw-list.html %}
+    </div>  
 
-  <div class="l-66-33--2">
-    {% include contact-list.html %}
-    {% include added-list.html %}
-  </div>      
+    <div class="l-66-33--2">
+      {% include contact-list.html %}
+      {% include added-list.html %}
+    </div>      
+  </div>
 </div>
-
 {% include site-footer.html %}
