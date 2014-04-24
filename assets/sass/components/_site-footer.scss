@@ -7,8 +7,8 @@
   @include zen-clear();
   @include adjust-font-size-to($crumb, 1.25);   
   text-align: left;
-  color: $gray-medium;
-  background: $off-white;
+  color: $stout-40;
+  background: $stout;
   padding: 4em 0 3em;
 }
 .site-footer__logo {

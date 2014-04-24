@@ -13,9 +13,10 @@ $styleguide-slug: 2em;
   height: 36px;
 }
 .styleguide-breadcrumbs {
-  font-family: $helvetica;
-  @extend %allcaps;  
+  //font-family: $helvetica;
+  //@extend %allcaps;  
   @include adjust-font-size-to($label, 1);
+  font-weight: 700;
 }
 .styleguide-body {
   h1,h2,h3,h4,h5,h6,p,ul,ol { max-width: 760px; }

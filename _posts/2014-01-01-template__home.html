@@ -7,7 +7,14 @@ categories: Templates
 
 {% include site-header.html %}
 
-{% include finder--homepage.html %}
+<div class="l-finder-homepage">
+  {% include finder--homepage.html %}
+  <div class="container">
+    <div class="l-1up">
+      {% include feature.html %}
+    </div>
+  </div>  
+</div>
 
 <div class="container l-stripe">
 

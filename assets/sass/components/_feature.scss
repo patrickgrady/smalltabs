@@ -3,59 +3,86 @@
  * Style rules for the bar feature.
  */
 
-.feature {
-  //background: url('../img/feature__background.jpg');
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //color: $white;
-  background: $off-white;
+.feature { 
+  display: table;
+  width: 100%;
+}
 
-  /*
+.feature.rollup { border: 0px; }
+.feature__image {
+  background: url('../img/feature__image.jpg');
+  background-size: cover;   
+  background-repeat: no-repeat;
+  padding-bottom: 60%;
+  width: 100%;
+  @include breakpoint($bp1) {
+    display: table-cell;  
+    padding-bottom: 0;
+    width: 40%;
+  }   
+}
+.feature__content {
+  width: 100%;
+  @include breakpoint($bp1) { 
+    display: table-cell;
+    width: 60%;
+  }   
+}
+
+.feature__dotw {
+  @extend %champion-heavyweight;
+  @extend %allcaps; 
+  color: $pilsner;
+  @include adjust-font-size-to($label, 1.5);       
+  @include leader(0, $label);
+  @include trailer(.25, $label);
+  padding-top: rhythm(1.5, $label);
+  padding-right: rhythm(1, $label);  
+  padding-left: rhythm(1.5, $label);    
+}
+.feature__title { 
+  @extend %sentinel-display;
+  @extend %track-in;
+  font-weight: 700;
+  @include adjust-font-size-to($lg-heading, 2.5);
+  @include leader(0, $lg-heading);
+  @include trailer(.5, $lg-heading);
+  padding-right: rhythm(1, $lg-heading);  
+  padding-left: rhythm(1.5, $lg-heading);
+  a { border-bottom: 0px; }
+}
+.feature__address {
+  @extend %helvetica;
+  @extend %allcaps;    
+  @include adjust-font-size-to($crumb, 1);
+  @include trailer(0, $crumb);
+  padding-left: rhythm(1.5, $crumb); 
+  padding-right: rhythm(1, $crumb);    
+  padding-bottom: rhythm(1.5, $crumb);
+
   a:link,
   a:visited { 
-    color: $white;
-    text-decoration: none;  
+    color: $stout-60;
+    text-decoration: underline;  
   }
   a:hover,
   a:focus,
   a:active {
     @include trans($timing, $easing);
     color: $hover-color;
-    text-decoration: none;  
-  }
-  */
+    text-decoration: underline;  
+  }     
 }
-.feature__dotw {
-  @extend %allcaps;
-  font-weight: 700;     
-  @include adjust-font-size-to($crumb, 1.5);
-  color: $pilsner;  
-  @include leader(0, $crumb);
-  @include trailer(1, $crumb);  
-}
-.feature__title { 
-  @extend %sentinel-display;
-  font-weight: 700;
-  @include adjust-font-size-to($lg-heading, 1.5);
-  @include leader(0, $lg-heading);
-  @include trailer(.5, $lg-heading);
-  padding-top: rhythm(1.5, $lg-heading);
-  padding-right: rhythm(1, $lg-heading);  
-  margin-bottom: rhythm(1.5, $lg-heading);
-  padding-left: rhythm(1.5, $lg-heading);
-}
-.feature__address {
-  color: $gray-medium;
-}
-.feature__summary {}
 .feature-list {
-  color: $black;
+  @extend %helvetica;
+  @include adjust-font-size-to($label, 1.75);  
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
   @include adjust-font-size-to($label, 1.5);
 
   li {
-    border-top: 1px solid $white-60;
+    border-top: 1px solid $off-white;
     padding-top: rhythm(1.25, $label);
     padding-right: rhythm(1, $label);
     padding-bottom: rhythm(1.25, $label);
@@ -64,14 +91,12 @@
   }
 }
 
-
-
 .feature-list__drink,
 .feature-list__food,
 .feature-list__category {
   a:link,
   a:visited { 
-    color: $gray-medium;
+    color: $stout-60;
     text-decoration: underline;  
   }
   a:hover,

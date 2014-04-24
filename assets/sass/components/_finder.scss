@@ -3,19 +3,30 @@
  * Style rules for the specials finder.
  */
 
-.l-finder {
-  padding-top: 1.5em;
-  padding-bottom: .75em;
-  background: $pilsner;  
-}
 .l-finder-homepage {
-  background: url('../img/header__background.jpg');
+  background: url('../img/hero-background.jpg');
   background-size: cover;   
-  padding-top: 3em;
-  padding-bottom: 3em;
-  @include breakpoint($bp1) {
-    padding-top: 9em;
-    padding-bottom: 9em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+.l-finder__column {
+  width: 100%;
+  position: relative;   
+  height: 2em;
+  margin-bottom: rhythm(1, $label);
+  @include breakpoint($bp2) {
+    float: left;
+    width: 27%;
+    margin-right: 2%; 
+  }
+}
+.l-finder__column--button {
+  width: 100%;
+  position: relative;  
+  height: 2em;
+  @include breakpoint($bp2) {  
+    float: left;
+    width: 13%;
   }
 }
 
@@ -26,98 +37,104 @@
 }
 .finder { 
   color: $white;
-}
-.finder__image {  
-  background: url('../img/header__background.jpg');
-  background-size: cover; 
-}
-.finder__heading {
-  @extend %allcaps; 
-  color: $white;
-  @include adjust-font-size-to($lg-heading, 3);
-  @include trailer(0, $lg-heading);
-}
-.finder__subheading {
-  @include adjust-font-size-to($xl-heading, 3);  
-  @include leader(0);
-  @include trailer(2, $xl-heading);
-  color: $weber;
-  padding-bottom: rhythm(2, $xl-heading);
-  border-bottom: 2px solid $white-30;
-}
-.finder__label {
-  @extend %champion-heavyweight;
-  text-transform: uppercase;
-  letter-spacing: .125em;
-  @include adjust-font-size-to($crumb, 1);
-  @include trailer(1, $crumb); 
-  color: $weber; 
-  font-weight: 700;
-}
-.finder__column {
-  width: 100%;
-  position: relative;   
-  height: 3.5em;
-  margin-bottom: 1em;
-  @include breakpoint($bp1) {
-    float: left;
-    width: 26%;
-    margin-right: 2%; 
-  }
-}
-.finder__column--button {
-  width: 100%;
-  position: relative;  
-  height: 3.5em;
-  @include breakpoint($bp1) {  
-    float: left;
-    width: 16%;
-  }
-}
-.finder__select,
-.finder__button {
-  position: absolute;
-  bottom: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-select, button {
-  font-weight: 400;
+.finder__heading {
+  @extend %champion-heavyweight;
+  @extend %allcaps; 
+  color: $pilsner;
+  @include adjust-font-size-to($lg-heading, 2.5);   
+  @include trailer(1, $lg-heading);
+  padding-bottom: rhythm(1.25, $lg-heading);
+  border-bottom: 1px solid $stout-80;
+  &.reverse-border { border-bottom: 1px solid $stout-10; }
+}
+.finder__subheading {
+  @extend %sentinel-display;
+  @extend %track-in;
+  @include adjust-font-size-to($lg-heading, 2.5);  
+  @include leader(0, $lg-heading);
+  @include trailer(2, $lg-heading);
+  color: $white;
+  &.reverse { color: $stout; }
+}
+
+
+.finder__column {
+  display: table;
+  width: 100%;  
+}
+.finder__label-wrapper {
+  display: table-cell;
+  text-align: center;
+  width: 60px;
+  @include breakpoint($bp2) {
+    width: 66px;
+  }  
+}
+.finder__select-wrapper {
+  display: table-cell;
+}
+
+.finder__label {
+  @extend %helvetica;
+  @include adjust-font-size-to($label, 2.5);
+  @extend %track-in;
+  color: $stout-60; 
+  font-weight: 700;
+  border-radius: $radius 0 0 $radius;
+   -moz-box-shadow:    inset 0 0 1px 0px $stout-40;
+   -webkit-box-shadow: inset 0 0 1px 0px $stout-40;
+   box-shadow:         inset 0 0 1px 0px $stout-40;
+  background-color: $white;
+  height: 2.5em;  
+  vertical-align: middle;
+}
+
+.finder__select {
+  width: 100%;
+}
+.finder__button {
+  //position: absolute;
+  //bottom: 0;
 }
 
 select {
-  @include adjust-font-size-to($label, 1.5);  
+  @include adjust-font-size-to($label, 2.5);  
   font-family: $helvetica;
-  font-weight: 300;
-  color: $weber-75;
+  color: $stout;
   @include box-sizing(border-box);
-  width: 100%;
   -webkit-appearance: none;
-  border-radius: $radius;
-  height: 2.5em;
-  text-indent: 1em;
-  background-color: $white;
+  border-radius: 0 $radius $radius 0;
+  background-color: $stout-10;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU4QTMzNkUyNDAwQzExRTNBOEY4OTE4N0E1NkQ4QjVCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU4QTMzNkUzNDAwQzExRTNBOEY4OTE4N0E1NkQ4QjVCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RThBMzM2RTA0MDBDMTFFM0E4Rjg5MTg3QTU2RDhCNUIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RThBMzM2RTE0MDBDMTFFM0E4Rjg5MTg3QTU2RDhCNUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4x37VGAAAAWklEQVR42mI0NjZeysDAEMWAHyxlAhKZQPwAj6L7QJwFUvgJiKOB+C8WRX+gcp+YoALHgLgZi0KQ2HEQgwlJsAWIjyLxjwBxK4yDrBBkdQwQf4DiGGTnAAQYAGJbEyV4nwHtAAAAAElFTkSuQmCC);
   background-repeat: no-repeat;
   background-position: top 50% right 10px;
-  border: 1px solid $weber-25;
+  border-color: $stout-20;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;  
+  height: 2.5em;
+  text-indent: .5em;
   outline: none;
   @include trans(.1s, ease-out);
   &:hover,
   &:focus,
   &:active {
     outline: 0;
-    border: 1px solid $weber-50;
   }
+
 }
 
 button {
   width: 100%;
-  @include adjust-font-size-to($label, 1.5);    
+  @include adjust-font-size-to($label, 0);    
   font-family: $champion-heavyweight;
   text-transform: uppercase;
   background: $link-color;
   border-radius: $radius;
-  border: 1px solid transparent;
+  border: 1px solid $link-color;
   color: $white;
   height: 2.5em;
   margin: 0;
@@ -125,9 +142,9 @@ button {
   @include trans(.1s, ease-out);
 }
 button:hover {
-  background: $pilsner;
+  background: $hover-color;
   color: $white;
-  border: 1px solid $pilsner;  
+  border: 1px solid $hover-color;  
 }
 button:focus {
   outline-style: dotted;

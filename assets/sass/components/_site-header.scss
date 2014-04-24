@@ -5,7 +5,7 @@
 
 .site-header { 
   display: block;
-  background: $weber;
+  background: $stout;
   padding: rhythm(2) 0;  
 }
 
@@ -21,6 +21,9 @@
   float: right;
   height: 40px;
   @include adjust-font-size-to($crumb, 0);
+  display: none;
+  @include breakpoint($bp2){ display: block; }
+
 }
 .site-navigation a:link,
 .site-navigation a:visited { 
@@ -45,24 +48,40 @@
   letter-spacing: .125em;
   &:link,
   &:visited {
-    color: $weber-75;
+    color: $white-30;
   }  
   &:hover,
   &:active { 
-    color: $white;
+    color: $link-color;
   }  
 }
 .site-navigation__button {
-  background: rgba($weber-50, 0.125);
+  background: rgba($stout-80, .5);
   padding: 1em 1.5em;
   border-radius: $radius;
 
   &:link,
   &:visited {
-    color: $weber-75;
+    color: $white-60;
   }
   &:hover,
   &:active {
-    background: $white;
+    background: $link-color;
+  }
+}
+.site-navigation--mobile {
+  font-size: 30px;
+  line-height: .25;
+  float: right;
+  height: 40px;
+  @include breakpoint($bp2){ display: none; }
+
+  a {
+    color: $link-color;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }

@@ -20,22 +20,27 @@
   }
 }
 .neighborhoods-list__heading {
+  @extend %champion-heavyweight;
+  @extend %allcaps; 
   color: $pilsner;
-  @extend %allcaps;
-  @include adjust-font-size-to($lg-heading, 3);
-  @include trailer(0, $lg-heading);  
+  @include adjust-font-size-to($lg-heading, 2);   
+  @include trailer(1, $lg-heading);
+  padding-bottom: rhythm(1.5, $lg-heading);
+  border-bottom: 1px solid $stout-10; 
 }
 .neighborhoods-list__subheading {
+  @extend %sentinel-display;
+  @extend %track-in;
   @include adjust-font-size-to($lg-heading, 2.5);  
-  @include leader(0);
+  @include leader(0, $lg-heading);
   @include trailer(2, $lg-heading);
   color: $stout;
 }
 .neighborhoods-list__item {
-  @extend %sentinel;
+  @extend %helvetica;
   &:after {
     content: '›';
     margin-left: rhythm(.25, $text);
-    color: $stout;
+    color: $pilsner;
   }
 }

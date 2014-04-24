@@ -9,33 +9,34 @@
 }
 
 .rollup {
+  //border: 1px solid $stout-10;
   background-color: $white;
-  border: 1px solid $off-white;
   margin-bottom: $zen-gutter-width / 2;  
 }
 .rollup-title {
   @extend %sentinel-display;
+  @extend %track-in;
   font-weight: 700;
-  @include adjust-font-size-to($sm-heading, 1.5);
-  @include leader(0, $sm-heading);
-  @include trailer(.5, $sm-heading);
-  padding-top: rhythm(1.5, $sm-heading);
-  padding-left: rhythm(4, $sm-heading);
-  padding-right: rhythm(1, $sm-heading);  
+  @include adjust-font-size-to($md-heading, 2);
+  @include leader(0, $md-heading);
+  @include trailer(.5, $md-heading);
+  padding-top: rhythm(1.25, $md-heading);
+  padding-left: rhythm(4, $md-heading);
+  padding-right: rhythm(1, $md-heading);
+  a { border-bottom: 0px; }    
 }
 .rollup-address {
   @extend %helvetica;
   @extend %allcaps;  
   @include adjust-font-size-to($crumb, 1);
   @include trailer(0, $crumb);
-  color: $gray-medium;
   padding-left: rhythm(4, $crumb); 
   padding-right: rhythm(1, $crumb);    
   padding-bottom: rhythm(1.5, $crumb);  
 
   a:link,
   a:visited { 
-    color: $gray-medium;
+    color: $stout-60;
     text-decoration: underline;  
   }
   a:hover,
@@ -48,14 +49,14 @@
 }
 %rollup-list,
 .rollup-list {
-  color: $black;
+  @extend %helvetica;
+  @include adjust-font-size-to($label, 1.75);
   list-style-type: none;
   padding-left: 0;
-  @include adjust-font-size-to($label, 1.5);
   margin-bottom: 0; // important
 
   li {
-    border-top: 1px solid $off-white;
+    border-top: 1px solid $stout-05;
     padding-top: rhythm(1.25, $label);
     padding-right: rhythm(1, $label);
     padding-bottom: rhythm(1.25, $label);
@@ -69,15 +70,14 @@
 .rollup-list__category {
   a:link,
   a:visited { 
-    color: $gray-medium;
-    text-decoration: underline;  
+    color: $stout-60;
+    text-decoration: underline; 
   }
   a:hover,
   a:focus,
   a:active {
-    @include trans($timing, $easing);
     color: $hover-color;
-    text-decoration: underline;  
+    text-decoration: underline;
   }
 }
 .rollup-list__drink { background-image: url('../img/icon__drink.svg'); }
@@ -98,7 +98,7 @@
   position: relative;
   z-index: 999;  
   background: url('../img/icon__pin.svg');
-  left: rhythm(1.125, $label); 
+  left: rhythm(1, $label); 
   top: rhythm(1.25, $label);
   background-repeat: no-repeat;
   background-size: 1em;  

@@ -25,102 +25,145 @@
         <a class="site-navigation__link" href="#">Promote Your Bar</a>
         <a class="site-navigation__button" href="#">Sign In</a>
       </nav>
+      <nav class="site-navigation--mobile">
+        <a class="site-navigation__link-icon"><i class="ss-icon ss-standard">rows</i></a>
+      </nav>  
     </div>
   </div>
 </header>
 
 <div class="l-finder-homepage">
+  <div class="container finder">
+  <div class="l-1up">
+    <h1 class="finder__heading">Thirsty + Thrifty</h1>
+    <h2 class="finder__subheading">Discover local bar specials with Small Tabs.</h2>
+
+    <form>
+      <div class="l-finder__column">
+        <div class="finder__column">
+
+          <div class="finder__label-wrapper">
+            <label class="finder__label" for="select">Day:</label>
+          </div>
+          
+          <div class="finder__select-wrapper">
+            <select class="finder__select" id="finder__dotw">
+              <option>Monday</option>
+              <option>Tuesday</option>
+              <option>Wednesday</option>
+              <option>Thursday</option>
+              <option>Friday</option>
+              <option>Saturday</option>
+              <option>Sunday</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="l-finder__column">
+        <div class="finder__column">
+          <div class="finder__label-wrapper">
+            <label class="finder__label" for="select">Near:</label>
+          </div>
+          <div class="finder__select-wrapper">
+            <select class="finder__select" id="finder__neighborhood">
+              <option>any neighborhood</option>
+              <option>Albany Park</option>
+              <option>Andersonville</option>
+              <option>Avondale</option>
+              <option>Bridgeport</option>
+              <option>Bucktown</option>
+              <option>Edgewater</option>
+              <option>Edison Park</option>
+              <option>Gold Coast</option>
+              <option>Humboldt Park</option>
+              <option>Irving Park</option>
+              <option>Jefferson Park</option>
+              <option>Lakeview</option>
+              <option>Lincoln Park</option>
+              <option>Lincoln Square</option>
+              <option>Logan Square</option>
+              <option>Loop</option>
+              <option>Mayfair</option>
+              <option>Millenium Park</option>
+              <option>Near North Side</option>
+              <option>Near South Side</option>
+              <option>Near West Side</option>
+              <option>Noble Square</option>
+              <option>North Center</option>
+              <option>Norwood Park</option>
+              <option>Old Town</option>
+              <option>Pilsen</option>
+              <option>Printers Row</option>
+              <option>River North</option>
+              <option>Rogers Park</option>
+              <option>Roscoe Village</option>
+              <option>South Loop</option>
+              <option>Streeterville</option>
+              <option>Ukrainian Village</option>
+              <option>University Village</option>
+              <option>Uptown</option>
+              <option>West Loop</option>
+              <option>West Rogers Park</option>
+              <option>Wicker Park</option>
+              <option>Wrigleyville</option> 
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-finder__column">
+        <div class="finder__column">      
+          <div class="finder__label-wrapper">
+            <label class="finder__label" for="select">Type:</label>
+          </div>
+          <div class="finder__select-wrapper">  
+            <select class="finder__select" id="finder__type">
+              <option>any type of bar</option>
+              <option>Dive bar</option>
+              <option>Night Club</option>
+              <option>Sports Bar</option>
+              <option>Microbrewery</option>
+            </select>
+          </div>
+        </div>      
+      </div>
+
+      <div class="l-finder__column--button">
+        <button class="finder__button" type="submit">Search </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
   <div class="container">
     <div class="l-1up">
-      <h1 class="finder__heading">Thirsty & Thrifty</h1>
-      <h2 class="finder__subheading">Discover local bar specials with Small Tabs.</h2>
-
-      <form>
-        <div class="finder__column">
-          <label class="finder__label" for="select">Day of the Week</label>
-          <select class="finder__select" id="finder__dotw">
-            <option>Monday</option>
-            <option>Tuesday</option>
-            <option>Wednesday</option>
-            <option>Thursday</option>
-            <option>Friday</option>
-            <option>Saturday</option>
-            <option>Sunday</option>
-          </select>
-        </div>
-
-        <div class="finder__column">
-        <label class="finder__label" for="select">Neighborhood</label>
-        <select class="finder__select" id="finder__neighborhood">
-          <option>any neighborhood</option>
-          <option>Albany Park</option>
-          <option>Andersonville</option>
-          <option>Avondale</option>
-          <option>Bridgeport</option>
-          <option>Bucktown</option>
-          <option>Edgewater</option>
-          <option>Edison Park</option>
-          <option>Gold Coast</option>
-          <option>Humboldt Park</option>
-          <option>Irving Park</option>
-          <option>Jefferson Park</option>
-          <option>Lakeview</option>
-          <option>Lincoln Park</option>
-          <option>Lincoln Square</option>
-          <option>Logan Square</option>
-          <option>Loop</option>
-          <option>Mayfair</option>
-          <option>Millenium Park</option>
-          <option>Near North Side</option>
-          <option>Near South Side</option>
-          <option>Near West Side</option>
-          <option>Noble Square</option>
-          <option>North Center</option>
-          <option>Norwood Park</option>
-          <option>Old Town</option>
-          <option>Pilsen</option>
-          <option>Printers Row</option>
-          <option>River North</option>
-          <option>Rogers Park</option>
-          <option>Roscoe Village</option>
-          <option>South Loop</option>
-          <option>Streeterville</option>
-          <option>Ukrainian Village</option>
-          <option>University Village</option>
-          <option>Uptown</option>
-          <option>West Loop</option>
-          <option>West Rogers Park</option>
-          <option>Wicker Park</option>
-          <option>Wrigleyville</option> 
-        </select>
-      </div>
-
-      <div class="finder__column">
-        <label class="finder__label" for="select">Bar Type</label>
-        <select class="finder__select" id="finder__type">
-          <option>any type of bar</option>
-          <option>Dive bar</option>
-          <option>Night Club</option>
-          <option>Sports Bar</option>
-          <option>Microbrewery</option>
-        </select>      
-      </div>
-
-      <div class="finder__column--button">
-        <button class="finder__button" type="submit">Search</button>
-      </div>
-
-      </form>
-    </div>
+      <article class="feature rollup">
+  <div class="feature__image">
   </div>
+
+  <div class="feature__content">
+    <p class="feature__dotw">Featured Special:</p>
+    <h1 class="feature__title"><a href="#">Finley Dunne’s Tavern</a></h1>
+    <p class="feature__address">3458 N Lincoln Ave., <a href="#">Lakeview</a></p>
+    <ul class="feature-list">
+      <li class="feature-list__drink">$4 Beer of the Month, $7 Lucifer Belgian Ale Tallboys</li>
+      <li class="feature-list__food">$5 Ryan Burgers</li>
+      <li class="feature-list__category"><a href="#">Sports Bar</a></li>      
+    </ul>
+  </div>  
+</article>
+    </div>
+  </div>  
 </div>
 
 <div class="container l-stripe">
 
   <div class="l-1up">
-    <h1 class="neighborhoods-list__heading">Explore & Save</h1>
+    <h1 class="neighborhoods-list__heading">Explore + Save</h1>
 <h2 class="neighborhoods-list__subheading">We’ve cataloged over 420 bars across Chicago.</h2>
-<hr />
 
 <ul class="neighborhoods-list">
   <li class="neighborhoods-list__item"><a href="#">Albany Park</a></li>

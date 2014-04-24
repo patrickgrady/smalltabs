@@ -96,34 +96,37 @@ $gotham-ssm: 'Gotham SSm A', 'Gotham SSm B', $helvetica;
 $monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $helvetica; // The font family set on the html element.
+$base-font-family: $sentinel-ssm; // The font family set on the html element.
 $font-monospace:   $monospace;
 
 // Sass color variables, etc.
 
-$wingsauce: #e35125;
+$wingsauce: #E96300;
 $ipa: $wingsauce;
-$pilsner: #f5ad00;
+
+$pilsner: #ffac00;
 $weber: #2E3E36;
 $weber-75: #8AA29E;
 $weber-50: #CAD2D1;
 $weber-25: #f5f8f7;
+$blue: #17b;
 
-$stout: #1e140c;
+$stout: #281E0E;
 $stout-80: tint( $stout, 20% );
 $stout-60: tint( $stout, 40% );
 $stout-40: tint( $stout, 60% );
 $stout-20: tint( $stout, 80% );
+$stout-10: tint( $stout, 90% );
 $stout-05: tint( $stout, 95% );
 
 $link-color: $wingsauce;
-$hover-color: darken($wingsauce, 10%);
+$hover-color: darken($link-color, 5%);
 
-$black: $weber;
+$black: $stout;
 $gray-medium: $weber-75;
 $gray-light: $weber-50;
 
-$off-white: $weber-25;
+$off-white: $stout-05;
 $white: #ffffff;
 $white-60: rgba($white, .60);
 $white-30: rgba($white, .30);

@@ -97,7 +97,7 @@ html {
   font-family: $base-font-family; /* 1 */
   font-weight: 300;
   font-size: 100% * ($base-font-size / 16px); /* 3 */
-  color: $weber;
+  color: $stout-80;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-font-smoothing: antialiased; /* 4 */
@@ -137,7 +137,8 @@ body {
 a:link,
 a:visited { 
   color: $link-color;
-  text-decoration: none;  
+  text-decoration: none;
+  //border-bottom: 1px solid $pilsner;  
 }
 a:hover,
 a:focus,
@@ -185,7 +186,7 @@ blockquote {
  */
 h1 {
   @extend %champion-lightweight;
-  color: $weber;
+  color: $stout;
   @include adjust-font-size-to($md-heading, 2);
   @include leader(0, $md-heading);
   @include trailer(1, $md-heading);
@@ -198,14 +199,14 @@ h1 {
 }
 h2 {
   @extend %champion-heavyweight;
-  color: $weber;  
+  color: $stout;  
   @include adjust-font-size-to($md-heading, 2.5);
   @include leader(2, $md-heading);
   @include trailer(1, $md-heading);
 }
 h3 {
   @extend %sentinel-display;
-  color: $weber;  
+  color: $stout;  
   @include adjust-font-size-to($sm-heading, 2);
   @include leader(2, $sm-heading);
   @include trailer(1, $sm-heading);
@@ -214,7 +215,7 @@ h4 {
   @extend %track-in;
   font-weight: 700;     
   @include adjust-font-size-to($text, 2);
-  color: $weber;  
+  color: $stout;  
   @include leader(2, $text);
   @include trailer(1, $text);
 }
@@ -223,7 +224,7 @@ h6 {
   @extend %allcaps;
   font-weight: 700;     
   @include adjust-font-size-to($label, 1.5);
-  color: $weber;  
+  color: $stout;  
   @include leader(2, $label);
   @include trailer(1, $label);
 }
