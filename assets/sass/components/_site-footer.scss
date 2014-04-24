@@ -23,18 +23,27 @@
   }
 }
 .site-footer__social-links {
-  float: right;
-  list-style: none;
-  padding-left: 0;
-  li {
-    @include adjust-font-size-to($xxl-heading, 1);    
-    margin-bottom: 0;
-    display: block;    
-    padding: 0 rhythm(0);
-    @include breakpoint($bp1) {
-      display: inline;
-      padding-right: rhythm(1);      
-    }
+  @include zen-clear();
+  font-size: 30px;
+  line-height: 1;
+  height: 40px;
+
+  @include breakpoint($bp1) {
+    @include zen-clear(none);  
+    float: right;
+    font-size: 30px;
+    line-height: .25;
   }
 }
-
+.site-footer__social-links a {  
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-right: rhythm(.5, $text);
+  @include breakpoint($bp1) {
+    padding-left: rhythm(.5, $text);
+    padding-right: rhythm(0, $text);
+  }
+}

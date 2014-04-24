@@ -24,7 +24,7 @@
    ========================================================================== */
 /* Use Champion Heavyweight */
 /* line 29, ../sass/_mixins.scss */
-h2, .site-navigation, .finder__heading, .feature__dotw, .neighborhoods-list__heading {
+h2, .site-navigation, .finder__heading, .feature__dotw, .neighborhoods-list__heading, .dotw-title {
   font-family: "Champion Heavywt A", "Champion Heavywt B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 400;
 }
@@ -38,7 +38,7 @@ h1 {
 
 /* Use Sentinel Display */
 /* line 35, ../sass/_mixins.scss */
-h3, .rollup-title, .finder__subheading, .feature__title, .neighborhoods-list__subheading, .dotw-title {
+h3, .rollup-title, .finder__subheading, .feature__title, .neighborhoods-list__subheading {
   font-family: "Sentinel A", "Sentinel B", Georgia, "Times New Roman", "DejaVu Serif", serif;
 }
 
@@ -46,7 +46,7 @@ h3, .rollup-title, .finder__subheading, .feature__title, .neighborhoods-list__su
 /* Use Helvetica Neue font stack */
 /* line 41, ../sass/_mixins.scss */
 .rollup-address, .dotw-list,
-.rollup-list, .finder__label, .feature__address, .feature-list, .neighborhoods-list__item {
+.rollup-list, .finder__label, .feature__address, .feature-list, .block-list__item-address, .neighborhoods-list__item {
   font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 }
 
@@ -1225,8 +1225,8 @@ table {
 
 /* line 25, ../sass/layouts/_l-page.scss */
 .l-stripe {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 /**
@@ -1337,7 +1337,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   /* line 6, ../sass/layouts/_l-33-66.scss */
   .l-33-66--1 {
     float: left;
@@ -1369,7 +1369,7 @@ table {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   /* line 14, ../sass/layouts/_l-33-66.scss */
   .l-33-66--2 {
     clear: none;
@@ -2323,23 +2323,35 @@ table {
 
 /* line 25, ../sass/components/_site-footer.scss */
 .site-footer__social-links {
-  float: right;
-  list-style: none;
-  padding-left: 0;
-}
-/* line 29, ../sass/components/_site-footer.scss */
-.site-footer__social-links li {
-  font-size: 3.05em;
-  line-height: 0.2459em;
-  margin-bottom: 0;
-  display: block;
-  padding: 0 0em;
+  clear: left;
+  font-size: 30px;
+  line-height: 1;
+  height: 40px;
 }
 @media (min-width: 600px) {
-  /* line 29, ../sass/components/_site-footer.scss */
-  .site-footer__social-links li {
-    display: inline;
-    padding-right: 0.75em;
+  /* line 25, ../sass/components/_site-footer.scss */
+  .site-footer__social-links {
+    clear: none;
+    float: right;
+    font-size: 30px;
+    line-height: .25;
+  }
+}
+
+/* line 38, ../sass/components/_site-footer.scss */
+.site-footer__social-links a {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-right: 0.375em;
+}
+@media (min-width: 600px) {
+  /* line 38, ../sass/components/_site-footer.scss */
+  .site-footer__social-links a {
+    padding-left: 0.375em;
+    padding-right: 0em;
   }
 }
 
@@ -2492,11 +2504,9 @@ table {
 .l-finder-homepage {
   background: url("../img/hero-background.jpg");
   background-size: cover;
-  padding-top: 2em;
-  padding-bottom: 1em;
 }
 
-/* line 12, ../sass/components/_finder.scss */
+/* line 10, ../sass/components/_finder.scss */
 .l-finder__column {
   width: 100%;
   position: relative;
@@ -2504,43 +2514,48 @@ table {
   margin-bottom: 0.9375em;
 }
 @media (min-width: 900px) {
-  /* line 12, ../sass/components/_finder.scss */
+  /* line 10, ../sass/components/_finder.scss */
   .l-finder__column {
     float: left;
     width: 27%;
     margin-right: 2%;
+    margin-bottom: 0;
   }
 }
 
-/* line 23, ../sass/components/_finder.scss */
+/* line 22, ../sass/components/_finder.scss */
 .l-finder__column--button {
   width: 100%;
   position: relative;
   height: 2em;
 }
 @media (min-width: 900px) {
-  /* line 23, ../sass/components/_finder.scss */
+  /* line 22, ../sass/components/_finder.scss */
   .l-finder__column--button {
     float: left;
     width: 13%;
   }
 }
 
-/* line 34, ../sass/components/_finder.scss */
-.finder__map,
-.finder__map img {
-  margin: 0;
+/* line 32, ../sass/components/_finder.scss */
+.finder__map {
   padding: 0;
+  border: 0.75em solid white;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
-
 /* line 38, ../sass/components/_finder.scss */
-.finder {
-  color: white;
-  padding-top: 1em;
-  padding-bottom: 1em;
+.finder__map img {
+  margin-bottom: 0;
 }
 
-/* line 44, ../sass/components/_finder.scss */
+/* line 43, ../sass/components/_finder.scss */
+.finder {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* line 48, ../sass/components/_finder.scss */
 .finder__heading {
   color: #ffac00;
   font-size: 1.25em;
@@ -2549,12 +2564,12 @@ table {
   padding-bottom: 0.75em;
   border-bottom: 1px solid #534b3e;
 }
-/* line 52, ../sass/components/_finder.scss */
+/* line 56, ../sass/components/_finder.scss */
 .finder__heading.reverse-border {
   border-bottom: 1px solid #e9e8e6;
 }
 @media (min-width: 600px) {
-  /* line 44, ../sass/components/_finder.scss */
+  /* line 48, ../sass/components/_finder.scss */
   .finder__heading {
     font-size: 1.95em;
     line-height: 0.96154em;
@@ -2563,7 +2578,7 @@ table {
   }
 }
 
-/* line 59, ../sass/components/_finder.scss */
+/* line 63, ../sass/components/_finder.scss */
 .finder__subheading {
   font-size: 1.95em;
   line-height: 0.96154em;
@@ -2571,36 +2586,36 @@ table {
   margin-bottom: 0.76923em;
   color: white;
 }
-/* line 66, ../sass/components/_finder.scss */
+/* line 70, ../sass/components/_finder.scss */
 .finder__subheading.reverse {
   color: #281e0e;
 }
 
-/* line 70, ../sass/components/_finder.scss */
+/* line 74, ../sass/components/_finder.scss */
 .finder__column {
   display: table;
   width: 100%;
 }
 
-/* line 74, ../sass/components/_finder.scss */
+/* line 78, ../sass/components/_finder.scss */
 .finder__label-wrapper {
   display: table-cell;
   text-align: center;
   width: 50px;
 }
 @media (min-width: 900px) {
-  /* line 74, ../sass/components/_finder.scss */
+  /* line 78, ../sass/components/_finder.scss */
   .finder__label-wrapper {
     width: 66px;
   }
 }
 
-/* line 82, ../sass/components/_finder.scss */
+/* line 86, ../sass/components/_finder.scss */
 .finder__select-wrapper {
   display: table-cell;
 }
 
-/* line 86, ../sass/components/_finder.scss */
+/* line 90, ../sass/components/_finder.scss */
 .finder__label {
   font-size: 0.8em;
   line-height: 2.34375em;
@@ -2615,12 +2630,12 @@ table {
   vertical-align: middle;
 }
 
-/* line 101, ../sass/components/_finder.scss */
+/* line 105, ../sass/components/_finder.scss */
 .finder__select {
   width: 100%;
 }
 
-/* line 109, ../sass/components/_finder.scss */
+/* line 113, ../sass/components/_finder.scss */
 select {
   font-size: 0.8em;
   line-height: 2.34375em;
@@ -2646,12 +2661,12 @@ select {
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
-/* line 129, ../sass/components/_finder.scss */
+/* line 133, ../sass/components/_finder.scss */
 select:hover, select:focus, select:active {
   outline: 0;
 }
 
-/* line 135, ../sass/components/_finder.scss */
+/* line 139, ../sass/components/_finder.scss */
 button {
   width: 100%;
   font-size: 0.8em;
@@ -2671,14 +2686,14 @@ button {
   transition: all 0.1s ease-out;
 }
 
-/* line 149, ../sass/components/_finder.scss */
+/* line 153, ../sass/components/_finder.scss */
 button:hover {
   background: #d05800;
   color: white;
   border: 1px solid #d05800;
 }
 
-/* line 154, ../sass/components/_finder.scss */
+/* line 158, ../sass/components/_finder.scss */
 button:focus {
   outline-style: dotted;
   outline-color: #281e0e;
@@ -2698,9 +2713,10 @@ button:focus {
 /* line 11, ../sass/components/_feature.scss */
 .feature.rollup {
   border: 0px;
+  margin-bottom: 48px;
 }
 
-/* line 12, ../sass/components/_feature.scss */
+/* line 15, ../sass/components/_feature.scss */
 .feature__image {
   background: url("../img/feature__image.jpg");
   background-size: cover;
@@ -2709,7 +2725,7 @@ button:focus {
   width: 100%;
 }
 @media (min-width: 600px) {
-  /* line 12, ../sass/components/_feature.scss */
+  /* line 15, ../sass/components/_feature.scss */
   .feature__image {
     display: table-cell;
     padding-bottom: 0;
@@ -2717,19 +2733,19 @@ button:focus {
   }
 }
 
-/* line 24, ../sass/components/_feature.scss */
+/* line 27, ../sass/components/_feature.scss */
 .feature__content {
   width: 100%;
 }
 @media (min-width: 600px) {
-  /* line 24, ../sass/components/_feature.scss */
+  /* line 27, ../sass/components/_feature.scss */
   .feature__content {
     display: table-cell;
     width: 60%;
   }
 }
 
-/* line 32, ../sass/components/_feature.scss */
+/* line 35, ../sass/components/_feature.scss */
 .feature__dotw {
   color: #ffac00;
   font-size: 0.8em;
@@ -2741,7 +2757,7 @@ button:focus {
   padding-left: 1.40625em;
 }
 
-/* line 43, ../sass/components/_feature.scss */
+/* line 46, ../sass/components/_feature.scss */
 .feature__title {
   font-weight: 700;
   font-size: 1.95em;
@@ -2751,12 +2767,12 @@ button:focus {
   padding-right: 0.38462em;
   padding-left: 0.57692em;
 }
-/* line 52, ../sass/components/_feature.scss */
+/* line 55, ../sass/components/_feature.scss */
 .feature__title a {
   border-bottom: 0px;
 }
 
-/* line 54, ../sass/components/_feature.scss */
+/* line 57, ../sass/components/_feature.scss */
 .feature__address {
   font-size: 0.6em;
   line-height: 1.25em;
@@ -2765,13 +2781,13 @@ button:focus {
   padding-right: 1.25em;
   padding-bottom: 1.875em;
 }
-/* line 64, ../sass/components/_feature.scss */
+/* line 67, ../sass/components/_feature.scss */
 .feature__address a:link,
 .feature__address a:visited {
   color: #7e786e;
   text-decoration: underline;
 }
-/* line 70, ../sass/components/_feature.scss */
+/* line 73, ../sass/components/_feature.scss */
 .feature__address a:hover,
 .feature__address a:focus,
 .feature__address a:active {
@@ -2783,7 +2799,7 @@ button:focus {
   text-decoration: underline;
 }
 
-/* line 76, ../sass/components/_feature.scss */
+/* line 79, ../sass/components/_feature.scss */
 .feature-list {
   font-size: 0.8em;
   line-height: 1.64063em;
@@ -2793,7 +2809,7 @@ button:focus {
   font-size: 0.8em;
   line-height: 1.40625em;
 }
-/* line 84, ../sass/components/_feature.scss */
+/* line 87, ../sass/components/_feature.scss */
 .feature-list li {
   border-top: 1px solid #f4f3f2;
   padding-top: 1.17188em;
@@ -2803,7 +2819,7 @@ button:focus {
   margin-bottom: 0;
 }
 
-/* line 98, ../sass/components/_feature.scss */
+/* line 101, ../sass/components/_feature.scss */
 .feature-list__drink a:link,
 .feature-list__drink a:visited,
 .feature-list__food a:link,
@@ -2813,7 +2829,7 @@ button:focus {
   color: #7e786e;
   text-decoration: underline;
 }
-/* line 104, ../sass/components/_feature.scss */
+/* line 107, ../sass/components/_feature.scss */
 .feature-list__drink a:hover,
 .feature-list__drink a:focus,
 .feature-list__drink a:active,
@@ -2831,22 +2847,22 @@ button:focus {
   text-decoration: underline;
 }
 
-/* line 110, ../sass/components/_feature.scss */
+/* line 113, ../sass/components/_feature.scss */
 .feature-list__drink {
   background: url("../img/icon__drink.svg");
 }
 
-/* line 111, ../sass/components/_feature.scss */
+/* line 114, ../sass/components/_feature.scss */
 .feature-list__food {
   background-image: url("../img/icon__food.svg");
 }
 
-/* line 112, ../sass/components/_feature.scss */
+/* line 115, ../sass/components/_feature.scss */
 .feature-list__category {
   background-image: url("../img/icon__tag.svg");
 }
 
-/* line 115, ../sass/components/_feature.scss */
+/* line 118, ../sass/components/_feature.scss */
 .feature-list__drink,
 .feature-list__food,
 .feature-list__category {
@@ -2882,24 +2898,24 @@ button:focus {
 }
 /* line 20, ../sass/components/_updated-list.scss */
 .block-list li {
-  border-top: 1px solid #cad2d1;
+  border-top: 1px solid #e9e8e6;
   margin-bottom: 0.75em;
 }
 
 /* line 25, ../sass/components/_updated-list.scss */
 .block-list__item-title {
-  font-size: 1.25em;
-  line-height: 0.9em;
-  margin-top: 0.6em;
-  margin-bottom: 0.3em;
+  font-size: 1em;
+  line-height: 1.125em;
+  margin-top: 0.75em;
+  margin-bottom: 0.375em;
 }
 
-/* line 33, ../sass/components/_updated-list.scss */
+/* line 30, ../sass/components/_updated-list.scss */
 .block-list__item-address {
   text-transform: uppercase;
   font-size: 0.6em;
   line-height: 1.25em;
-  color: #8aa29e;
+  color: #7e786e;
 }
 
 /**
@@ -2916,7 +2932,7 @@ button:focus {
   font-size: 0.8em;
   line-height: 1.40625em;
   padding-top: 0.9375em;
-  border-top: 1px solid #cad2d1;
+  border-top: 1px solid #e9e8e6;
   margin-bottom: 0.9375em;
 }
 
@@ -3028,15 +3044,15 @@ button:focus {
  */
 /* line 6, ../sass/components/_dotw-list.scss */
 .dotw-title {
-  font-weight: 700;
-  font-size: 1.25em;
-  line-height: 0.9em;
+  color: #d4d2ce;
+  font-size: 1em;
+  line-height: 1.5em;
   margin-top: 0em;
-  margin-bottom: 0.3em;
-  padding-top: 0.9em;
-  padding-right: 0.6em;
-  margin-bottom: 0.9em;
-  padding-left: 0.9em;
+  margin-bottom: 0.375em;
+  padding-top: 1.125em;
+  padding-right: 0.75em;
+  margin-bottom: 0.9375em;
+  padding-left: 1.125em;
 }
 
 /* line 18, ../sass/components/_dotw-list.scss */
@@ -3055,6 +3071,25 @@ button:focus {
   background-position: left 1.40625em top 1.40625em;
   background-repeat: no-repeat;
   background-size: 1em;
+}
+
+/**
+ * @file
+ * Style rules for the bar page header.
+ */
+/* line 6, ../sass/components/_bar-header.scss */
+.bar__title {
+  color: #ffac00;
+  border-bottom: 1px solid #f4f3f2;
+  margin-bottom: 0.38462em;
+  padding-bottom: 0.28846em;
+}
+
+/* line 12, ../sass/components/_bar-header.scss */
+.bar__address {
+  font-size: 0.8em;
+  line-height: 0.9375em;
+  color: #a9a59e;
 }
 
 /* Styleguide rules */

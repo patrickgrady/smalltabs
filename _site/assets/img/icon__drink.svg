@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="90 0 612 612" enable-background="new 90 0 612 612" xml:space="preserve">
+	 width="612px" height="612px" viewBox="198 0 612 612" enable-background="new 198 0 612 612" xml:space="preserve">
 <g id="tag" display="none">
-	<path display="inline" fill="#E35125" d="M706.3,0H464.6L180,284.6L507.4,612l281.5-281.5V79.6L706.3,0z M684.9,205
-		c-27.5,27.5-70.4,27.5-94.9,0c-27.5-27.5-27.5-70.4,0-94.9c27.5-27.5,70.4-27.5,94.9,0C712.4,134.6,712.4,177.5,684.9,205z"/>
+	<path display="inline" fill="#E35125" d="M904.3,0H662.6L378,284.6L705.4,612l281.5-281.5V79.6L904.3,0z M882.9,205
+		c-27.5,27.5-70.4,27.5-94.9,0c-27.5-27.5-27.5-70.4,0-94.9c27.5-27.5,70.4-27.5,94.9,0C910.4,134.6,910.4,177.5,882.9,205z"/>
 </g>
 <g id="food_1_" display="none">
-	<path display="inline" fill="#E35125" d="M409.5,153h-52V0h-49v153h-52V0h-52v128.5l0,0V205l101,76.5v52L281,563
-		c0,27.5,21.4,52,52,52c27.5,0,52-21.4,52-52l-24.5-229.5l0,0v-55.1l101-76.5V0h-52V153z M767.5,358c0,0,0-306-177.5-355v560
-		c0,27.5,21.4,52,52,52s52-21.4,52-52l-24.5-202L767.5,358L767.5,358z"/>
+	<path display="inline" fill="#E35125" d="M607.5,153h-52V0h-49v153h-52V0h-52v128.5l0,0V205l101,76.5v52L479,563
+		c0,27.5,21.4,52,52,52c27.5,0,52-21.4,52-52l-24.5-229.5l0,0v-55.1l101-76.5V0h-52V153z M965.5,358c0,0,0-306-177.5-355v560
+		c0,27.5,21.4,52,52,52s52-21.4,52-52l-24.5-202L965.5,358L965.5,358z"/>
 </g>
 <g id="drink_1_">
-	<path fill="#CAD2D1" d="M601,0H191v165.2l52,422.3V612h306v-24.5l52-425.3V0z M549,140.8L549,140.8c0,18.4-67.3,39.8-153,39.8
+	<path fill="#D4D2CE" d="M709,0H299v165.2l52,422.3V612h306v-24.5l52-425.3V0z M657,140.8L657,140.8c0,18.4-67.3,39.8-153,39.8
 		c-85.7,3.1-153-21.4-153-39.8l0,0l0,0V52h306V140.8z"/>
 </g>
 </svg>

@@ -6,8 +6,6 @@
 .l-finder-homepage {
   background: url('../img/hero-background.jpg');
   background-size: cover;   
-  padding-top: 2em;
-  padding-bottom: 1em;
 }
 .l-finder__column {
   width: 100%;
@@ -17,7 +15,8 @@
   @include breakpoint($bp2) {
     float: left;
     width: 27%;
-    margin-right: 2%; 
+    margin-right: 2%;
+    margin-bottom: 0;  
   }
 }
 .l-finder__column--button {
@@ -30,15 +29,20 @@
   }
 }
 
-.finder__map,
-.finder__map img {
-  margin: 0;
-  padding: 0;
+.finder__map {
+  padding: 0;  
+  border: rhythm(1, $text) solid $white;
+  margin-top: 0;
+  margin-bottom: $zen-gutter-width / 2;
+
+  img {
+    margin-bottom: 0;
+  }
 }
+
 .finder { 
-  color: $white;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: $zen-gutter-width;
+  padding-bottom: $zen-gutter-width;
 }
 
 .finder__heading {

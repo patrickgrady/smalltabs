@@ -8,7 +8,10 @@
   width: 100%;
 }
 
-.feature.rollup { border: 0px; }
+.feature.rollup { 
+  border: 0px;
+  margin-bottom: $zen-gutter-width;
+}
 .feature__image {
   background: url('../img/feature__image.jpg');
   background-size: cover;   

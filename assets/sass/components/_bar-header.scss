@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Style rules for the bar page header.
+ */
+
+.bar__title { 
+  color: $pilsner;
+  border-bottom: 1px solid $stout-05;
+  @include trailer(1, $lg-heading);
+  padding-bottom: rhythm(.75, $lg-heading); 
+}
+.bar__address {
+  //@extend %helvetica;
+  //@extend %allcaps;
+  @include adjust-font-size-to($label, 1);
+  color: $stout-40;
+}
