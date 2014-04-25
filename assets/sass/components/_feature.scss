@@ -49,7 +49,7 @@
   font-weight: 700;
   @include adjust-font-size-to($lg-heading, 2.5);
   @include leader(0, $lg-heading);
-  @include trailer(.5, $lg-heading);
+  @include trailer(.75, $lg-heading);
   padding-right: rhythm(1, $lg-heading);  
   padding-left: rhythm(1.5, $lg-heading);
   a { border-bottom: 0px; }
