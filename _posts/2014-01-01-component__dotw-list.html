@@ -1,8 +1,21 @@
 ---
 layout: post
-title: "Day of the Week list"
+title: "Daily Special Listing"
 description: Used on bar pages to display the food and drink specials for each day of the week.
 categories: Components
 ---
+<section class="styleguide-example">
+  <div class="container">
+    <div class="l-page">
+      {% include dotw-list.html %}
+    </div>
+  </div>
+</section>
 
-{{% include dotw-list.html %}}
+<section class="styleguide-markup container">
+  <div class="l-1up">
+{% highlight html %}
+{% include dotw-list.html %}
+{% endhighlight %}
+  </div>
+</section>
