@@ -33,20 +33,19 @@
 }
 
 .feature__dotw {
-  @extend %champion-heavyweight;
-  @extend %allcaps; 
+  //@extend %champion-heavyweight;
+  @extend %allcaps;
+  font-weight: 700;
   color: $pilsner;
   @include adjust-font-size-to($label, 1.5);       
   @include leader(0, $label);
-  @include trailer(.25, $label);
+  @include trailer(.75, $label);
   padding-top: rhythm(1.5, $label);
   padding-right: rhythm(1, $label);  
   padding-left: rhythm(1.5, $label);    
 }
 .feature__title { 
-  @extend %sentinel-display;
   @extend %track-in;
-  font-weight: 700;
   @include adjust-font-size-to($lg-heading, 2.5);
   @include leader(0, $lg-heading);
   @include trailer(.75, $lg-heading);
@@ -54,14 +53,12 @@
   padding-left: rhythm(1.5, $lg-heading);
   a { border-bottom: 0px; }
 }
-.feature__address {
-  @extend %helvetica;
-  @extend %allcaps;    
-  @include adjust-font-size-to($crumb, 1);
-  @include trailer(0, $crumb);
-  padding-left: rhythm(1.5, $crumb); 
-  padding-right: rhythm(1, $crumb);    
-  padding-bottom: rhythm(1.5, $crumb);
+.feature__address {  
+  @include adjust-font-size-to($label, 1.5);  
+  @include trailer(0, $label);
+  padding-left: rhythm(1.5, $label); 
+  padding-right: rhythm(1, $label);    
+  padding-bottom: rhythm(1.5, $label);
 
   a:link,
   a:visited { 
@@ -77,12 +74,10 @@
   }     
 }
 .feature-list {
-  @extend %helvetica;
-  @include adjust-font-size-to($label, 1.75);  
+  @include adjust-font-size-to($label, 1.5);  
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0;
-  @include adjust-font-size-to($label, 1.5);
 
   li {
     border-top: 1px solid $off-white;

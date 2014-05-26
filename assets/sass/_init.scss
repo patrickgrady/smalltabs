@@ -49,7 +49,7 @@ $legacy-support-for-ie8: true;
 // use in the normalize.scss file.
 // @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
 
-$base-font-size: 16px; // The font size set on the root html element.
+$base-font-size: 14px; // The font size set on the root html element.
 $base-line-height: 12px; // This line-height determines the basic unit of vertical rhythm.
 
 // Modular Scale
@@ -84,7 +84,7 @@ $h6-font-size: $label;
 
 // First, let's create some font stacks.
 $georgia: Georgia, "Times New Roman", "DejaVu Serif", serif;
-$helvetica: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$helvetica: 'Gotham SSm A', 'Gotham SSm B', 'Whitney SSm A', 'Whitney SSm B', "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $sentinel-ssm: 'Sentinel SSm A', 'Sentinel SSm B', $georgia;
 $sentinel: 'Sentinel A', 'Sentinel B', $georgia;
 $champion-heavyweight: 'Champion Heavywt A', 'Champion Heavywt B', $helvetica;
@@ -96,7 +96,7 @@ $gotham-ssm: 'Gotham SSm A', 'Gotham SSm B', $helvetica;
 $monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $sentinel-ssm; // The font family set on the html element.
+$base-font-family: $helvetica; // The font family set on the html element.
 $font-monospace:   $monospace;
 
 // Sass color variables, etc.

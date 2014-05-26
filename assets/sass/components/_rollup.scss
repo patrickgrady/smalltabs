@@ -14,25 +14,38 @@
   margin-bottom: $zen-gutter-width / 2;  
 }
 .rollup-title {
-  @extend %sentinel-display;
-  @extend %track-in;
-  font-weight: 700;
+  //@extend %sentinel-display;
+  //@extend %track-in;
+  //@extend %champion-heavyweight;
+  //@extend %allcaps;
+  //font-family: $helvetica;  
+  //font-weight: 700;
+  @extend %champion-heavyweight;  
+  @include adjust-font-size-to($text, 1.5);
+  @include leader(0, $text);
+  @include trailer(.5, $text);
+  padding-top: rhythm(1.5, $text);
+  padding-left: rhythm(4, $text);
+  padding-right: rhythm(1, $text);
+  a { border-bottom: 0px; }  
+  /*
   @include adjust-font-size-to($md-heading, 2);
   @include leader(0, $md-heading);
   @include trailer(.5, $md-heading);
-  padding-top: rhythm(1.25, $md-heading);
+  padding-top: rhythm(2, $md-heading);
   padding-left: rhythm(4, $md-heading);
   padding-right: rhythm(1, $md-heading);
-  a { border-bottom: 0px; }    
+  a { border-bottom: 0px; }
+  */   
 }
 .rollup-address {
   @extend %helvetica;
-  @extend %allcaps;  
-  @include adjust-font-size-to($crumb, 1);
-  @include trailer(0, $crumb);
-  padding-left: rhythm(4, $crumb); 
-  padding-right: rhythm(1, $crumb);    
-  padding-bottom: rhythm(1.5, $crumb);  
+  //@extend %allcaps;  
+  @include adjust-font-size-to($label, 1);
+  @include trailer(0, $label);
+  padding-left: rhythm(4, $label); 
+  padding-right: rhythm(1, $label);    
+  padding-bottom: rhythm(1.5, $label);  
 
   a:link,
   a:visited { 
@@ -50,7 +63,7 @@
 %rollup-list,
 .rollup-list {
   @extend %helvetica;
-  @include adjust-font-size-to($label, 1.75);
+  @include adjust-font-size-to($label, 1.5);
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 0; // important

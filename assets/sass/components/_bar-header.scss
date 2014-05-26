@@ -5,9 +5,9 @@
 
 .bar__title { 
   color: $pilsner;
-  border-bottom: 1px solid $stout-05;
-  @include trailer(1, $lg-heading);
-  padding-bottom: rhythm(.75, $lg-heading); 
+  //border-bottom: 1px solid $stout-05;
+  //@include trailer(1, $lg-heading);
+  //padding-bottom: rhythm(.75, $lg-heading); 
 }
 .bar__address {
   //@extend %helvetica;

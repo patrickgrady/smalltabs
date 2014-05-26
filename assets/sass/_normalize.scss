@@ -185,27 +185,30 @@ blockquote {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  @extend %champion-lightweight;
+  @extend %champion-heavyweight;
+  @extend %track-in;  
   color: $stout;
   @include adjust-font-size-to($md-heading, 2);
   @include leader(0, $md-heading);
   @include trailer(1, $md-heading);
 
   @include breakpoint($bp1) {
-    @include adjust-font-size-to($xxl-heading, 4);
-    @include leader(0, $xxl-heading);
-    @include trailer(1, $xxl-heading);
+    @include adjust-font-size-to($xl-heading, 4);
+    @include leader(0, $xl-heading);
+    @include trailer(1, $xl-heading);
   }
 }
 h2 {
-  @extend %champion-heavyweight;
+  //@extend %track-in;
+  font-weight: 700;  
   color: $stout;  
   @include adjust-font-size-to($md-heading, 2.5);
   @include leader(2, $md-heading);
   @include trailer(1, $md-heading);
 }
 h3 {
-  @extend %sentinel-display;
+  @extend %champion-heavyweight;
+  @extend %allcaps; 
   color: $stout;  
   @include adjust-font-size-to($sm-heading, 2);
   @include leader(2, $sm-heading);

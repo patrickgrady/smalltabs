@@ -5,7 +5,7 @@
 
 .dotw-title {
   @extend %champion-heavyweight;
-  color: $stout-20;
+  color: $pilsner;
   @include adjust-font-size-to($text, 2);
   @include leader(0, $text);
   @include trailer(.5, $text);

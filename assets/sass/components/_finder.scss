@@ -50,18 +50,17 @@
   @extend %allcaps; 
   color: $pilsner;
   @include adjust-font-size-to($sm-heading, 2.5);   
-  @include trailer(1, $sm-heading);
+  @include trailer(1.5, $sm-heading);
   padding-bottom: rhythm(1.25, $sm-heading);
   border-bottom: 1px solid $stout-80;
   &.reverse-border { border-bottom: 1px solid $stout-10; }
   @include breakpoint($bp1) {
     @include adjust-font-size-to($lg-heading, 2.5);   
-    @include trailer(1, $lg-heading);
+    @include trailer(1.5, $lg-heading);
     padding-bottom: rhythm(1.25, $lg-heading);
   }
 }
 .finder__subheading {
-  @extend %sentinel-display;
   @extend %track-in;
   @include adjust-font-size-to($lg-heading, 2.5);  
   @include leader(0, $lg-heading);
