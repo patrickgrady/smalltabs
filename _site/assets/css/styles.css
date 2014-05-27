@@ -24,7 +24,7 @@
    ========================================================================== */
 /* Use Champion Heavyweight */
 /* line 29, ../sass/_mixins.scss */
-h1, h3, .site-navigation, .rollup-title, .finder__heading, .neighborhoods-list__heading, .dotw-title {
+h1, h3, .site-header-navigation, .rollup-title, .finder__heading, .neighborhoods-list__heading, .dotw-title {
   font-family: "Champion Heavywt A", "Champion Heavywt B", "Gotham SSm A", "Gotham SSm B", "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   font-weight: 400;
 }
@@ -41,7 +41,7 @@ h1, h3, .site-navigation, .rollup-title, .finder__heading, .neighborhoods-list__
 
 /* Tight tracking */
 /* line 44, ../sass/_mixins.scss */
-h1, h4, .finder__subheading, .finder__label, .feature__title, .neighborhoods-list__subheading {
+h1, h4, .finder__subheading, .feature__title, .neighborhoods-list__subheading {
   letter-spacing: -0.0125em;
 }
 
@@ -2184,15 +2184,15 @@ table {
 }
 
 /* line 12, ../sass/components/_site-header.scss */
-.site-logo {
+.site-header-logo {
   float: left;
   vertical-align: middle;
   line-height: 0;
-  height: 40px;
+  height: 36px;
 }
 
 /* line 19, ../sass/components/_site-header.scss */
-.site-navigation {
+.site-header-navigation {
   float: right;
   height: 40px;
   font-size: 0.6em;
@@ -2201,14 +2201,14 @@ table {
 }
 @media (min-width: 900px) {
   /* line 19, ../sass/components/_site-header.scss */
-  .site-navigation {
+  .site-header-navigation {
     display: block;
   }
 }
 
 /* line 28, ../sass/components/_site-header.scss */
-.site-navigation a:link,
-.site-navigation a:visited {
+.site-header-navigation a:link,
+.site-header-navigation a:visited {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -2219,8 +2219,8 @@ table {
 }
 
 /* line 38, ../sass/components/_site-header.scss */
-.site-navigation a:hover,
-.site-navigation a:active {
+.site-header-navigation a:hover,
+.site-header-navigation a:active {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
@@ -2229,36 +2229,36 @@ table {
 }
 
 /* line 46, ../sass/components/_site-header.scss */
-.site-navigation__link {
+.site-header-navigation__link {
   text-transform: uppercase;
   letter-spacing: .125em;
 }
 /* line 49, ../sass/components/_site-header.scss */
-.site-navigation__link:link, .site-navigation__link:visited {
+.site-header-navigation__link:link, .site-header-navigation__link:visited {
   color: rgba(255, 255, 255, 0.3);
 }
 /* line 53, ../sass/components/_site-header.scss */
-.site-navigation__link:hover, .site-navigation__link:active {
+.site-header-navigation__link:hover, .site-header-navigation__link:active {
   color: #e96300;
 }
 
 /* line 58, ../sass/components/_site-header.scss */
-.site-navigation__button {
+.site-header-navigation__button {
   background: rgba(83, 75, 62, 0.5);
   padding: 1em 1.5em;
   border-radius: 3px;
 }
 /* line 63, ../sass/components/_site-header.scss */
-.site-navigation__button:link, .site-navigation__button:visited {
+.site-header-navigation__button:link, .site-header-navigation__button:visited {
   color: rgba(255, 255, 255, 0.6);
 }
 /* line 67, ../sass/components/_site-header.scss */
-.site-navigation__button:hover, .site-navigation__button:active {
+.site-header-navigation__button:hover, .site-header-navigation__button:active {
   background: #e96300;
 }
 
 /* line 72, ../sass/components/_site-header.scss */
-.site-navigation--mobile {
+.site-header-navigation--mobile {
   font-size: 30px;
   line-height: .25;
   float: right;
@@ -2266,12 +2266,12 @@ table {
 }
 @media (min-width: 900px) {
   /* line 72, ../sass/components/_site-header.scss */
-  .site-navigation--mobile {
+  .site-header-navigation--mobile {
     display: none;
   }
 }
 /* line 79, ../sass/components/_site-header.scss */
-.site-navigation--mobile a {
+.site-header-navigation--mobile a {
   color: #e96300;
   position: relative;
   top: 50%;
@@ -2600,6 +2600,7 @@ table {
   display: table-cell;
   text-align: center;
   width: 50px;
+  position: relative;
 }
 @media (min-width: 900px) {
   /* line 77, ../sass/components/_finder.scss */
@@ -2608,36 +2609,41 @@ table {
   }
 }
 
-/* line 85, ../sass/components/_finder.scss */
+/* line 86, ../sass/components/_finder.scss */
 .finder__select-wrapper {
   display: table-cell;
 }
 
-/* line 89, ../sass/components/_finder.scss */
+/* line 90, ../sass/components/_finder.scss */
 .finder__label {
-  font-size: 0.8em;
-  line-height: 2.67857em;
   color: #7e786e;
-  font-weight: 700;
   border-radius: 3px 0 0 3px;
   -moz-box-shadow: inset 0 0 1px 0px #a9a59e;
   -webkit-box-shadow: inset 0 0 1px 0px #a9a59e;
   box-shadow: inset 0 0 1px 0px #a9a59e;
   background-color: white;
-  height: 2.5em;
-  vertical-align: middle;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* line 104, ../sass/components/_finder.scss */
 .finder__select {
   width: 100%;
+  vertical-align: bottom;
 }
 
-/* line 112, ../sass/components/_finder.scss */
+/* line 113, ../sass/components/_finder.scss */
+label {
+  font-size: 0.8em;
+  line-height: 2.67857em;
+}
+
+/* line 115, ../sass/components/_finder.scss */
 select {
   font-size: 0.8em;
   line-height: 2.67857em;
-  font-family: "Gotham SSm A", "Gotham SSm B", "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #281e0e;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2651,31 +2657,30 @@ select {
   border-color: #d4d2ce;
   border-style: solid;
   border-width: 1px 1px 1px 0;
-  height: 2.5em;
-  text-indent: .5em;
-  outline: none;
+  height: 36px;
+  text-indent: .75em;
+  outline: 0;
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
-/* line 130, ../sass/components/_finder.scss */
+/* line 132, ../sass/components/_finder.scss */
 select:hover, select:focus, select:active {
   outline: 0;
 }
 
-/* line 138, ../sass/components/_finder.scss */
+/* line 139, ../sass/components/_finder.scss */
 button {
   width: 100%;
   font-size: 0.8em;
   line-height: 0em;
   font-family: "Champion Heavywt A", "Champion Heavywt B", "Gotham SSm A", "Gotham SSm B", "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
-  text-transform: uppercase;
   background: #e96300;
   border-radius: 3px;
   border: 1px solid #e96300;
   color: white;
-  height: 2.5em;
+  height: 36px;
   margin: 0;
   padding: .125em 0 0;
   -webkit-transition: all 0.1s ease-out;
@@ -2684,14 +2689,14 @@ button {
   transition: all 0.1s ease-out;
 }
 
-/* line 152, ../sass/components/_finder.scss */
+/* line 153, ../sass/components/_finder.scss */
 button:hover {
   background: #d05800;
   color: white;
   border: 1px solid #d05800;
 }
 
-/* line 157, ../sass/components/_finder.scss */
+/* line 158, ../sass/components/_finder.scss */
 button:focus {
   outline-style: dotted;
   outline-color: #281e0e;
@@ -3092,32 +3097,39 @@ button:focus {
  */
 /* line 8, ../sass/styleguide/_styleguide.scss */
 .styleguide-header {
-  margin-top: 2em;
+  padding: 1.71429em 0;
   margin-bottom: 4em;
+  background: #281e0e;
 }
 
-/* line 12, ../sass/styleguide/_styleguide.scss */
+/* line 13, ../sass/styleguide/_styleguide.scss */
 .styleguide-header__image {
-  height: 36px;
+  height: 24px;
+}
+@media (min-width: 900px) {
+  /* line 13, ../sass/styleguide/_styleguide.scss */
+  .styleguide-header__image {
+    height: 36px;
+  }
 }
 
-/* line 15, ../sass/styleguide/_styleguide.scss */
+/* line 17, ../sass/styleguide/_styleguide.scss */
 .styleguide-breadcrumbs {
   font-size: 0.6em;
   line-height: 1.42857em;
   font-weight: 700;
 }
 
-/* line 20, ../sass/styleguide/_styleguide.scss */
+/* line 22, ../sass/styleguide/_styleguide.scss */
 .styleguide-body {
   margin-bottom: 2em;
 }
-/* line 21, ../sass/styleguide/_styleguide.scss */
+/* line 23, ../sass/styleguide/_styleguide.scss */
 .styleguide-body h1, .styleguide-body h2, .styleguide-body h3, .styleguide-body h4, .styleguide-body h5, .styleguide-body h6, .styleguide-body p, .styleguide-body ul, .styleguide-body ol {
   max-width: 760px;
 }
 
-/* line 24, ../sass/styleguide/_styleguide.scss */
+/* line 26, ../sass/styleguide/_styleguide.scss */
 .styleguide-footer {
   background: white;
   font-size: 0.6em;
@@ -3126,58 +3138,58 @@ button:focus {
   margin-bottom: 4em;
 }
 
-/* line 31, ../sass/styleguide/_styleguide.scss */
+/* line 33, ../sass/styleguide/_styleguide.scss */
 .styleguide-swatch {
   padding: 1em;
   margin-bottom: 48px;
 }
-/* line 33, ../sass/styleguide/_styleguide.scss */
+/* line 35, ../sass/styleguide/_styleguide.scss */
 .styleguide-swatch.reverse {
   color: white;
 }
 
-/* line 39, ../sass/styleguide/_styleguide.scss */
+/* line 41, ../sass/styleguide/_styleguide.scss */
 .white-box {
   box-shadow: inset 0px 0px 1px #666;
 }
 
-/* line 43, ../sass/styleguide/_styleguide.scss */
+/* line 45, ../sass/styleguide/_styleguide.scss */
 .styleguide-example {
   background: #f4f3f2;
   padding: 4em 0;
   margin-bottom: 2em;
 }
 
-/* line 48, ../sass/styleguide/_styleguide.scss */
+/* line 50, ../sass/styleguide/_styleguide.scss */
 .styleguide-markup {
   margin-bottom: 2em;
 }
 
-/* line 51, ../sass/styleguide/_styleguide.scss */
+/* line 53, ../sass/styleguide/_styleguide.scss */
 .stout-80 {
   background: #534b3e;
   padding: 1em;
 }
 
-/* line 55, ../sass/styleguide/_styleguide.scss */
+/* line 57, ../sass/styleguide/_styleguide.scss */
 .stout-60 {
   background: #7e786e;
   padding: 1em;
 }
 
-/* line 59, ../sass/styleguide/_styleguide.scss */
+/* line 61, ../sass/styleguide/_styleguide.scss */
 .stout-40 {
   background: #a9a59e;
   padding: 1em;
 }
 
-/* line 63, ../sass/styleguide/_styleguide.scss */
+/* line 65, ../sass/styleguide/_styleguide.scss */
 .stout-20 {
   background: #d4d2ce;
   padding: 1em;
 }
 
-/* line 67, ../sass/styleguide/_styleguide.scss */
+/* line 69, ../sass/styleguide/_styleguide.scss */
 .stout-5 {
   background: #f4f3f2;
   padding: 1em;

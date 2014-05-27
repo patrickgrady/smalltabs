@@ -9,14 +9,14 @@
   padding: rhythm(2) 0;  
 }
 
-.site-logo {
+.site-header-logo {
   float: left;
   vertical-align: middle;
   line-height: 0;
-  height: 40px;
+  height: 36px;
 }
 
-.site-navigation {
+.site-header-navigation {
   @extend %champion-heavyweight;
   float: right;
   height: 40px;
@@ -25,8 +25,8 @@
   @include breakpoint($bp2){ display: block; }
 
 }
-.site-navigation a:link,
-.site-navigation a:visited { 
+.site-header-navigation a:link,
+.site-header-navigation a:visited { 
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -35,15 +35,15 @@
   margin-left: rhythm(1.5, $crumb);
   border-bottom: 0;
 }
-.site-navigation a:hover,
-.site-navigation a:active {
+.site-header-navigation a:hover,
+.site-header-navigation a:active {
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   text-decoration: none;  
 }
-.site-navigation__link {
+.site-header-navigation__link {
   text-transform: uppercase;
   letter-spacing: .125em;
   &:link,
@@ -55,7 +55,7 @@
     color: $link-color;
   }  
 }
-.site-navigation__button {
+.site-header-navigation__button {
   background: rgba($stout-80, .5);
   padding: 1em 1.5em;
   border-radius: $radius;
@@ -69,7 +69,7 @@
     background: $link-color;
   }
 }
-.site-navigation--mobile {
+.site-header-navigation--mobile {
   font-size: 30px;
   line-height: .25;
   float: right;

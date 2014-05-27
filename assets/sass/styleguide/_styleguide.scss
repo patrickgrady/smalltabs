@@ -6,11 +6,13 @@
 $styleguide-slug: 2em;
 
 .styleguide-header {
-  margin-top: $styleguide-slug;
+  padding: rhythm(2) 0;  
   margin-bottom: $styleguide-slug * 2;
+  background: $stout;
 }
 .styleguide-header__image {
-  height: 36px;
+  height: 24px;  
+  @include breakpoint($bp2){ height: 36px; }
 }
 .styleguide-breadcrumbs {
   @extend %allcaps;  

@@ -78,6 +78,7 @@
   display: table-cell;
   text-align: center;
   width: 50px;
+  position: relative;
   @include breakpoint($bp2) {
     width: 66px;
   }  
@@ -88,30 +89,31 @@
 
 .finder__label {
   @extend %helvetica;
-  @include adjust-font-size-to($label, 2.5);
-  @extend %track-in;
   color: $stout-60; 
-  font-weight: 700;
   border-radius: $radius 0 0 $radius;
    -moz-box-shadow:    inset 0 0 1px 0px $stout-40;
    -webkit-box-shadow: inset 0 0 1px 0px $stout-40;
    box-shadow:         inset 0 0 1px 0px $stout-40;
   background-color: $white;
-  height: 2.5em;  
-  vertical-align: middle;
+  height: 36px;  
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .finder__select {
   width: 100%;
+  vertical-align: bottom;  
 }
 .finder__button {
   //position: absolute;
   //bottom: 0;
 }
 
+label { @include adjust-font-size-to($label, 2.5); }
+
 select {
   @include adjust-font-size-to($label, 2.5);  
-  font-family: $helvetica;
   color: $stout;
   @include box-sizing(border-box);
   -webkit-appearance: none;
@@ -123,28 +125,27 @@ select {
   border-color: $stout-20;
   border-style: solid;
   border-width: 1px 1px 1px 0;  
-  height: 2.5em;
-  text-indent: .5em;
-  outline: none;
+  height: 36px;
+  text-indent: .75em;
+  outline: 0;
   @include trans(.1s, ease-out);
   &:hover,
   &:focus,
   &:active {
     outline: 0;
   }
-
 }
 
 button {
   width: 100%;
-  @include adjust-font-size-to($label, 0);    
+  @include adjust-font-size-to($label, 0);
+  //font-weight: 700;    
   font-family: $champion-heavyweight;
-  text-transform: uppercase;
   background: $link-color;
   border-radius: $radius;
   border: 1px solid $link-color;
   color: $white;
-  height: 2.5em;
+  height: 36px;
   margin: 0;
   padding: .125em 0 0;
   @include trans(.1s, ease-out);
